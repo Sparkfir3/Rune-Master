@@ -5,6 +5,7 @@ import Initiative
 import APIRequest
 import Spells
 import Skills
+import Items
 
 from discord.ext import commands
 from discord.utils import get
@@ -24,6 +25,7 @@ async def help(ctx):
 		description += "\n" + "$roll - Rolls dice given format `#d#`. Can add and subtract multiple values and rolls."
 		description += "\n" + "$spell - Returns information for the given spell."
 		description += "\n" + "$feature|skill - Returns information for the given feature."
+		description += "\n" + "$item - Returns information for the given item."
 		description += "\n" + "$init - Allows for adding to and the display of an ordered initiative list."
 		description += "\n" + "$ping - Test command that gives the bot\'s latency time."
 
@@ -58,21 +60,18 @@ async def roll(ctx, *args):
 
 @client.command(pass_context = True, aliases = ["spells"])
 async def spell(ctx, *args):
-	spell_string = ""
-	for i, item in enumerate(args):
-		spell_string += item.lower().capitalize()
-		if i < len(args) - 1:
-			spell_string += " "
+	spell_string = combine_args(*args)
 	await ctx.send(embed = Spells.get_spell(spell_string))
 
 @client.command(pass_context = True, aliases = ["skills","feature","features"])
 async def skill(ctx, *args):
-	skill_string = ""
-	for i, item in enumerate(args):
-		skill_string += item.lower().capitalize()
-		if i < len(args) - 1:
-			skill_string += " "
+	skill_string = combine_args(*args)
 	await ctx.send(embed = Skills.get_skill(skill_string))
+
+@client.command(pass_context = True, aliases = ["items","equipment"])
+async def item(ctx, *args):
+	item_string = combine_args(*args)
+	await ctx.send(embed = Items.get_item(item_string))
 
 @client.command(pass_context = True, aliases = ["initiative"])
 async def init(ctx, *args):
@@ -131,6 +130,14 @@ async def init(ctx, *args):
 			embed = discord.Embed(color=0xff0000)
 			embed.add_field(name = "Invalid Arguments", value = "Please input initiatives using the format `$init <name> <value>`", inline = False)
 			await ctx.send(embed = embed)
+
+def combine_args(*args):
+	output = ""
+	for i, item in enumerate(args):
+		output += item.lower().capitalize()
+		if i < len(args) - 1:
+			output += " "
+	return output
 
 # Access code removed for security purposes
 client.run("")

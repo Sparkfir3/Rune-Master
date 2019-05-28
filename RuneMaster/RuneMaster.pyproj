@@ -25,6 +25,7 @@
     </Compile>
     <Compile Include="APIRequest.py" />
     <Compile Include="Initiative.py" />
+    <Compile Include="Items.py" />
     <Compile Include="RuneMaster.py" />
     <Compile Include="Skills.py" />
     <Compile Include="Spells.py" />

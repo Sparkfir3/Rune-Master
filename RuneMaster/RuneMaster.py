@@ -6,6 +6,8 @@ import APIRequest
 import Spells
 import Skills
 import Items
+import Spellcasting
+import Conditions
 
 from discord.ext import commands
 from discord.utils import get
@@ -25,12 +27,63 @@ async def help(ctx):
 		description += "\n" + "$roll - Rolls dice given format `#d#`. Can add and subtract multiple values and rolls."
 		description += "\n" + "$spell - Returns information for the given spell."
 		description += "\n" + "$feature|skill - Returns information for the given feature."
-		description += "\n" + "$item - Returns information for the given item."
+		description += "\n" + "$item - Returns information for the given item (weapons and armor only)."
+		description += "\n" + "$condition - Returns information for the given status condition."
 		description += "\n" + "$init - Allows for adding to and the display of an ordered initiative list."
 		description += "\n" + "$ping - Test command that gives the bot\'s latency time."
 
 		embed = discord.Embed(color = 0x555555, title = "Rune Master Commands", description = description)
 		await ctx.send(embed = embed)
+
+@client.command(pass_context = True)
+async def ping(ctx):
+	await ctx.send("Pong! Latency: {} ms".format(round(client.latency, 1)))
+
+# ---------------------------------------------------------------------------------------
+
+@client.command(pass_context = True)
+async def roll(ctx, *args):
+	roll_string = ""
+	for item in args:
+		roll_string += item
+	await ctx.send(embed = DiceRoll.roll_dice_embed(roll_string))
+
+# ---------------------------------------------------------------------------------------
+
+@client.command(pass_context = True, aliases = ["spells"])
+async def spell(ctx, *args):
+	spell_string = combine_args(*args)
+	await ctx.send(embed = Spells.get_spell(spell_string))
+
+# ---------------------------------------------------------------------------------------
+
+@client.command(pass_context = True, aliases = ["skills","feature","features"])
+async def skill(ctx, *args):
+	skill_string = combine_args(*args)
+	await ctx.send(embed = Skills.get_skill(skill_string))
+
+# ---------------------------------------------------------------------------------------
+
+@client.command(pass_context = True, aliases = ["items","equipment"])
+async def item(ctx, *args):
+	item_string = combine_args(*args)
+	await ctx.send(embed = Items.get_item(item_string))
+
+# ---------------------------------------------------------------------------------------
+
+@client.command(pass_context = True)
+async def condition(ctx, *args):
+	cond_name = combine_args(*args)
+	await ctx.send(embed = Conditions.get_condition(cond_name))
+
+# ---------------------------------------------------------------------------------------
+
+@client.command(pass_context = True)
+async def spellcasting(ctx, *args):
+	name_string = combine_args(*args)
+	await ctx.send(embed = Spellcasting.get_spellcasting_info(name_string))
+
+# ---------------------------------------------------------------------------------------
 
 @help.command(pass_context = True, aliases = ["initiative"])
 async def init(ctx):
@@ -46,32 +99,6 @@ async def init(ctx):
 
 	embed = discord.Embed(color = 0x555555, title = "Rune Master Command - $init", description = description)
 	await ctx.send(embed = embed)
-
-@client.command(pass_context = True)
-async def ping(ctx):
-	await ctx.send("Pong! Latency: {} ms".format(round(client.latency, 1)))
-
-@client.command(pass_context = True)
-async def roll(ctx, *args):
-	roll_string = ""
-	for item in args:
-		roll_string += item
-	await ctx.send(embed = DiceRoll.roll_dice_embed(roll_string))
-
-@client.command(pass_context = True, aliases = ["spells"])
-async def spell(ctx, *args):
-	spell_string = combine_args(*args)
-	await ctx.send(embed = Spells.get_spell(spell_string))
-
-@client.command(pass_context = True, aliases = ["skills","feature","features"])
-async def skill(ctx, *args):
-	skill_string = combine_args(*args)
-	await ctx.send(embed = Skills.get_skill(skill_string))
-
-@client.command(pass_context = True, aliases = ["items","equipment"])
-async def item(ctx, *args):
-	item_string = combine_args(*args)
-	await ctx.send(embed = Items.get_item(item_string))
 
 @client.command(pass_context = True, aliases = ["initiative"])
 async def init(ctx, *args):

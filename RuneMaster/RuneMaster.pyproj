@@ -28,6 +28,7 @@
     <Compile Include="Items.py" />
     <Compile Include="RuneMaster.py" />
     <Compile Include="Skills.py" />
+    <Compile Include="Spellcasting.py" />
     <Compile Include="Spells.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

@@ -24,8 +24,10 @@
       <Link>DiceRoll.py</Link>
     </Compile>
     <Compile Include="APIRequest.py" />
+    <Compile Include="Conditions.py" />
     <Compile Include="Initiative.py" />
     <Compile Include="Items.py" />
+    <Compile Include="Monsters.py" />
     <Compile Include="RuneMaster.py" />
     <Compile Include="Skills.py" />
     <Compile Include="Spellcasting.py" />

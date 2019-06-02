@@ -8,6 +8,7 @@ import Skills
 import Items
 import Spellcasting
 import Conditions
+import Monsters
 
 from discord.ext import commands
 from discord.utils import get
@@ -29,6 +30,7 @@ async def help(ctx):
 		description += "\n" + "$feature|skill - Returns information for the given feature."
 		description += "\n" + "$item - Returns information for the given item (weapons and armor only)."
 		description += "\n" + "$condition - Returns information for the given status condition."
+		description += "\n" + "$monster - Returns stats and information for the given monster."
 		description += "\n" + "$init - Allows for adding to and the display of an ordered initiative list."
 		description += "\n" + "$ping - Test command that gives the bot\'s latency time."
 
@@ -82,6 +84,19 @@ async def condition(ctx, *args):
 async def spellcasting(ctx, *args):
 	name_string = combine_args(*args)
 	await ctx.send(embed = Spellcasting.get_spellcasting_info(name_string))
+
+# ---------------------------------------------------------------------------------------
+
+@client.command(pass_context = True, aliases = ["monsters"])
+async def monster(ctx, *args):
+	monster_string = combine_args(*args);
+	try:
+		await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+	except:
+		description = "There was an error with retrieving the data from the API.\n"
+		description = "Something is missing from the API, and the data cannot be retrieved properly!"
+		embed = discord.Embed(color = 0xff0000, title = "Attempting to Get Info", description = description)
+		await ctx.send(embed = embed)
 
 # ---------------------------------------------------------------------------------------
 
@@ -157,6 +172,8 @@ async def init(ctx, *args):
 			embed = discord.Embed(color=0xff0000)
 			embed.add_field(name = "Invalid Arguments", value = "Please input initiatives using the format `$init <name> <value>`", inline = False)
 			await ctx.send(embed = embed)
+
+# ---------------------------------------------------------------------------------------
 
 def combine_args(*args):
 	output = ""

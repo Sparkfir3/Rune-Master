@@ -119,3 +119,61 @@ def get_cr(cr):
 	else:
 		challenge += str(cr) + " (" + str(200 * cr) + " XP)"
 	return challenge + "\n"
+
+# Gets monster special abilities
+def get_abilities(monster_name):
+	data = APIRequest.get_json(APIRequest.base_URL + "monsters/")
+	if "results" in data:
+		for list_item in data["results"]:
+			if monster_name == list_item["name"]:
+				data = APIRequest.get_json(list_item["url"])
+
+				description = ""
+				for ability in data["special_abilities"]:
+					description += "***{}.*** {}\n\n".format(ability["name"], ability["desc"])
+				if description == "":
+					description = "This monster has no special abilities."
+
+				embed = discord.Embed(color = 0x0080ff, title = monster_name + " - Abilities", description = description)
+				return embed
+
+		embed = discord.Embed(color = 0xff0000)
+		description = "Unable to get data for `" + skill_name + "`, please enter a valid skill name."
+		embed.add_field(name = "Attempting to Get Info", value = description, inline = False)
+		return embed
+	else:
+		embed = discord.Embed(color = 0xff0000)
+		description = "There was an error in attempting to retrieve the data. Please try again later."
+		embed.add_field(name = "Attempting to Get Info", value = description, inline = False)
+		return embed
+
+# Gets monster actions
+def get_actions(monster_name):
+	data = APIRequest.get_json(APIRequest.base_URL + "monsters/")
+	if "results" in data:
+		for list_item in data["results"]:
+			if monster_name == list_item["name"]:
+				data = APIRequest.get_json(list_item["url"])
+
+				description = ""
+				for action in data["actions"]:
+					description += "***{}.*** {}\n\n".format(action["name"], action["desc"])
+				embed = discord.Embed(color = 0x0080ff, title = monster_name + " - Actions", description = description)
+
+				if "legendary_actions" in data:
+					description = ""
+					for leg_action in data["legendary_actions"]:
+						description += "**{}.** {}\n\n".format(leg_action["name"], leg_action["desc"])
+					embed.add_field(name = monster_name + " - Legendary Actions", value = description, inline = False)
+
+				return embed
+
+		embed = discord.Embed(color = 0xff0000)
+		description = "Unable to get data for `" + skill_name + "`, please enter a valid skill name."
+		embed.add_field(name = "Attempting to Get Info", value = description, inline = False)
+		return embed
+	else:
+		embed = discord.Embed(color = 0xff0000)
+		description = "There was an error in attempting to retrieve the data. Please try again later."
+		embed.add_field(name = "Attempting to Get Info", value = description, inline = False)
+		return embed

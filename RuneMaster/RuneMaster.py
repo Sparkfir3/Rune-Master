@@ -87,14 +87,44 @@ async def spellcasting(ctx, *args):
 
 # ---------------------------------------------------------------------------------------
 
+@help.command(pass_context = True, aliases = ["monsters"])
+async def monster(ctx):
+	description = "`$monster <monster name>`\n`$monster stats <monster name>`"
+	description += "\n" + "Prints stats of the given monster."
+	description += "\n\n" + "`$monster abilities <monster name>`"
+	description += "\n" + "Prints special abilities of the given monster."
+	description += "\n\n" + "`$monster actions|attacks <monster name>`"
+	description += "\n" + "Prints actions and legendary actions (if any) of the given monster."
+	description += "\n\n" + "`$monster all <monster name>`"
+	description += "\n" + "Prints stats, abilites, and actions of the given monster."
+
+	embed = discord.Embed(color = 0x555555, title = "Rune Master Command - $monster", description = description)
+	await ctx.send(embed = embed)
+
 @client.command(pass_context = True, aliases = ["monsters"])
 async def monster(ctx, *args):
-	monster_string = combine_args(*args);
 	try:
-		await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+		lower = args[0].lower()
+		if lower == "abilities" or lower == "ability":
+			monster_string = combine_args(*args, ignore_first = True)
+			await ctx.send(embed = Monsters.get_abilities(monster_string))
+		elif lower == "actions" or lower == "action" or lower == "attacks" or lower == "attack":
+			monster_string = combine_args(*args, ignore_first = True)
+			await ctx.send(embed = Monsters.get_actions(monster_string))
+		elif lower == "stats":
+			monster_string = combine_args(*args, ignore_first = True)
+			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+		elif lower == "all":
+			monster_string = combine_args(*args, ignore_first = True)
+			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+			await ctx.send(embed = Monsters.get_abilities(monster_string))
+			await ctx.send(embed = Monsters.get_actions(monster_string))
+		else:
+			monster_string = combine_args(*args)
+			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
 	except:
-		description = "There was an error with retrieving the data from the API.\n"
-		description = "Something is missing from the API, and the data cannot be retrieved properly!"
+		description = "There was an error with retrieving the data from the API:\n"
+		description += "Something is missing from the API, and the data cannot be retrieved properly!"
 		embed = discord.Embed(color = 0xff0000, title = "Attempting to Get Info", description = description)
 		await ctx.send(embed = embed)
 
@@ -175,9 +205,11 @@ async def init(ctx, *args):
 
 # ---------------------------------------------------------------------------------------
 
-def combine_args(*args):
+def combine_args(*args, ignore_first = False):
 	output = ""
 	for i, item in enumerate(args):
+		if ignore_first and i == 0:
+			continue
 		output += item.lower().capitalize()
 		if i < len(args) - 1:
 			output += " "

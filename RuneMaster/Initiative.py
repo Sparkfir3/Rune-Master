@@ -28,6 +28,16 @@ def update_initiative(value, name):
 			return True
 	return False
 
+# Removes value from the list, if it exists
+def remove_initiative(name):
+	for i in range(len(Init_List.list)):
+		if name == Init_List.list[i][1]:
+			del Init_List.list[i]
+			embed = discord.Embed(color = 0x0080ff, title = "Success", description = "Successfully removed \"{}\" from the initiative list.\nInitiative list now has {} item(s)".format(name, str(len(Init_List.list))))
+			return embed
+	embed = discord.Embed(color = 0xff0000, title = "Item Does Not Exist", description = "There is no item with name \"{}\" in the initiative list.".format(name))
+	return embed
+
 # Prints list as sorted embed
 def print_list(display_values = True):
 	sorted_list = sorted(Init_List.list, key = lambda init: init[0])

@@ -103,30 +103,33 @@ async def monster(ctx):
 
 @client.command(pass_context = True, aliases = ["monsters"])
 async def monster(ctx, *args):
-	try:
-		lower = args[0].lower()
-		if lower == "abilities" or lower == "ability":
-			monster_string = combine_args(*args, ignore_first = True)
-			await ctx.send(embed = Monsters.get_abilities(monster_string))
-		elif lower == "actions" or lower == "action" or lower == "attacks" or lower == "attack":
-			monster_string = combine_args(*args, ignore_first = True)
-			await ctx.send(embed = Monsters.get_actions(monster_string))
-		elif lower == "stats":
-			monster_string = combine_args(*args, ignore_first = True)
-			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
-		elif lower == "all":
-			monster_string = combine_args(*args, ignore_first = True)
-			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
-			await ctx.send(embed = Monsters.get_abilities(monster_string))
-			await ctx.send(embed = Monsters.get_actions(monster_string))
-		else:
-			monster_string = combine_args(*args)
-			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
-	except:
-		description = "There was an error with retrieving the data from the API:\n"
-		description += "Something is missing from the API, and the data cannot be retrieved properly!"
-		embed = discord.Embed(color = 0xff0000, title = "Attempting to Get Info", description = description)
-		await ctx.send(embed = embed)
+	if check_perms(ctx):
+		try:
+			lower = args[0].lower()
+			if lower == "abilities" or lower == "ability":
+				monster_string = combine_args(*args, ignore_first = True)
+				await ctx.send(embed = Monsters.get_abilities(monster_string))
+			elif lower == "actions" or lower == "action" or lower == "attacks" or lower == "attack":
+				monster_string = combine_args(*args, ignore_first = True)
+				await ctx.send(embed = Monsters.get_actions(monster_string))
+			elif lower == "stats":
+				monster_string = combine_args(*args, ignore_first = True)
+				await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+			elif lower == "all":
+				monster_string = combine_args(*args, ignore_first = True)
+				await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+				await ctx.send(embed = Monsters.get_abilities(monster_string))
+				await ctx.send(embed = Monsters.get_actions(monster_string))
+			else:
+				monster_string = combine_args(*args)
+				await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+		except:
+			description = "There was an error with retrieving the data from the API:\n"
+			description += "Something is missing from the API, and the data cannot be retrieved properly!"
+			embed = discord.Embed(color = 0xff0000, title = "Attempting to Get Info", description = description)
+			await ctx.send(embed = embed)
+	else:
+		await ctx.send(embed = insufficient_perms())
 
 # ---------------------------------------------------------------------------------------
 
@@ -139,6 +142,8 @@ async def init(ctx):
 	description += "\n" + "If `<display numbers>` is `true`, initiative numbers will be displayed. By default, this is disabled."
 	description += "\n\n" + "`$init clear|empty`"
 	description += "\n" + "Removes all entries from the initiative list."
+	description += "\n\n" + "`$init remove <name>`"
+	description += "\n" + "Removes entry with name `<name>` from the initiative list, if it exists."
 	description += "\n\n" + "`$init <name> <value>`"
 	description += "\n" + "Adds entry to initiative list with name `<name>` and value `<value>`. `<value>` must be an integer."
 
@@ -147,8 +152,13 @@ async def init(ctx):
 
 @client.command(pass_context = True, aliases = ["initiative"])
 async def init(ctx, *args):
+	# If no arguments
+	if len(args) == 0:
+		embed = discord.Embed(color=0xff0000, title = "Invalid Arguments", description = "Please input initiatives using the format `$init <name> <value>`\nOr use `$help init` for detailed help")
+		await ctx.send(embed = embed)
+
 	# Print/display
-	if args[0].lower() == "print" or args[0].lower() == "display":
+	elif args[0].lower() == "print" or args[0].lower() == "display":
 		# Get inputs
 		display_numbers = False
 		channel_id = ""
@@ -161,6 +171,12 @@ async def init(ctx, *args):
 					display_numbers = True
 		except:
 			None
+
+		# Check permissions if displaying numbers
+		if display_numbers and not check_perms(ctx):
+			await ctx.send(embed = insufficient_perms())
+			return
+
 		# Check which channel to send to, and print in appropriate channel
 		try:
 			if bool(channel_id):
@@ -181,6 +197,18 @@ async def init(ctx, *args):
 	elif args[0].lower() == "clear" or args[0].lower() == "empty":
 		await ctx.send(embed = Initiative.clear())
 
+	# Remove from list
+	elif args[0].lower() == "remove":
+		name = ""
+		for i, item in enumerate(args):
+			if i == 0:
+				continue
+			elif i == len(args) - 1:
+				name += item
+			else:
+				name += item + " "
+		await ctx.send(embed = Initiative.remove_initiative(name))
+
 	# Add to list
 	else:
 		if len(args) > 1:
@@ -195,13 +223,25 @@ async def init(ctx, *args):
 				name = name.strip()
 				await ctx.send(embed = Initiative.add_initiative(init, name))
 			except:
-				embed = discord.Embed(color=0xff0000)
-				embed.add_field(name = "Invalid Arguments", value = "Please input initiatives using the format `$init <name> <value>`", inline = False)
+				embed = discord.Embed(color=0xff0000, title = "Invalid Arguments", description = "Please input initiatives using the format `$init <name> <value>`\nOr use `$help init` for detailed help")
 				await ctx.send(embed = embed)
 		else:
-			embed = discord.Embed(color=0xff0000)
-			embed.add_field(name = "Invalid Arguments", value = "Please input initiatives using the format `$init <name> <value>`", inline = False)
+			embed = discord.Embed(color=0xff0000, title = "Invalid Arguments", description = "Please input initiatives using the format `$init <name> <value>`\nOr use `$help init` for detailed help")
 			await ctx.send(embed = embed)
+
+# ---------------------------------------------------------------------------------------
+
+def check_perms(ctx):
+	id1 = discord.utils.get(ctx.guild.roles, name="DM")
+	id2 = discord.utils.get(ctx.guild.roles, name="Dungeon Master")
+	if id1 in ctx.author.roles or id2 in ctx.author.roles:
+		return True
+	return False
+
+def insufficient_perms():
+	description = "The \"DM\" or \"Dungeon Master\" role is required to use this command."
+	embed = discord.Embed(color = 0xff0000, title = "Insufficient Permissions", description = description)
+	return embed
 
 # ---------------------------------------------------------------------------------------
 

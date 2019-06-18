@@ -49,28 +49,11 @@ def reformat_stat(stat):
 
 # Converts a stat number to its corresponding bonus
 def get_bonus(stat):
-	if stat >= 20:
-		return "+5"
-	elif stat >= 18:
-		return "+4"
-	elif stat >= 16:
-		return "+3"
-	elif stat >= 14:
-		return "+2"
-	elif stat >= 12:
-		return "+1"
-	elif stat >= 10:
-		return "+0"
-	elif stat >= 8:
-		return "-1"
-	elif stat >= 6:
-		return "-2"
-	elif stat >= 4:
-		return "-3"
-	elif stat >= 2:
-		return "-4"
+	new_stat = int((stat / 2) - 5)
+	if new_stat >= 0:
+		return "+" + str(new_stat)
 	else:
-		return "-5"
+		return str(new_stat)
 
 # Gets damage vulnerabilites of the monster and returns as a string
 def get_dam_vuln(vuln):
@@ -110,14 +93,66 @@ def get_languages(lang):
 # Gets challenge rating of the monster, formats it, and returns as a string
 def get_cr(cr):
 	challenge = "**Challenge** "
-	if cr == 0.125:
+	if cr == 0:
+		challenge += "0 (0 XP)"
+	elif cr == 0.125:
 		challenge += "1/8 (25 XP)"
 	elif cr == 0.25:
 		challenge += "1/4 (50 XP)"
 	elif cr == 0.5:
 		challenge += "1/2 (100 XP)"
+	elif cr == 1:
+		challenge += "1 (200 XP)"
+	elif cr == 2:
+		challenge += "2 (450 XP)"
+	elif cr == 3:
+		challenge += "3 (700 XP)"
+	elif cr == 4:
+		challenge += "4 (1,100 XP)"
+	elif cr == 5:
+		challenge += "5 (1,800 XP)"
+	elif cr == 6:
+		challenge += "6 (2,300 XP)"
+	elif cr == 7:
+		challenge += "7 (2,900 XP)"
+	elif cr == 8:
+		challenge += "8 (3,900 XP)"
+	elif cr == 9:
+		challenge += "9 (5,000 XP)"
+	elif cr == 10:
+		challenge += "10 (5,900 XP)"
+	elif cr == 11:
+		challenge += "11 (7,200 XP)"
+	elif cr == 12:
+		challenge += "12 (8,400 XP)"
+	elif cr == 13:
+		challenge += "13 (10,000 XP)"
+	elif cr == 14:
+		challenge += "14 (11,500 XP)"
+	elif cr == 15:
+		challenge += "15 (13,000 XP)"
+	elif cr == 16:
+		challenge += "16 (15,000 XP)"
+	elif cr == 17:
+		challenge += "17 (18,000 XP)"
+	elif cr == 18:
+		challenge += "18 (20,000 XP)"
+	elif cr == 19:
+		challenge += "19 (22,000 XP)"
+	elif cr == 20:
+		challenge += "20 (25,000 XP)"
+	elif cr == 21:
+		challenge += "21 (33,000 XP)"
+	elif cr == 22:
+		challenge += "22 (41,000 XP)"
+	elif cr == 23:
+		challenge += "23 (50,000 XP)"
+	elif cr == 24:
+		challenge += "24 (62,000 XP)"
+	elif cr == 30:
+		challenge += "30 (155,000 XP)"
 	else:
-		challenge += str(cr) + " (" + str(200 * cr) + " XP)"
+		challenge += str(cr)
 	return challenge + "\n"
 
 # Gets monster special abilities

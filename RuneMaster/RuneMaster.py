@@ -193,6 +193,11 @@ async def init(ctx, *args):
 		except:
 			print("Failed to send message to channel {channel}".format(str(channel_id)))
 
+	# Shuffle list
+	#elif args[0].lower() == "shuffle":
+	#	embed = discord.Embed(color = 0x0080ff, title = "Success", description = "Successfully shuffled initiative list")
+	#	await ctx.send(embed = embed)
+
 	# Clear list
 	elif args[0].lower() == "clear" or args[0].lower() == "empty":
 		await ctx.send(embed = Initiative.clear())

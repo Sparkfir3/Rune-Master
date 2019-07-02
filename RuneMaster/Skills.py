@@ -39,4 +39,21 @@ def reformat_name(name):
 		final_string += item.lower().capitalize()
 		if i < len(split_string) - 1:
 			final_string += " "
+
+	# Catch statements for specific formatting
+	if " Of The " in final_string:
+		final_string = final_string.strip().replace(" Of The ", " of the ")
+	elif final_string == "Destroy Undead": # 91
+		final_string = "Destroy Undead (CR 2 or below)"
+	elif "Circle of the Land" in final_string: # 104 to 111
+		final_string = final_string.strip()
+		if "Land " in final_string:
+			final_string = final_string.replace("Land ", "Land: ")
+	elif final_string == "Lands Stride": # 118
+		final_string = "Land's Stride"
+	elif "Natures" in final_string: # 123, 125
+		final_string = final_string.replace("Natures", "Nature's")
+	elif "Fighting Style" in final_string: # 132, 137
+		final_string = final_string.strip().replace("Style ", "Style: ")
+
 	return final_string

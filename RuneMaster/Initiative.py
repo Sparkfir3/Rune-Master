@@ -5,9 +5,11 @@ from random import shuffle
 # Object that stores the list
 class Init_List(object):
 	list = []
+	shuffled = False
 
 # Adds initiative with name "name" and value "value" into list
 def add_initiative(value, name):
+	Init_List.shuffled = False
 	if update_initiative(value, name):
 		embed = discord.Embed(color=0x0080ff)
 		embed.add_field(name = "Success", value = "Updated \"{name}\" with initiative {init} to the ordering.\nInitiative list now has {size} item(s)".format(name=name, init=str(value), size=str(len(Init_List.list))), inline = False)
@@ -21,6 +23,7 @@ def add_initiative(value, name):
 
 # Updates iniative value for given "name" if it already exists in the list
 def update_initiative(value, name):
+	Init_List.shuffled = False
 	for i in range(len(Init_List.list)):
 		if name == Init_List.list[i][1]:
 			new_item = (value, name)
@@ -40,8 +43,15 @@ def remove_initiative(name):
 
 # Prints list as sorted embed
 def print_list(display_values = True):
+	#sorted_list = []
+	#if not Init_List.shuffled:
+	#	sorted_list = sorted(Init_List.list, key = lambda init: init[0])
+	#	Init_List.list = shuffle_list(sorted_list)
+	#else:
+	#	sorted_list = Init_List.list;
 	sorted_list = sorted(Init_List.list, key = lambda init: init[0])
 	Init_List.list = shuffle_list(sorted_list)
+
 	if len(sorted_list) > 0:
 		sorted_list.reverse()
 		embed = discord.Embed(color=0x0080ff)
@@ -50,7 +60,7 @@ def print_list(display_values = True):
 			if display_values:
 				description += str(item[0]) + " - "
 			description += item[1] + "\n"
-		embed.add_field(name = "Initiatives", value = description, inline = False)
+		embed.add_field(name = "Initiatives " + str(Init_List.shuffled), value = description, inline = False)
 		return embed
 	else:
 		embed = discord.Embed(color=0xff0000)
@@ -79,6 +89,7 @@ def shuffle_list(old_list):
 				current_value = old_item[0]
 				sorted_items = []
 				sorted_items.append(old_item)
+	Init_List.shuffled = True
 	return new_list
 
 # Clears the list

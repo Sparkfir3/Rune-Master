@@ -97,6 +97,7 @@ async def monster(ctx):
 	description += "\n" + "Prints actions and legendary actions (if any) of the given monster."
 	description += "\n\n" + "`$monster all <monster name>`"
 	description += "\n" + "Prints stats, abilites, and actions of the given monster."
+	description += "\n\n" + "(\"DM\" or \"Dungeon Master\" role is required to use this command)"
 
 	embed = discord.Embed(color = 0x555555, title = "Rune Master Command - $monster", description = description)
 	await ctx.send(embed = embed)
@@ -140,6 +141,9 @@ async def init(ctx):
 	description += "\n" + "`$init print|display <channel ID> <display numbers>`"
 	description += "\n" + "Prints the initiative list. If a channel ID is provided, prints into the designated channel."
 	description += "\n" + "If `<display numbers>` is `true`, initiative numbers will be displayed. By default, this is disabled."
+	description += "\n" + "(\"DM\" or \"Dungeon Master\" role is required to print with numbers)"
+	description += "\n\n" + "`$init shuffle`"
+	description += "\n" + "Shuffles the order of all initiative items with the same value"
 	description += "\n\n" + "`$init clear|empty`"
 	description += "\n" + "Removes all entries from the initiative list."
 	description += "\n\n" + "`$init remove <name>`"
@@ -194,9 +198,10 @@ async def init(ctx, *args):
 			print("Failed to send message to channel {channel}".format(str(channel_id)))
 
 	# Shuffle list
-	#elif args[0].lower() == "shuffle":
-	#	embed = discord.Embed(color = 0x0080ff, title = "Success", description = "Successfully shuffled initiative list")
-	#	await ctx.send(embed = embed)
+	elif args[0].lower() == "shuffle":
+		Initiative.Init_List.list = Initiative.shuffle_list(Initiative.Init_List.list)
+		embed = discord.Embed(color = 0x0080ff, title = "Success", description = "Successfully shuffled initiative list")
+		await ctx.send(embed = embed)
 
 	# Clear list
 	elif args[0].lower() == "clear" or args[0].lower() == "empty":

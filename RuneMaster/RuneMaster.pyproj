@@ -25,6 +25,7 @@
     </Compile>
     <Compile Include="APIRequest.py" />
     <Compile Include="Conditions.py" />
+    <Compile Include="Enchantments.py" />
     <Compile Include="Initiative.py" />
     <Compile Include="Items.py" />
     <Compile Include="Mode.py" />

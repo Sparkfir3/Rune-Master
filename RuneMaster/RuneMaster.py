@@ -5,6 +5,7 @@ import Mode
 import Initiative
 import APIRequest
 import Spells
+import Enchantments
 import Skills
 import Items
 import Spellcasting
@@ -242,6 +243,13 @@ async def init(ctx, *args):
 
 # ---------------------------------------------------------------------------------------
 
+@client.command(pass_context = True, aliases = ["enchantment"])
+async def enchant(ctx, *args):
+	enchant_string = combine_args(*args)
+	await ctx.send(embed = Enchantments.get_enchantment(enchant_string))
+
+# ---------------------------------------------------------------------------------------
+
 @help.command(pass_context = True)
 async def mode(ctx):
 	description = "Current Mode: `{}`".format(Mode.Mode.current)
@@ -258,34 +266,38 @@ async def mode(ctx):
 
 @client.command(pass_context = True)
 async def mode(ctx, *args):
-	try:
-		if len(args) == 0:
-			await ctx.send("Bot mode is currently set to `{}`.".format(Mode.Mode.current))
-			return
+	if check_perms(ctx):
+		try:
+			if len(args) == 0:
+				await ctx.send("Bot mode is currently set to `{}`.".format(Mode.Mode.current))
+				return
 
-		arg = args[0].lower()
-		if arg == "vanilla":
-			if Mode.Mode.current != "vanilla":
-				Mode.Mode.current = "vanilla"
-				await ctx.send("Bot mode set to `vanilla`.")
+			arg = args[0].lower()
+			if arg == "vanilla":
+				if Mode.Mode.current != "vanilla":
+					Mode.Mode.current = "vanilla"
+					await ctx.send("Bot mode set to `vanilla`.")
+				else:
+					await ctx.send("Bot mode is already set to `vanilla`!")
+			elif arg == "homebrew":
+				if Mode.Mode.current != "homebrew":
+					Mode.Mode.current = "homebrew"
+					await ctx.send("Bot mode set to `homebrew`.")
+				else:
+					await ctx.send("Bot mode is already set to `homebrew`!")
+			elif arg == "limited":
+				if Mode.Mode.current != "limited":
+					Mode.Mode.current = "limited"
+					await ctx.send("Bot mode set to `limited`.")
+				else:
+					await ctx.send("Bot mode is already set to `limited`!")
 			else:
-				await ctx.send("Bot mode is already set to `vanilla`!")
-		elif arg == "homebrew":
-			if Mode.Mode.current != "homebrew":
-				Mode.Mode.current = "homebrew"
-				await ctx.send("Bot mode set to `homebrew`.")
-			else:
-				await ctx.send("Bot mode is already set to `homebrew`!")
-		elif arg == "limited":
-			if Mode.Mode.current != "limited":
-				Mode.Mode.current = "limited"
-				await ctx.send("Bot mode set to `limited`.")
-			else:
-				await ctx.send("Bot mode is already set to `limited`!")
-		else:
-			raise SyntaxError
-	except:
-		await ctx.send("Please enter a valid argument!")
+				raise SyntaxError
+		except:
+			await ctx.send("Please enter a valid argument!")
+
+	else:
+		await ctx.send(embed = insufficient_perms())
 
 # ---------------------------------------------------------------------------------------
 

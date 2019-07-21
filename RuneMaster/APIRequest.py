@@ -8,7 +8,7 @@ class rc_data(object):
 		data = myfile.read()
 	rc_spells = json.loads(data)
 
-	with open("RC-Database/RC-Spells.json") as myfile2:
+	with open("RC-Database/RC-Enchantments.json") as myfile2:
 		data2 = myfile2.read()
 	rc_enchants = json.loads(data2)
 

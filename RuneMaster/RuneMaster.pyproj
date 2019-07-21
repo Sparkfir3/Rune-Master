@@ -27,11 +27,25 @@
     <Compile Include="Conditions.py" />
     <Compile Include="Initiative.py" />
     <Compile Include="Items.py" />
+    <Compile Include="Mode.py" />
     <Compile Include="Monsters.py" />
     <Compile Include="RuneMaster.py" />
     <Compile Include="Skills.py" />
     <Compile Include="Spellcasting.py" />
     <Compile Include="Spells.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\RC-Database\RC-Enchantments.json">
+      <Link>RC-Enchantments.json</Link>
+    </Content>
+    <Content Include="..\RC-Database\RC-Spells.json">
+      <Link>RC-Spells.json</Link>
+    </Content>
+    <Content Include="RC-Database\RC-Enchantments.json" />
+    <Content Include="RC-Database\RC-Spells.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RC-Database\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

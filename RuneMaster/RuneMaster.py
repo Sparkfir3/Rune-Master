@@ -1,6 +1,7 @@
 import discord
 
 import DiceRoll
+import Mode
 import Initiative
 import APIRequest
 import Spells
@@ -240,6 +241,57 @@ async def init(ctx, *args):
 			await ctx.send(embed = embed)
 
 # ---------------------------------------------------------------------------------------
+
+@help.command(pass_context = True)
+async def mode(ctx):
+	description = "Current Mode: `{}`".format(Mode.Mode.current)
+	description += "\n\n" + "3 Modes Available:"
+	description += "\n" + "`Vanilla`"
+	description += "\n" + "Standard D&D 5e only, with no homebrew."
+	description += "\n\n" + "`Limited`"
+	description += "\n" + "Standard D&D 5e with Runic Cataclysm spells and monsters."
+	description += "\n\n" + "`Homebrew`"
+	description += "\n" + "Standard D&D 5e with all of Runic Cataclysm."
+
+	embed = discord.Embed(color = 0x555555, title = "Rune Master Command - $mode", description = description)
+	await ctx.send(embed = embed)
+
+@client.command(pass_context = True)
+async def mode(ctx, *args):
+	try:
+		if len(args) == 0:
+			await ctx.send("Bot mode is currently set to `{}`.".format(Mode.Mode.current))
+			return
+
+		arg = args[0].lower()
+		if arg == "vanilla":
+			if Mode.Mode.current != "vanilla":
+				Mode.Mode.current = "vanilla"
+				await ctx.send("Bot mode set to `vanilla`.")
+			else:
+				await ctx.send("Bot mode is already set to `vanilla`!")
+		elif arg == "homebrew":
+			if Mode.Mode.current != "homebrew":
+				Mode.Mode.current = "homebrew"
+				await ctx.send("Bot mode set to `homebrew`.")
+			else:
+				await ctx.send("Bot mode is already set to `homebrew`!")
+		elif arg == "limited":
+			if Mode.Mode.current != "limited":
+				Mode.Mode.current = "limited"
+				await ctx.send("Bot mode set to `limited`.")
+			else:
+				await ctx.send("Bot mode is already set to `limited`!")
+		else:
+			raise SyntaxError
+	except:
+		await ctx.send("Please enter a valid argument!")
+
+# ---------------------------------------------------------------------------------------
+
+#@client.command(pass_context = True)
+#async def test(ctx, *args):
+#	await ctx.send(str(Spells.check_rc_spells("Blinding Light")))
 
 def check_perms(ctx):
 	id1 = discord.utils.get(ctx.guild.roles, name="DM")

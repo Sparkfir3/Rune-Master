@@ -121,8 +121,8 @@
         "rarity": "Uncommon",
         "level": 2,
         "ranged-desc": [
-            "Once per day, the weapon may duplicate ammunition when attacking. Choose an additional target, and make a ranged attack against them as normal. The two attacks may not target the same creature. This effect does not consume any extra ammunition.",
-            "For each rune level above 2nd, this effect may be activated once more per day."
+            "Twice per day, the weapon may duplicate ammunition when attacking. Choose an additional target, and make a ranged attack against them as normal. The two attacks may not target the same creature. This effect does not consume any extra ammunition.",
+            "For each rune level above 2nd, this effect may be activated twice more per day."
         ],
         "page": "rc 11"
     },
@@ -132,9 +132,9 @@
         "rarity": "Uncommon",
         "level": 2,
         "melee-desc": [
-            "The weapon begins to crackle with lightning whenever the wielder so chooses. The lightning is capable of moving short distances, and is capable of shocking anyone except for the wielder. While crackling with lightning, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and 1d4 lightning damage otherwise.",
+            "For up to 10 minutes per day, the weapon may begin to crackle with lightning whenever the wielder so chooses. The lightning is capable of moving short distances, and is capable of shocking anyone except for the wielder. While crackling with lightning, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and 1d4 lightning damage otherwise.",
             "If attacking a target wearing metal armor, the lightning is capable of shocking them through their armor if the attack doesn't fully connect. While crackling with lightning, the weapon deals 1d4 lightning damage to targets wearing metal armor on a non-critical miss.",
-            "For each rune level above 2nd, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and an additional 1d4 lightning damage otherwise. Against targets wearing metal armor, the weapon deals an additional 1d4 lightning damage on a non-critical miss."
+            "For each rune level above 2nd, the lightning may last for an additional 10 minutes per day. For every two rune levels above 2nd, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and an additional 1d4 lightning damage otherwise. Against targets wearing metal armor, the weapon deals an additional 1d4 lightning damage on a non-critical miss."
         ],
         "page": "rc 11"
     },
@@ -171,8 +171,8 @@
             "If the rune is at 5th level or higher, the wearer is now granted resistance to fire damage and immunity to cold damage. If the rune is at 8th level or higher, the wearer is now granted immunity to fire damage."
         ],
         "melee-desc": [
-            "The weapon begins to emit small flames whenever the wielder so chooses. These flames are incapable of spreading, and cannot catch anything on fire. The flames still emit a large amount of heat, however. While emitting these flames, the weapon deals an additional 1d6 fire damage and emits a dim light in a 5 foot radius.",
-            "For each rune level above 2nd, the bonus fire damage increases by 1d6."
+            "For up to 10 minutes per day, the weapon may begin to emit small flames whenever the wielder so chooses. These flames are incapable of spreading, and cannot catch anything on fire. The flames still emit a large amount of heat, however. While emitting these flames, the weapon deals an additional 1d6 fire damage and emits a dim light in a 5 foot radius.",
+            "For each rune level above 2nd, the flames may last for an additional 10 minutes per day. For every two rune levels above 2nd, the bonus fire damage increases by 1d6."
         ],
         "page": "rc 12"
     },
@@ -416,7 +416,7 @@
         "rarity": "Rare",
         "level": 4,
         "armor-desc": [
-            "The armor grants you the ability to breathe underwater for up to 1 hour per day. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour, per day.",
+            "The armor grants you the ability to breathe underwater for up to 1 hour per day. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour per day.",
             "For each rune level above 4th, the maximum amount of time you can breathe underwater increases by 1 hour per day."
         ],
         "page": "rc 15"
@@ -458,5 +458,87 @@
             "For each rune level above 1st, the wind becomes increasingly larger and stronger. If the rune is at 4th level or higher, creatures within a 5 foot radius of the line of fire of the attack must succeed on a Strength saving throw with DC 4 + rune level or be pushed 5 feet in the direction of the attack."
         ],
         "page": "rc 15"
+    },
+    {
+        "index": 39,
+        "name": "Targetted Teleport",
+        "rarity": "Legendary",
+        "level": 9,
+        "melee-desc": [
+            "Once per day, for the cost of all your movement, you may teleport to a space next to the weapon. The weapon must be within 120 feet of you, and within your line of sight. There must be enough space besides the weapon for you to stand comfortably, and after the teleport you end in a position such that the weapon is in your hands. The weapon remains in the same position it was in before you teleport.",
+            "As a bonus action and at the cost of all your movement, you may throw the weapon and then teleport to it during its flight. Additionally, you may still make an action after teleporting if you have not done so during your turn, such as an attack."
+        ],
+        "page": "rc"
+    },
+    {
+        "index": 40,
+        "name": "Rope Tether",
+        "rarity": "Very rare",
+        "level": 6,
+        "melee-desc": [
+            "As a bonus action, you may create a rope that forms between the handle and the blade/rest of the weapon. The rope is regular rope, can carry up to four times the user's weight, and is 20 feet long. The rope is incapable of snapping or breaking; instead, it automatically retracts if it goes over its weight capacity or if it is damaged enough.",
+            "The rope may be used to increase the range of the weapon, although it is significantly harder to control, especially when compared to the chain extension enchantment. Any attack made at an increased range using the rope always has disadvantage.",
+            "The rope may be dismissed as a bonus action, which retracts the rope into the handle, returning the weapon to normal. This retraction is capable of hitting other creatures, but it may also be stopped by them.",
+            "For each rune level above 6th, the length of the rope is increased by 10 feet."
+        ],
+        "page": "rc"
+    },
+    {
+        "index": 41,
+        "name": "Wall Breaker",
+        "rarity": "Uncommon",
+        "level": 3,
+        "melee-desc": [
+            "Any attacks made with the weapon deals twice as much damage to walls, buildings, and other structures or terrain.",
+            "For each rune level above 3rd, the weapon deals an additional multiplier of damage to structures and terrain (for example, on a 5th level rune, the weapon deals four times as much damage)."
+        ],
+        "ranged-desc": [
+            "Any attacks made with the weapon deals twice as much damage to walls, buildings, and other structures or terrain.",
+            "For each rune level above 3rd, the weapon deals an additional multiplier of damage to structures and terrain (for example, on a 5th level rune, the weapon deals four times as much damage)."
+        ],
+        "page": "rc"
+    },
+    {
+        "index": 42,
+        "name": "Strong Hold",
+        "rarity": "Uncommon",
+        "level": 3,
+        "melee-desc": [
+            "The weapon (or shots fired from the weapon, if ranged) is capable of sticking inside of and holding onto walls and other structures with ease. While doing so, the weapon deals as little damage to the structure as possible."
+        ],
+        "ranged-desc": [
+            "The weapon (or shots fired from the weapon, if ranged) is capable of sticking inside of and holding onto walls and other structures with ease. While doing so, the weapon deals as little damage to the structure as possible."
+        ],
+        "page": "rc"
+    },
+    {
+        "index": 43,
+        "name": "Illusory Protection",
+        "rarity": "Rare",
+        "level": 3,
+        "armor-desc": [
+            "For up to one hour per day, the armor can change its appearance to another type of armor, or to even be invisible. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour, per day."
+        ],
+        "page": "rc"
+    },
+    {
+        "index": 44,
+        "name": "Invisible Shield",
+        "rarity": "Uncommon",
+        "level": 2,
+        "shield-desc": [
+            "For up to one hour per day, the shield can appear to be invisible. Additionally, the hand holding the shield appears normal, as if its not holding anything. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour, per day."
+        ],
+        "page": "rc"
+    },
+    {
+        "index": 45,
+        "name": "Triple Shot",
+        "rarity": "Rare",
+        "level": 4,
+        "ranged-desc": [
+            "Twice per day, the weapon may duplicate ammunition when attacking. Choose two additional targets, and make a ranged attack against them as normal. The three attacks may not target the same creature. This effect does not consume any extra ammunition.",
+            "For each rune level above 4th, this effect may be activated twice more per day."
+        ]
     }
 ]

@@ -3,8 +3,8 @@
         "index": 1,
         "name": "Blast of Light",
         "desc": [
-            "You shoot a small, thin, bolt of pure light at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 radiant damage.",
-            "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+            "You shoot a small, thin, bolt of pure light at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d4 radiant damage.",
+            "This spell's damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4)."
         ],
         "level": 0,
         "school": {
@@ -431,9 +431,9 @@
 		"desc": [
 			"Choose one spell rune of 5th level or lower within range. The rune shatters or crumbles into dust, and casts its spell at any target you wish. The spell's level is raised by one during this time. You may delay this effect by up to 1 minute, if you so choose."
 		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 6th level or higher, you may target a rune one level higher for each slot level above 5th. If targeting a rune with a 9th level spell, the level for the spell is not raised."
-		],
+        "higher_level": [
+            "When you cast this spell using a spell slot of 6th level or higher, you may target a rune with a level equal to or lower than the slot level used. If targeting a rune with a 9th level spell, the level for the spell is not raised."
+        ],
 		"level": 3,
 		"school": {
 			"name": "Transmutation",
@@ -497,7 +497,7 @@
             "url": ""
         },
         "ritual": false,
-        "casting_time": "Instantaneous",
+        "casting_time": "1 action",
         "range": "60 feet",
         "components": [
             "V",
@@ -520,11 +520,11 @@
         ],
         "level": 5,
         "school": {
-            "name": "???",
+            "name": "Abjuration",
             "url": ""
         },
         "ritual": false,
-        "casting_time": "Instantaneous",
+        "casting_time": "1 action",
         "range": "30 feet",
         "components": [
             "V",
@@ -533,6 +533,146 @@
         ],
         "materials": "a small piece of iron or steel",
         "duration": "5 minutes",
+        "concentration": false,
+        "page": "rc",
+        "classes": [],
+        "subclasses": [],
+        "url": ""
+    },
+    {
+        "index": 20,
+        "name": "Icicle Blast",
+        "desc": [
+            "You hurl large, sharp icicles in a 10-foot-radius, 20-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 3d8 piercing damage and 6d6 cold damge, or half as much on a successful one."
+        ],
+        "higher_level": [
+            "When you cast this spell using a spell slot of 6th level or higher, the piercing damage increases by 1d8 for each slot level above 5th."
+        ],
+        "level": 5,
+        "school": {
+            "name": "Evocation",
+            "url": ""
+        },
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": [
+            "V",
+            "S",
+            "M"
+        ],
+        "materials": "a shard of ice or a drop of water",
+        "duration": "Instantaneous",
+        "concentration": false,
+        "page": "rc",
+        "classes": [],
+        "subclasses": [],
+        "url": ""
+    },
+    {
+        "index": 21,
+        "name": "Water Blast",
+        "desc": [
+            "You shoot a large blast of water at one target within range. The water is capable of putting out medium or smaller fires. Medium or smaller creatures that are hit by the water must make a Dexterity saving throw. On a failed saving throw, the creature is hit by the water and is pushed back 5 feet. Large or bigger creatures are always hit by the water, but are unaffected by it, other than becoming soaked."
+        ],
+        "level": 0,
+        "school": {
+            "name": "Evocation",
+            "url": ""
+        },
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": [
+            "V",
+            "S"
+        ],
+        "duration": "Instantaneous",
+        "concentration": false,
+        "page": "rc",
+        "classes": [],
+        "subclasses": [],
+        "url": ""
+    },
+    {
+        "index": 22,
+        "name": "Lightning Blade",
+        "desc": [
+            "You evoke a blade of lightning in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
+            "You can use your action to make a melee spell attack with the lightning blade. On a hit, the target takes 3d6 lightning damage."
+        ],
+        "level": 2,
+        "school": {
+            "name": "Evocation",
+            "url": ""
+        },
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "Self",
+        "components": [
+            "V",
+            "S",
+            "M"
+        ],
+        "materials": "a bit of fur and a rod of amber, crystal, or glass",
+        "duration": "10 minutes",
+        "concentration": false,
+        "page": "rc",
+        "classes": [],
+        "subclasses": [],
+        "url": ""
+    },
+    {
+        "index": 23,
+        "name": "Vortex of Flames",
+        "desc": [
+            "You create a vortex of flames in a 20-foot-radius centered at a point within range. A creature that starts or ends their turn in the vortex must make a Dexterity saving throw. A creature takes 6d8 fire damage on a failed save, or half as much on a successful one. The vortex lasts until the end of your next turn, and the vortex's area of effect is difficult terrain.",
+            "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
+        ],
+        "higher_level": [
+            "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+        ],
+        "level": 4,
+        "school": {
+            "name": "Evocation",
+            "url": ""
+        },
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "120 feet",
+        "components": [
+            "V",
+            "S"
+        ],
+        "duration": "Instantaneous",
+        "concentration": false,
+        "page": "rc",
+        "classes": [],
+        "subclasses": [],
+        "url": ""
+    },
+    {
+        "index": 24,
+        "name": "Recharge Rune",
+        "desc": [
+            "Choose one rune of 2nd level or lower within range. If it is a spell rune, it regains one charge (but it can't go past its maximum). If it is an enchantment rune with limited uses, such as twice per day, it regains a number of uses equal to its max amount at base level (up to twice its default amount at current level). If it is an enchantment rune with a limited use time, such as up to 1 hour per day, it regains usage time equal to its max amount at base level (up to twice its default amount at current level). Other enchantment runes cannot be targetted by this spell."
+        ],
+        "higher_level": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you may target a rune with a level equal to or lower than the slot level used."
+        ],
+        "level": 2,
+        "school": {
+            "name": "Transmutation",
+            "url": ""
+        },
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Touch",
+        "components": [
+            "V",
+            "S"
+        ],
+        "duration": "Instantaneous",
         "concentration": false,
         "page": "rc",
         "classes": [],

@@ -6,6 +6,7 @@ from random import shuffle
 class Init_List(object):
 	list = []
 	shuffled = False
+	title = "Initiatives"
 
 # Adds initiative with name "name" and value "value" into list
 def add_initiative(value, name):
@@ -36,6 +37,9 @@ def remove_initiative(name):
 	for i in range(len(Init_List.list)):
 		if name == Init_List.list[i][1]:
 			del Init_List.list[i]
+			if len(Init_List.list) == 0:
+				Init_List.title = "Initiatives"
+
 			embed = discord.Embed(color = 0x0080ff, title = "Success", description = "Successfully removed \"{}\" from the initiative list.\nInitiative list now has {} item(s)".format(name, str(len(Init_List.list))))
 			return embed
 	embed = discord.Embed(color = 0xff0000, title = "Item Does Not Exist", description = "There is no item with name \"{}\" in the initiative list.".format(name))
@@ -60,7 +64,10 @@ def print_list(display_values = True):
 			if display_values:
 				description += str(item[0]) + " - "
 			description += item[1] + "\n"
-		embed.add_field(name = "Initiatives", value = description, inline = False)
+		if Init_List.title == "Initiatives":
+			embed.add_field(name = Init_List.title, value = description, inline = False)
+		else:
+			embed.add_field(name = "Initiatives - " + Init_List.title, value = description, inline = False)
 		return embed
 	else:
 		embed = discord.Embed(color=0xff0000)
@@ -97,6 +104,7 @@ def clear():
 	Init_List.shuffled = False
 	count = len(Init_List.list)
 	Init_List.list = []
+	Init_List.title = "Initiatives"
 	if count > 0:
 		embed = discord.Embed(color=0x0080ff)
 		embed.add_field(name = "Success", value = "Cleared initiative list of {count} values".format(count=str(count)), inline = False)

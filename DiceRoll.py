@@ -89,52 +89,13 @@ def dice_roll_total(sum_string):
 	
 	return total
 
-# Rolls dice given string message, and returns as a string
-# CTRL+K and CTRL+U to uncomment
-#def roll_dice_string(message):
-#	dice_string = message.replace(" ", "")[5:]
-#	char_search = re.compile(r'[d\d+-]')
-
-#	if char_search.search(dice_string):
-#		multi_strings = dice_string.split("+")
-#		dice_string += " resolves to: \n`"
-#		total = 0
-#		sum_string = ""
-
-#		for i, item in enumerate(multi_strings):
-#			# Calculate subtraction
-#			if "-" in item:
-#				diff_string = item.split("-")
-#				for j, diff in enumerate(diff_string):
-#					roll = eval_dice_roll(diff)
-#					if j == 0:
-#						total += dice_roll_total(roll)
-#					else:
-#						total -= dice_roll_total(roll)
-#					if "+" in roll:
-#						sum_string += "(" + roll + ")"
-#					else:
-#						sum_string += roll
-
-#					# If there are more rolls to calculate, add " - " to end of string
-#					if(j < len(diff_string) - 1):
-#						sum_string += " - "
-
-#			# Calculate addition
-#			else:
-#				roll = eval_dice_roll(item)
-#				total += dice_roll_total(roll)
-#				if "+" in roll:
-#					sum_string += "(" + roll + ")"
-#				else:
-#					sum_string += roll
-
-#			# If there are more rolls to calculate, add " + " to end of string
-#			if(i < len(multi_strings) - 1):
-#				sum_string += " + "
-
-#		dice_string += str(total) + " = " + sum_string + "`"
-#	else:
-#		dice_string = "Unable to resolve `" + message[5:].strip() + "`"
-	
-#	return dice_string
+# Gets automatic dice roll for initiative, returns integer
+def init_auto_dice_roll(string):
+	if "+" in string:
+		split = string.split("+")
+		return random.randint(1, 20) + int(split[1])
+	elif "-" in string:
+		split = string.split("-")
+		return random.randint(1, 20) - int(split[1])
+	else:
+		return random.randint(1, 20)

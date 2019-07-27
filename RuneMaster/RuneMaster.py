@@ -154,12 +154,22 @@ async def init(ctx):
 	description += "\n" + "Removes entry with name `<name>` from the initiative list, if it exists."
 	description += "\n\n" + "`$init <name> <value>`"
 	description += "\n" + "Adds entry to initiative list with name `<name>` and value `<value>`. `<value>` must be an integer."
+	description += "\n" + "Alternatively, `<value>` can be `auto+#` or `auto-#` (no spaces) to automatically roll a d20 with a modifier, where `#` is any integer."
+	description += "\n\n" + "`init title <title>`"
+	description += "\n" + "Sets a title for the initiative list when printing."
+	description += "\n" + "Resets when initiative list becomes empty."
+	description += "\n\n" + "(\"DM\" or \"Dungeon Master\" role is required to use this command)"
 
 	embed = discord.Embed(color = 0x555555, title = "Rune Master Command - $init", description = description)
 	await ctx.send(embed = embed)
 
 @client.command(pass_context = True, aliases = ["initiative"])
 async def init(ctx, *args):
+	# Check permissions
+	if not check_perms(ctx):
+			await ctx.send(embed = insufficient_perms())
+			return
+
 	# If no arguments
 	if len(args) == 0:
 		embed = discord.Embed(color=0xff0000, title = "Invalid Arguments", description = "Please input initiatives using the format `$init <name> <value>`\nOr use `$help init` for detailed help")
@@ -179,11 +189,6 @@ async def init(ctx, *args):
 					display_numbers = True
 		except:
 			None
-
-		# Check permissions if displaying numbers
-		if display_numbers and not check_perms(ctx):
-			await ctx.send(embed = insufficient_perms())
-			return
 
 		# Check which channel to send to, and print in appropriate channel
 		try:
@@ -223,6 +228,16 @@ async def init(ctx, *args):
 				name += item + " "
 		await ctx.send(embed = Initiative.remove_initiative(name))
 
+	# Set list title
+	elif args[0].lower() == "title":
+		title_string = ""
+		for i, item in enumerate(args):
+			if i != 0:
+				title_string += item + " "
+		Initiative.Init_List.title = title_string
+		embed = discord.Embed(Color=0x00ff80, title = "Success", description = "Successfully changed initiative list title to `{}`".format(title_string))
+		await ctx.send(embed = embed)
+
 	# Add to list
 	else:
 		if len(args) > 1:
@@ -231,7 +246,10 @@ async def init(ctx, *args):
 				name = ""
 				for i, item in enumerate(args):
 					if i == len(args) - 1:
-						init = int(item)
+						if "auto" in item:
+							init = DiceRoll.init_auto_dice_roll(item)
+						else:
+							init = int(item)
 					else:
 						name += item + " "
 				name = name.strip()

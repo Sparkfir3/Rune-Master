@@ -106,6 +106,9 @@ def get_page_num(page):
 	if split_string[0] == "phb":
 		return "Player's Handbook, page " + split_string[1]
 	elif split_string[0] == "rc":
-		return "Runic Cataclysm, page " + split_string[1]
+		try:
+			return "Runic Cataclysm, page " + split_string[1]
+		except:
+			return "Runic Cataclysm"
 	else:
 		return page

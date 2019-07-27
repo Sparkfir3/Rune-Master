@@ -18,7 +18,9 @@ def get_enchantment(enchant_string):
 						if j > 0:
 							description += indent
 						description += desc + "\n"
-				elif "melee-desc" in item:
+				if "melee-desc" in item:
+					if "armor-desc" in item:
+						description += "\n"
 					if "ranged-desc" in item:
 						description += "***Melee and Ranged Weapons:***  "
 					else:
@@ -39,6 +41,8 @@ def get_enchantment(enchant_string):
 						if j > 0:
 							description += indent
 						description += desc + "\n"
+
+				description += "\n" + "**Source:** " + get_page_num(item["page"])
 
 				embed = discord.Embed(color = 0x0080ff, title = enchant_string, description = description)
 				return embed
@@ -64,3 +68,13 @@ def format_level(level):
 		return "3rd level"
 	else:
 		return str(level) + "th level"
+
+def get_page_num(page):
+	split_string = page.split(" ")
+	if split_string[0] == "rc":
+		try:
+			return "Runic Cataclysm, page " + split_string[1]
+		except:
+			return "Runic Cataclysm"
+	else:
+		return page

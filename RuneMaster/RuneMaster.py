@@ -27,6 +27,7 @@ async def on_ready():
 async def help(ctx):
 	if ctx.invoked_subcommand is None:
 		description = "$help - Lists all available bot commands."
+		description += "\n" + "$mode - Sets the bot mode. Use `$help mode` for more details."
 		description += "\n" + "$roll - Rolls dice given format `#d#`. Can add and subtract multiple values and rolls."
 		description += "\n" + "$spell - Returns information for the given spell."
 		description += "\n" + "$feature|skill - Returns information for the given feature."
@@ -34,6 +35,7 @@ async def help(ctx):
 		description += "\n" + "$condition - Returns information for the given status condition."
 		description += "\n" + "$monster - Returns stats and information for the given monster."
 		description += "\n" + "$init - Allows for adding to and the display of an ordered initiative list."
+		description += "\n" + "$enchant - Returns information for the given enchantment. Requires homebrew bot mode."
 		description += "\n" + "$ping - Test command that gives the bot\'s latency time."
 
 		embed = discord.Embed(color = 0x555555, title = "Rune Master Commands", description = description)

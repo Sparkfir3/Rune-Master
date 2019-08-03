@@ -109,30 +109,34 @@ async def monster(ctx):
 @client.command(pass_context = True, aliases = ["monsters"])
 async def monster(ctx, *args):
 	if check_perms(ctx):
-		try:
-			lower = args[0].lower()
-			if lower == "abilities" or lower == "ability":
-				monster_string = combine_args(*args, ignore_first = True)
-				await ctx.send(embed = Monsters.get_abilities(monster_string))
-			elif lower == "actions" or lower == "action" or lower == "attacks" or lower == "attack":
-				monster_string = combine_args(*args, ignore_first = True)
-				await ctx.send(embed = Monsters.get_actions(monster_string))
-			elif lower == "stats":
-				monster_string = combine_args(*args, ignore_first = True)
-				await ctx.send(embed = Monsters.get_monster_stats(monster_string))
-			elif lower == "all":
-				monster_string = combine_args(*args, ignore_first = True)
-				await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+		#try:
+		lower = args[0].lower()
+		if lower == "abilities" or lower == "ability":
+			monster_string = combine_args(*args, ignore_first = True)
+			await ctx.send(embed = Monsters.get_abilities(monster_string))
+		elif lower == "actions" or lower == "action" or lower == "attacks" or lower == "attack":
+			monster_string = combine_args(*args, ignore_first = True)
+			await ctx.send(embed = Monsters.get_actions(monster_string))
+		elif lower == "stats":
+			monster_string = combine_args(*args, ignore_first = True)
+			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+		elif lower == "all":
+			monster_string = combine_args(*args, ignore_first = True)
+			embed_stats = Monsters.get_monster_stats(monster_string)
+			if embed_stats.title != "Attempting to Get Info":
+				await ctx.send(embed = embed_stats)
 				await ctx.send(embed = Monsters.get_abilities(monster_string))
 				await ctx.send(embed = Monsters.get_actions(monster_string))
 			else:
-				monster_string = combine_args(*args)
-				await ctx.send(embed = Monsters.get_monster_stats(monster_string))
-		except:
-			description = "There was an error with retrieving the data from the API:\n"
-			description += "Something is missing from the API, and the data cannot be retrieved properly!"
-			embed = discord.Embed(color = 0xff0000, title = "Attempting to Get Info", description = description)
-			await ctx.send(embed = embed)
+				await ctx.send(embed = embed_stats)
+		else:
+			monster_string = combine_args(*args)
+			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+		#except:
+		#	description = "There was an error with retrieving the data from the API:\n"
+		#	description += "Something is missing from the API, and the data cannot be retrieved properly!"
+		#	embed = discord.Embed(color = 0xff0000, title = "Attempting to Get Info", description = description)
+		#	await ctx.send(embed = embed)
 	else:
 		await ctx.send(embed = insufficient_perms())
 
@@ -344,7 +348,10 @@ def combine_args(*args, ignore_first = False):
 	for i, item in enumerate(args):
 		if ignore_first and i == 0:
 			continue
-		output += item.lower().capitalize()
+		if item.lower() == "of":
+			output += item.lower()
+		else:
+			output += item.lower().capitalize()
 		if i < len(args) - 1:
 			output += " "
 	return output

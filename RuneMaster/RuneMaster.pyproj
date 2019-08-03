@@ -43,6 +43,7 @@
       <Link>RC-Spells.json</Link>
     </Content>
     <Content Include="RC-Database\RC-Enchantments.json" />
+    <Content Include="RC-Database\RC-Monsters.json" />
     <Content Include="RC-Database\RC-Spells.json" />
   </ItemGroup>
   <ItemGroup>

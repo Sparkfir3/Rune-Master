@@ -1,0 +1,55 @@
+[
+	{
+		"index": 1,
+		"name": "Flying Shield",
+		"size": "Small",
+		"type": "construct",
+		"subtype": "",
+		"alignment": "unaligned",
+		"armor_class": 17,
+		"hit_points": 17,
+		"hit_dice": "3d6",
+		"speed": "0 ft., fly 50 ft.",
+		"strength": 8,
+		"dexterity": 12,
+		"constitution": 15,
+		"intelligence": 1,
+		"wisdom": 3,
+		"charisma": 1,
+		"constitution_save": 4,
+		"damage_vulnerabilities": "",
+		"damage_resistances": "",
+		"damage_immunities": "poison, psychic",
+		"condition_immunities": "blinded, charmed, deafened, paralyzed, petrified, poisoned",
+		"senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 6",
+		"languages": "",
+		"challenge_rating": 0.25,
+		"special_abilities": [
+			{
+				"attack_bonus": 0,
+				"desc": "The shield is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the shield must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+				"name": "Antimagic Susceptibility"
+			},
+			{
+				"attack_bonus": 0,
+				"desc": "While the shield remains motionless and isn't flying, it is indistinguishable from a normal shield.",
+				"name": "False Appearance"
+			}
+		],
+		"actions": [
+			{
+				"damage_bonus": 1,
+				"damage_dice": "1d6",
+				"attack_bonus": 3,
+				"desc": "Melee Weapon Attack: _3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 1) bludgeoning damage.",
+				"name": "Shield Bash"
+			},
+			{
+				"attack_bonus": 0,
+				"desc": "Provide +1 AC to one medium creature or smaller within 5 ft. of the shield until the start of the shield's next turn. A creature may only benefit from one shield guard at a time.",
+				"name": "Shield Guard"
+			}
+		]
+
+	}
+]

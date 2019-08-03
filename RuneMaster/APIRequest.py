@@ -12,6 +12,10 @@ class rc_data(object):
 		data2 = myfile2.read()
 	rc_enchants = json.loads(data2)
 
+	with open("RC-Database/RC-Monsters.json") as myfile3:
+		data3 = myfile3.read()
+	rc_monsters = json.loads(data3)
+
 def get_json(url):
 	response = requests.get(url)
 	if response.status_code == 200:

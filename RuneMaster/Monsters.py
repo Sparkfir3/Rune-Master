@@ -94,6 +94,8 @@ def get_bonus(stat):
 	if new_stat >= 0:
 		return "+" + str(new_stat)
 	else:
+		if stat % 2 == 1:
+			new_stat -= 1
 		return str(new_stat)
 
 # Gets saving throw bonuses of the monster

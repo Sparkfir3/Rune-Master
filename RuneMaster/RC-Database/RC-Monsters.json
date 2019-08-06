@@ -1,55 +1,350 @@
 [
-	{
-		"index": 1,
-		"name": "Flying Shield",
-		"size": "Small",
-		"type": "construct",
-		"subtype": "",
-		"alignment": "unaligned",
-		"armor_class": 17,
-		"hit_points": 17,
-		"hit_dice": "3d6",
-		"speed": "0 ft., fly 50 ft.",
-		"strength": 8,
-		"dexterity": 12,
-		"constitution": 15,
-		"intelligence": 1,
-		"wisdom": 3,
-		"charisma": 1,
-		"constitution_save": 4,
-		"damage_vulnerabilities": "",
-		"damage_resistances": "",
-		"damage_immunities": "poison, psychic",
-		"condition_immunities": "blinded, charmed, deafened, paralyzed, petrified, poisoned",
-		"senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 6",
-		"languages": "",
-		"challenge_rating": 0.25,
-		"special_abilities": [
-			{
-				"attack_bonus": 0,
-				"desc": "The shield is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the shield must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
-				"name": "Antimagic Susceptibility"
-			},
-			{
-				"attack_bonus": 0,
-				"desc": "While the shield remains motionless and isn't flying, it is indistinguishable from a normal shield.",
-				"name": "False Appearance"
-			}
-		],
-		"actions": [
-			{
-				"damage_bonus": 1,
-				"damage_dice": "1d6",
-				"attack_bonus": 3,
-				"desc": "Melee Weapon Attack: _3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 1) bludgeoning damage.",
-				"name": "Shield Bash"
-			},
-			{
-				"attack_bonus": 0,
-				"desc": "Provide +1 AC to one medium creature or smaller within 5 ft. of the shield until the start of the shield's next turn. A creature may only benefit from one shield guard at a time.",
-				"name": "Shield Guard"
-			}
-		]
-
-	}
+    {
+        "index": 1,
+        "name": "Flying Shield",
+        "size": "Small",
+        "type": "construct",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 17,
+        "hit_points": 17,
+        "hit_dice": "3d6",
+        "speed": "0 ft., fly 50 ft.",
+        "strength": 8,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 1,
+        "wisdom": 3,
+        "charisma": 1,
+        "constitution_save": 4,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "",
+        "damage_immunities": "poison, psychic",
+        "condition_immunities": "blinded, charmed, deafened, paralyzed, petrified, poisoned",
+        "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 6",
+        "languages": "",
+        "challenge_rating": 0.25,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "The shield is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the shield must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+                "name": "Antimagic Susceptibility"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "While the shield remains motionless and isn't flying, it is indistinguishable from a normal shield.",
+                "name": "False Appearance"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 1,
+                "damage_dice": "1d6",
+                "attack_bonus": 3,
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 1) bludgeoning damage.",
+                "name": "Shield Bash"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "Provide +1 AC to one medium creature or smaller within 5 ft. of the shield until the start of the shield's next turn. A creature may only benefit from one shield guard at a time.",
+                "name": "Shield Guard"
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "name": "Sentient Rock",
+        "size": "Tiny",
+        "type": "construct",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 14,
+        "hit_points": 9,
+        "hit_dice": "2d4",
+        "speed": "20 ft.",
+        "strength": 10,
+        "dexterity": 6,
+        "constitution": 15,
+        "intelligence": 2,
+        "wisdom": 5,
+        "charisma": 3,
+        "constitution_save": 4,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "",
+        "damage_immunities": "poison, psychic",
+        "condition_immunities": "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
+        "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 7",
+        "languages": "",
+        "challenge_rating": 0.125,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "While the shield remains motionless and isn�t flying, it is indistinguishable from a normal shield.",
+                "name": "False Appearance"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "An adjacent friendly creature with a minimum Strength of 10 can use its action to throw the rock. The throw is a ranged weapon attack with finesse, reaches 30 ft., hits one target, and deals 4 (1d8) bludgeoning damage.",
+                "name": "Fling"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The rock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+                "name": "Stone Camouflage"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "1d6",
+                "attack_bonus": 2,
+                "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d6) bludgeoning damage.",
+                "name": "Tackle"
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "name": "Shadow Sphere",
+        "size": "Tiny",
+        "type": "elemental",
+        "subtype": "",
+        "alignment": "chaotic evil",
+        "armor_class": 12,
+        "hit_points": 15,
+        "hit_dice": "6d4",
+        "speed": "20 ft.",
+        "strength": 6,
+        "dexterity": 14,
+        "constitution": 7,
+        "intelligence": 3,
+        "wisdom": 7,
+        "charisma": 2,
+        "stealth": 4,
+        "damage_vulnerabilities": "radiant",
+        "damage_resistances": "poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+        "damage_immunities": "necrotic",
+        "condition_immunities": "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
+        "senses": "blindsight 120 ft. (blind beyond this radius), passive Perception 8",
+        "languages": "",
+        "challenge_rating": 0.25,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "The shadow sphere can move through a space as narrow as 1 inch wide without squeezing.",
+                "name": "Amorphous"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "While in bright light or sunlight, the shadow sphere has disadvantage on attack rolls, ability checks, and saving throws. Additionally, the shadow sphere takes 1 (1d2) damage every turn.",
+                "name": "Light Vulnerability"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "While in dim light or darkness, the shadow sphere has resistance to damage that isn�t force, psychic, or radiant.",
+                "name": "Living Shadow"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "While in dim light or darkness, the shadow sphere can take the Hide action as a bonus action.",
+                "name": "Shadow Stealth"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 2,
+                "damage_dice": "1d6",
+                "attack_bonus": 4,
+                "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) necrotic damage.",
+                "name": "Shadow Lunge"
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "name": "Phobic Spider",
+        "size": "Large",
+        "type": "beast",
+        "subtype": "",
+        "alignment": "chaotic evil",
+        "armor_class": 15,
+        "hit_points": 39,
+        "hit_dice": "6d10",
+        "speed": "40 ft., climb 40 ft.",
+        "strength": 14,
+        "dexterity": 18,
+        "constitution": 12,
+        "intelligence": 1,
+        "wisdom": 10,
+        "charisma": 3,
+        "stealth": 8,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "",
+        "damage_immunities": "",
+        "condition_immunities": "",
+        "senses": "blindsight 10 ft., darkvision 80 ft., passive Perception 10",
+        "languages": "",
+        "challenge_rating": 2,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "The spider has +1 to hit and +1 poison and web DC against creatures who are afraid of spiders, or +1 to hit against creatures who are afraid of bugs in general.",
+                "name": "Phobic Origin"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+                "name": "Spider Climb"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.",
+                "name": "Web Sense"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The spider ignores movement restrictions caused by webbing.",
+                "name": "Web Walker"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 4,
+                "damage_dice": "1d8",
+                "attack_bonus": 6,
+                "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 11 (2d10) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+                "name": "Bite"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "+6 to hit, range 30/60 ft., one target. \textit{Hit:} The target is restrained by webbing. As an action, the restrained target can make a DC 14 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
+                "name": "Web (Recharge 5-6)"
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "name": "Knight of Eternal Chains",
+        "size": "Medium",
+        "type": "construct",
+        "subtype": "",
+        "alignment": "chaotic evil",
+        "armor_class": 18,
+        "hit_points": 165,
+        "hit_dice": "30d8",
+        "speed": "35 ft.",
+        "strength": 19,
+        "dexterity": 16,
+        "constitution": 15,
+        "intelligence": 5,
+        "wisdom": 10,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "cold, necrotic",
+        "damage_immunities": "poison, psychic",
+        "condition_immunities": "charmed, frightened, paralyzed, petrified, poisoned",
+        "senses": "darkvision 120 ft., passive Perception 10",
+        "languages": "",
+        "challenge_rating": 14,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "The knight has +1 to hit, +1 grapple DC, and +1d8 grapple damage against creatures who are afraid of being bound or captured.",
+                "name": "Phobic Origin"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The knight's weapons are enchanted with modified versions of the chain extension and projection enchantments",
+                "name": "Runic Weapons"
+            }
+        ],
+        "actions": [
+            {
+                "attack_bonus": 0,
+                "desc": "The knight makes four melee attacks, grapples, or any combination of the two.",
+                "name": "Multiattack"
+            },
+            {
+                "damage_bonus": 4,
+                "damage_dice": "4d6",
+                "attack_bonus": 9,
+                "desc": "Melee Weapon Attack: +9 to hit, reach 20 ft., one target. Hit: 18 (4d6 + 4) slashing damage.",
+                "name": "Chain Slash"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The knight extends its chains to wrap around one target within a 15 ft. range. The target must make a Dexterity (Acrobatics) check with DC 17 or become grappled. A grappled target takes 13 (2d8 + 4) slashing damage at the end of the knight's turn. The knight may grapple up to 4 targets at once, and may move a grappled targets anywhere within range as a melee attack or as a bonus action.",
+                "name": "Grappling Chains"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The knight creates several projections of its chains and uses them to unleash a flurry of attacks around itself. All creatures within a 30-foot radius of the knight must make a Dexterity saving throw with DC 19. A creature takes 38 (4d10 + 16) slashing damage on a failed save, or half as much on a successful one. A creature currently being grappled by the knight automatically fails the saving throw.",
+                "name": "Flurry of Chains (Recharge 5-6)"
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "name": "Corpsebringer",
+        "size": "Medium",
+        "type": "undead",
+        "subtype": "",
+        "alignment": "chaotic evil",
+        "armor_class": 14,
+        "hit_points": 110,
+        "hit_dice": "20d8",
+        "speed": "25 ft.",
+        "strength": 10,
+        "dexterity": 14,
+        "constitution": 12,
+        "intelligence": 19,
+        "wisdom": 14,
+        "charisma": 2,
+        "arcana": 8,
+        "damage_vulnerabilities": "radiant",
+        "damage_resistances": "cold, poison",
+        "damage_immunities": "necrotic",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 120 ft., passive Perception 12",
+        "languages": "",
+        "challenge_rating": 9,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "The corpsebringer is a 7th level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). The corpsebringer has the following wizard spells prepared:\n\n- Cantrips (at will): chill touch, minor illusion, poison spray, ray of frost\n- 1st level (4 slots): chromatic orb, detect magic, false life, shield\n- 2nd level (3 slots): acid arrow, blindness/deafness, hold person\n- 3rd level (3 slots): animate dead, counterspell, hypnotic pattern\n- 4th level (1 slot): blight",
+                "name": "Innate Spellcasting"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The corpsebringer has +1 spell save DC and +1 to hit against creatures who are afraid of undead.",
+                "name": "Phobic Origin"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The corpsebringer can command nearby zombies and skeletons at will.",
+                "name": "Undead Commander"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "4d6",
+                "attack_bonus": 4,
+                "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) necrotic damage.",
+                "name": "Necrotic Touch"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The corpsebringer summons 1d4 + 1 zombies or skeletons from the ground anywhere within a 60 foot radius. An existing corpse or pile of bones is not required to perform this action. Any zombies or skeletons summoned this way turn to ash several minutes after the corpsebringer is defeated.",
+                "name": "Rising Dead (Recharge 3-4)"
+            }
+        ],
+        "reactions": [
+            {
+                "attack_bonus": 0,
+                "desc": "When a creature the corpsebringer can see targets it with an attack, the corpsebringer chooses a zombie or skeleton within 5 feet of it. The two swap places, and the chosen undead becomes the target instead.",
+                "name": "Redirect Attack"
+            }
+        ]
+    }
 ]

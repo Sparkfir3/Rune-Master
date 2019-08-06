@@ -278,7 +278,7 @@ def get_abilities(monster_name):
 		return embed
 
 	else:
-		data = APIRequest.check_monsters(monster_name)
+		data = APIRequest.get_json(APIRequest.base_URL + "monsters/")
 		if "results" in data:
 			for list_item in data["results"]:
 				if monster_name == list_item["name"]:
@@ -318,7 +318,7 @@ def get_actions(monster_name):
 			description = ""
 			for leg_action in data["legendary_actions"]:
 				description += "***{}.*** {}\n\n".format(leg_action["name"], leg_action["desc"])
-			embed.add_field(name = monster_name + " - Legendary Actions" + str(embed.title), value = description, inline = False)
+			embed.add_field(name = monster_name + " - Legendary Actions", value = description, inline = False)
 
 		if "reactions" in data:
 			description = ""
@@ -329,7 +329,7 @@ def get_actions(monster_name):
 		return embed
 
 	else:
-		data = APIRequest.check_monsters(monster_name)
+		data = APIRequest.get_json(APIRequest.base_URL + "monsters/")
 		if "results" in data:
 			for list_item in data["results"]:
 				if monster_name == list_item["name"]:
@@ -344,7 +344,7 @@ def get_actions(monster_name):
 						description = ""
 						for leg_action in data["legendary_actions"]:
 							description += "***{}.*** {}\n\n".format(leg_action["name"], leg_action["desc"])
-						embed.add_field(name = monster_name + " - Legendary Actions" + str(embed.title), value = description, inline = False)
+						embed.add_field(name = monster_name + " - Legendary Actions", value = description, inline = False)
 
 					if "reactions" in data:
 						description = ""

@@ -346,5 +346,353 @@
                 "name": "Redirect Attack"
             }
         ]
+    },
+    {
+        "index": 7,
+        "name": "Slime",
+        "size": "Small",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 6,
+        "hit_points": 36,
+        "hit_dice": "6d6",
+        "speed": "15 ft.",
+        "strength": 12,
+        "dexterity": 10,
+        "constitution": 17,
+        "intelligence": 1,
+        "wisdom": 6,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid",
+        "damage_immunities": "",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
+        "languages": "",
+        "challenge_rating": 0.25,
+        "special_abilities": [
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "2d6",
+                "attack_bonus": 3,
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d6) acid damage.",
+                "name": "Pseudopod"
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "name": "Water Slime",
+        "size": "Small",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 7,
+        "hit_points": 65,
+        "hit_dice": "10d6",
+        "speed": "10 ft., swim 30 ft.",
+        "strength": 12,
+        "dexterity": 11,
+        "constitution": 17,
+        "intelligence": 1,
+        "wisdom": 6,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid",
+        "damage_immunities": "",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 90 ft. (blind beyond this radius), passive Perception 8",
+        "languages": "",
+        "challenge_rating": 1,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "If the slime spends more than 12 hours without water, the slime starts to dry up and takes 5 (1d10) damage every turn.",
+                "name": "Aquatic Body"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "Even when the slime is in plain sight, it takes a successful DC 12 Wisdom (Perception) check to spot a slime that has neither moved nor attacked. If the slime is completely submerged in water, a DC 18 Wisdom (Perception) check is required instead.",
+                "name": "Transparent"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime has advantage on Dexterity (Stealth) checks made to hide underwater, and can take the Hide action as a bonus action while underwater.",
+                "name": "Water Camoflauge"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "2d6",
+                "attack_bonus": 3,
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d6) acid damage.",
+                "name": "Pseudopod"
+            },
+            {
+                "damage_bonus": 1,
+                "damage_dice": "1d8",
+                "attack_bonus": 3,
+                "desc": "Ranged Weapon Attack: +3 to hit, reach 30 ft., one target. Hit: 5 (1d8 + 1) slashing damage. If the slime is not at least halfway submerged in water when performing this attack, the slime also takes 3 (1d6) damage.",
+                "name": "Water Blade"
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "name": "Corrosive Slime",
+        "size": "Medium",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 7,
+        "hit_points": 105,
+        "hit_dice": "12d8",
+        "speed": "20 ft.",
+        "strength": 14,
+        "dexterity": 8,
+        "constitution": 18,
+        "intelligence": 1,
+        "wisdom": 7,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "",
+        "damage_immunities": "acid",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 90 ft. (blind beyond this radius), passive Perception 8",
+        "languages": "",
+        "challenge_rating": 2,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "A creature that touches the slime or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage.\nAny nonmagical weapon that hits the slime corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition that hits the slime is destroyed after dealing damage.\nThe slime can eat through 2-inch-thick, nonmagical wood, stone, or metal in 1 round.",
+                "name": "Corrosive Body"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "3d8",
+                "attack_bonus": 4,
+                "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 13 (3d8) acid damage.",
+                "name": "Pseudopod"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime sprays acid in a 15-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (4d10) acid damage on a failed save, or half as much on a successful one.",
+                "name": "Acid Spray (Recharge 3-4)"
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "name": "Burning Slime",
+        "size": "Small",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 9,
+        "hit_points": 104,
+        "hit_dice": "16d6",
+        "speed": "20 ft.",
+        "strength": 13,
+        "dexterity": 11,
+        "constitution": 17,
+        "intelligence": 1,
+        "wisdom": 7,
+        "charisma": 1,
+        "damage_vulnerabilities": "cold",
+        "damage_resistances": "acid",
+        "damage_immunities": "fire",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 90 ft. (blind beyond this radius), passive Perception 8",
+        "languages": "",
+        "challenge_rating": 2,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "Whenever the slime is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to half the fire damage dealt, rounded down; or, the slime's flame burst attack instantly recharges, and deals an additional 11 (2d10) damage the next time it uses it.",
+                "name": "Fire Absorption"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "A creature that touches the slime or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage.",
+                "name": "Flaming Body"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime sheds bright light in a 5-foot radius and dim light for an additional 10 feet.",
+                "name": "Illumination"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "3d6",
+                "attack_bonus": 3,
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) acid damage plus 7 (2d6) fire damage.",
+                "name": "Pseudopod"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime sprays fire in a 15-foot sphere centered on itself. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much on a successful one.",
+                "name": "Flame Burst (Recharge 3-4)"
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "name": "Freezing Slime",
+        "size": "Small",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 8,
+        "hit_points": 90,
+        "hit_dice": "12d6",
+        "speed": "20 ft.",
+        "strength": 13,
+        "dexterity": 9,
+        "constitution": 18,
+        "intelligence": 1,
+        "wisdom": 7,
+        "charisma": 1,
+        "damage_vulnerabilities": "fire",
+        "damage_resistances": "acid",
+        "damage_immunities": "cold",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 90 ft. (blind beyond this radius), passive Perception 8",
+        "languages": "",
+        "challenge_rating": 2,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "A creature that touches the slime or hits it with a melee attack while within 5 feet of it takes 1 (1d2) cold damage.",
+                "name": "Freezing Body"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "2d8",
+                "attack_bonus": 3,
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) acid damage plus 4 (1d8) cold damage.",
+                "name": "Pseudopod"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime blows a blast of cold air in a 10-foot cone. Each creature in the area must make a DC 14 Constitution saving throw, taking 7 (2d6) cold damage on a failed save, or half as much on a successful one.",
+                "name": "Cold Breath"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime creates a shell of thick ice around itself. The slime's AC increases to 18, its speed is halved during its time, and gains disadvantage on its \textit{pseudopod} attack. The shell has 10 hit points, and whenever the slime would take damage the ice shell takes damage instead.\nWhenever the shell breaks or as the slime's bonus action, each creature in a 10-foot sphere centered on the slime must make a DC 16 Constitution saving throw, taking 11 (2d10) cold damage on a failed save, or half as much on a successful one.\nIf the shell takes any fire damage, it instantly breaks, and does not deal damage to creatures in a 10-foot radius.",
+                "name": "Ice Shell (Recharge 2)"
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "name": "Electric Slime",
+        "size": "Small",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 9,
+        "hit_points": 90,
+        "hit_dice": "14d6",
+        "speed": "20 ft.",
+        "strength": 12,
+        "dexterity": 13,
+        "constitution": 16,
+        "intelligence": 1,
+        "wisdom": 7,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid",
+        "damage_immunities": "lightning",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 90 ft. (blind beyond this radius), passive Perception 8",
+        "languages": "",
+        "challenge_rating": 2,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "A creature that touches the slime or hits it with a melee attack while within 5 feet of it takes 2 (1d4) lightning damage.",
+                "name": "Electric Body"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "2d8",
+                "attack_bonus": 3,
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) acid damage plus 4 (1d8) lightning damage.",
+                "name": "Pseudopod"
+            },
+            {
+                "damage_bonus": 0,
+                "damage_dice": "2d6",
+                "attack_bonus": 3,
+                "desc": "Ranged Spell Attack: +3 to hit, reach 30 ft., one target. Hit: 7 (2d6) lightning damage.",
+                "name": "Shock"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime consumes half its speed to dash up to 20 feet in a straight line. Any creature within 5 feet of the slime at any point during the dash must make a DC 15 Dexterity saving throw, taking 9 (2d8) lightning damage on a failed save, or half as much on a successful one.",
+                "name": "Lightning Dash (Recharge 2-3)"
+            }
+        ]
+    },
+    {
+        "index": 13,
+        "name": "Rainbow Slime",
+        "size": "Medium",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 11,
+        "hit_points": 136,
+        "hit_dice": "16d8",
+        "speed": "20 ft.",
+        "strength": 13,
+        "dexterity": 11,
+        "constitution": 19,
+        "intelligence": 1,
+        "wisdom": 8,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid",
+        "damage_immunities": "",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 120 ft. (blind beyond this radius), passive Perception 9",
+        "languages": "",
+        "challenge_rating": 3,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "As a bonus action, the slime may change its color and appearance to mimic that of another type of slime. When doing so, roll a d8. The slime changes into a different slime depending on the outcome:\n\n1 - Slime\n2 - Water Slime\n3 - Corrosive Slime\n4 - Fire Slime\n5 - Freezing Slime\n6 - Electric Slime\n7 - Rainbow Slime (return to normal)\n8 - Reroll the d8\n\nThe slime gains the armor class, speed, vulnerabilities, resistances, immunities, abilities, and actions of the targetted slime type. However, the slime's size, hit points, and stats remain the same, and it retains its existing abilities and actions.",
+                "name": "Color Change"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "2d8",
+                "attack_bonus": 3,
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 9 (2d8) acid damage.",
+                "name": "Pseudopod"
+            },
+            {
+                "damage_bonus": 0,
+                "damage_dice": "3d8",
+                "attack_bonus": 3,
+                "desc": "The slime casts the chromatic orb spell at 1st level. The slime has +3 to hit with the spell.",
+                "name": "Chromatic Orb (Twice Daily)"
+            }
+        ]
     }
 ]

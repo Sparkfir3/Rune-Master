@@ -74,7 +74,7 @@
         "damage_immunities": "poison, psychic",
         "condition_immunities": "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
         "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 7",
-        "languages": "",
+        "languages": "understands the languages of its creator but can't speak",
         "challenge_rating": 0.125,
         "special_abilities": [
             {
@@ -155,7 +155,7 @@
                 "damage_bonus": 2,
                 "damage_dice": "1d6",
                 "attack_bonus": 4,
-                "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) necrotic damage.",
+                "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 2) necrotic damage.",
                 "name": "Shadow Lunge"
             }
         ]
@@ -330,7 +330,7 @@
                 "damage_bonus": 0,
                 "damage_dice": "4d6",
                 "attack_bonus": 4,
-                "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) necrotic damage.",
+                "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d6) necrotic damage.",
                 "name": "Necrotic Touch"
             },
             {
@@ -572,6 +572,11 @@
                 "attack_bonus": 0,
                 "desc": "A creature that touches the slime or hits it with a melee attack while within 5 feet of it takes 1 (1d2) cold damage.",
                 "name": "Freezing Body"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The slime has advantage on Dexterity (Stealth) checks made to hide in snow or while it is snowing, and can take the Hide action as a bonus action during this time as well.",
+                "name": "Snow Camoflauge"
             }
         ],
         "actions": [

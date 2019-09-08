@@ -232,7 +232,7 @@
 			"name": "Transmutation",
 			"url": ""
 		},
-		"ritual": true,
+		"ritual": false,
 		"casting_time": "1 hour",
 		"range": "5 feet",
 		"components": [
@@ -343,12 +343,15 @@
 	{
 		"index": 13,
 		"name": "Isolation",
-		"desc": [
-			"Choose one target in range. The target must make a Wisdom saving throw against your spell DC. On a failed save, the target creature can no longer hear, see, or otherwise communicate in any way with any of their allies or comrades for the duration of the spell. The creature may not target any of their allies with an action or skill during this time.",
-			"Items held or worn by their allies also cannot be seen by the target, but actions taken by their allies can still be seen and noticed, such as opening a door. The target creature can still physically communicate with their allies, such as accidentally hitting one another, and the target creature may still be heard, seen, and targeted by their allies.",
-			"On a successful save or once the spell ends, the target creature knows that they were targeted by the spell."
-		],
-		"level": 7,
+        "desc": [
+            "Choose one target in range. The target must make a Wisdom saving throw against your spell DC. On a failed save, the target creature can no longer hear, see, or otherwise communicate in any way with any of their allies or comrades for the duration of the spell. The creature may not target any of their allies with an action or skill during this time.",
+            "Items held or worn by their allies also cannot be seen by the target, but actions taken by their allies can still be seen and noticed, such as opening a door. The target creature can still physically communicate with their allies, such as accidentally hitting one another, and the target creature may still be heard, seen, and targeted by their allies.",
+            "On a successful save or once the spell ends, the target creature knows that they were targeted by the spell."
+        ],
+        "higher_level": [
+            "When you cast this spell using a spell slot of 7th level or higher, the spell lasts an additional 10 minutes for each slot level above 6th"
+        ],
+		"level": 6,
 		"school": {
 			"name": "Enchantment",
 			"url": ""

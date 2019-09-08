@@ -130,11 +130,11 @@
         "index": 11,
         "name": "Electrify",
         "rarity": "Uncommon",
-        "level": 2,
+        "level": 4,
         "melee-desc": [
             "For up to 10 minutes per day, the weapon may begin to crackle with lightning whenever the wielder so chooses. The lightning is capable of moving short distances, and is capable of shocking anyone except for the wielder. While crackling with lightning, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and 1d4 lightning damage otherwise.",
             "If attacking a target wearing metal armor, the lightning is capable of shocking them through their armor if the attack doesn't fully connect. While crackling with lightning, the weapon deals 1d4 lightning damage to targets wearing metal armor on a non-critical miss.",
-            "For each rune level above 2nd, the lightning may last for an additional 10 minutes per day. For every two rune levels above 2nd, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and an additional 1d4 lightning damage otherwise. Against targets wearing metal armor, the weapon deals an additional 1d4 lightning damage on a non-critical miss."
+            "For each rune level above 4th, the lightning may last for an additional 10 minutes per day. For every two rune levels above 4th, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and an additional 1d4 lightning damage otherwise. Against targets wearing metal armor, the weapon deals an additional 1d4 lightning damage on a non-critical miss."
         ],
         "page": "rc 11"
     },
@@ -164,15 +164,15 @@
         "index": 14,
         "name": "Firebound",
         "rarity": "Uncommon",
-        "level": 2,
+        "level": 4,
         "armor-desc": [
             "The armor begins to heat up and emit small flames whenever the wearer so chooses. These flames are incapable of spreading, and cannot catch anything on fire. Although the flames cannot directly damage the wearer, the immense heat from them may have side effects depending on the wearer's physical condition and the outside environment.",
             "While emitting these flames, the wearer is granted resistance to cold damage. The flames also emit a dim light in a 5 foot radius.",
-            "If the rune is at 5th level or higher, the wearer is now granted resistance to fire damage and immunity to cold damage. If the rune is at 8th level or higher, the wearer is now granted immunity to fire damage."
+            "If the rune is at 6th level or higher, the wearer is now granted resistance to fire damage and immunity to cold damage. If the rune is at 8th level or higher, the wearer is now granted immunity to fire damage."
         ],
         "melee-desc": [
             "For up to 10 minutes per day, the weapon may begin to emit small flames whenever the wielder so chooses. These flames are incapable of spreading, and cannot catch anything on fire. The flames still emit a large amount of heat, however. While emitting these flames, the weapon deals an additional 1d6 fire damage and emits a dim light in a 5 foot radius.",
-            "For each rune level above 2nd, the flames may last for an additional 10 minutes per day. For every two rune levels above 2nd, the bonus fire damage increases by 1d6."
+            "For each rune level above 4th, the flames may last for an additional 10 minutes per day. For every two rune levels above 4th, the bonus fire damage increases by 1d6."
         ],
         "page": "rc 12"
     },
@@ -204,7 +204,7 @@
         "index": 17,
         "name": "Icebound",
         "rarity": "Uncommon",
-        "level": 2,
+        "level": 3,
         "armor-desc": [
             "The armor begins to emit freezing cold mist whenever the wearer so chooses. The immense cold from the mist may have side effects depending on the wearer's physical condition and the outside environment.",
             "While emitting the mist, the wearer is granted resistance to fire damage.",

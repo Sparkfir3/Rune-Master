@@ -217,7 +217,7 @@
             },
             {
                 "attack_bonus": 0,
-                "desc": "+6 to hit, range 30/60 ft., one target. \textit{Hit:} The target is restrained by webbing. As an action, the restrained target can make a DC 14 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
+                "desc": "Ranged Weapon Attack: +6 to hit, range 30/60 ft., one target. \textit{Hit:} The target is restrained by webbing. As an action, the restrained target can make a DC 14 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
                 "name": "Web (Recharge 5-6)"
             }
         ]
@@ -230,8 +230,8 @@
         "subtype": "",
         "alignment": "chaotic evil",
         "armor_class": 18,
-        "hit_points": 165,
-        "hit_dice": "30d8",
+        "hit_points": 275,
+        "hit_dice": "48d6",
         "speed": "35 ft.",
         "strength": 19,
         "dexterity": 16,
@@ -249,6 +249,11 @@
         "special_abilities": [
             {
                 "attack_bonus": 0,
+                "desc": "The knight can grapple targets up to 20 feet away from it, and can make opportunity attacks within a range of 15 feet.",
+                "name": "Long Chains"
+            },
+            {
+                "attack_bonus": 0,
                 "desc": "The knight has +1 to hit, +1 grapple DC, and +1d8 grapple damage against creatures who are afraid of being bound or captured.",
                 "name": "Phobic Origin"
             },
@@ -256,12 +261,17 @@
                 "attack_bonus": 0,
                 "desc": "The knight's weapons are enchanted with modified versions of the chain extension and projection enchantments",
                 "name": "Runic Weapons"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The knight's movement is not hindered when dragging a grappled creature. If a target is forcefully moved outside of the knight's grapple range, the knight can make a Strength saving throw with DC = distance moved * 4. On a successful save, the creature is instead stopped at the edge of the knight's grapple range.",
+                "name": "Strong Grapple"
             }
         ],
         "actions": [
             {
                 "attack_bonus": 0,
-                "desc": "The knight makes four melee attacks, grapples, or any combination of the two.",
+                "desc": "The knight makes a combination of up to 4 of any of its other actions. For every two creatures the knight has grappled, one of these actions must be move creature.",
                 "name": "Multiattack"
             },
             {
@@ -273,13 +283,18 @@
             },
             {
                 "attack_bonus": 0,
-                "desc": "The knight extends its chains to wrap around one target within a 15 ft. range. The target must make a Dexterity (Acrobatics) check with DC 17 or become grappled. A grappled target takes 13 (2d8 + 4) slashing damage at the end of the knight's turn. The knight may grapple up to 4 targets at once, and may move a grappled targets anywhere within range as a melee attack or as a bonus action.",
+                "desc": "The knight extends its chains to wrap around one medium or smaller target within a 20 ft. range. The target must make a Dexterity (Acrobatics) check with DC 17 or become grappled. A grappled target takes 13 (2d8 + 4) slashing damage at the start of their turn. The knight may grapple up to 4 targets at once.",
                 "name": "Grappling Chains"
             },
             {
                 "attack_bonus": 0,
+                "desc": "The knight moves one creature it has grappled to another location within a 20 ft. radius, up to 40 feet in total. If the creature is slammed against a wall or other surface, the creature takes fall damage relative to the distance it was moved.",
+                "name": "Move Creature"
+            },
+            {
+                "attack_bonus": 0,
                 "desc": "The knight creates several projections of its chains and uses them to unleash a flurry of attacks around itself. All creatures within a 30-foot radius of the knight must make a Dexterity saving throw with DC 19. A creature takes 38 (4d10 + 16) slashing damage on a failed save, or half as much on a successful one. A creature currently being grappled by the knight automatically fails the saving throw.",
-                "name": "Flurry of Chains (Recharge 5-6)"
+                "name": "Flurry of Chains (Recharge 6)"
             }
         ]
     },
@@ -336,7 +351,7 @@
             {
                 "attack_bonus": 0,
                 "desc": "The corpsebringer summons 1d4 + 1 zombies or skeletons from the ground anywhere within a 60 foot radius. An existing corpse or pile of bones is not required to perform this action. Any zombies or skeletons summoned this way turn to ash several minutes after the corpsebringer is defeated.",
-                "name": "Rising Dead (Recharge 3-4)"
+                "name": "Rising Dead (Recharge 6)"
             }
         ],
         "reactions": [
@@ -483,7 +498,7 @@
             {
                 "attack_bonus": 0,
                 "desc": "The slime sprays acid in a 15-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (4d10) acid damage on a failed save, or half as much on a successful one.",
-                "name": "Acid Spray (Recharge 3-4)"
+                "name": "Acid Spray (Recharge 5-6)"
             }
         ]
     },
@@ -539,7 +554,7 @@
             {
                 "attack_bonus": 0,
                 "desc": "The slime sprays fire in a 15-foot sphere centered on itself. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much on a successful one.",
-                "name": "Flame Burst (Recharge 3-4)"
+                "name": "Flame Burst (Recharge 5-6)"
             }
         ]
     },
@@ -590,12 +605,12 @@
             {
                 "attack_bonus": 0,
                 "desc": "The slime blows a blast of cold air in a 10-foot cone. Each creature in the area must make a DC 14 Constitution saving throw, taking 7 (2d6) cold damage on a failed save, or half as much on a successful one.",
-                "name": "Cold Breath"
+                "name": "Cold Breath (Recharge 4-6)"
             },
             {
                 "attack_bonus": 0,
                 "desc": "The slime creates a shell of thick ice around itself. The slime's AC increases to 18, its speed is halved during its time, and gains disadvantage on its \textit{pseudopod} attack. The shell has 10 hit points, and whenever the slime would take damage the ice shell takes damage instead.\nWhenever the shell breaks or as the slime's bonus action, each creature in a 10-foot sphere centered on the slime must make a DC 16 Constitution saving throw, taking 11 (2d10) cold damage on a failed save, or half as much on a successful one.\nIf the shell takes any fire damage, it instantly breaks, and does not deal damage to creatures in a 10-foot radius.",
-                "name": "Ice Shell (Recharge 2)"
+                "name": "Ice Shell (Recharge 4-6)"
             }
         ]
     },
@@ -648,7 +663,7 @@
             {
                 "attack_bonus": 0,
                 "desc": "The slime consumes half its speed to dash up to 20 feet in a straight line. Any creature within 5 feet of the slime at any point during the dash must make a DC 15 Dexterity saving throw, taking 9 (2d8) lightning damage on a failed save, or half as much on a successful one.",
-                "name": "Lightning Dash (Recharge 2-3)"
+                "name": "Lightning Dash (Recharge 4-6)"
             }
         ]
     },
@@ -697,6 +712,188 @@
                 "attack_bonus": 3,
                 "desc": "The slime casts the chromatic orb spell at 1st level. The slime has +3 to hit with the spell.",
                 "name": "Chromatic Orb (Twice Daily)"
+            }
+        ]
+    },
+    {
+        "index": 14,
+        "name": "Minor Slime Monstrosity",
+        "size": "Medium",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 6,
+        "hit_points": 105,
+        "hit_dice": "14d6",
+        "speed": "15 ft.",
+        "strength": 14,
+        "dexterity": 10,
+        "constitution": 18,
+        "intelligence": 3,
+        "wisdom": 10,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid",
+        "damage_immunities": "",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 10",
+        "languages": "",
+        "challenge_rating": 2,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "A slime monstrosity is always originally a type of regular slime, and retains the vulnerabilities, resistances, immunities, abilities, and actions of its original form on top of those listed here.\nAdditionally, the slime monstrosity may replace up to 2 of its base stats, AC, or speed with the correspondings stat of its original form.",
+                "name": "Mutated Slime"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "4d6",
+                "attack_bonus": 4,
+                "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 14 (4d6) acid damage.",
+                "name": "Pseudopod"
+            }
+        ]
+    },
+    {
+        "index": 15,
+        "name": "Slime Monstrosity",
+        "size": "Large",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 7,
+        "hit_points": 123,
+        "hit_dice": "13d8",
+        "speed": "20 ft.",
+        "strength": 15,
+        "dexterity": 12,
+        "constitution": 20,
+        "intelligence": 4,
+        "wisdom": 11,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid",
+        "damage_immunities": "",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 90 ft. (blind beyond this radius), passive Perception 10",
+        "languages": "",
+        "challenge_rating": 3,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "A slime monstrosity is always originally a type of regular slime, and retains the vulnerabilities, resistances, immunities, abilities, and actions of its original form on top of those listed here.\nAdditionally, the slime monstrosity may replace up to 2 of its base stats, AC, or speed with the correspondings stat of its original form.",
+                "name": "Mutated Slime"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "4d8",
+                "attack_bonus": 4,
+                "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 18 (4d8) acid damage.",
+                "name": "Pseudopod"
+            }
+        ]
+    },
+    {
+        "index": 16,
+        "name": "Major Slime Monstrosity",
+        "size": "Large",
+        "type": "ooze",
+        "subtype": "",
+        "alignment": "unaligned",
+        "armor_class": 8,
+        "hit_points": 147,
+        "hit_dice": "14d8",
+        "speed": "25 ft.",
+        "strength": 16,
+        "dexterity": 13,
+        "constitution": 22,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid",
+        "damage_immunities": "",
+        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+        "senses": "blindsight 120 ft. (blind beyond this radius), passive Perception 11",
+        "languages": "",
+        "challenge_rating": 3,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "A slime monstrosity is always originally a type of regular slime, and retains the vulnerabilities, resistances, immunities, abilities, and actions of its original form on top of those listed here.\nAdditionally, the slime monstrosity may replace up to 2 of its base stats, AC, or speed with the correspondings stat of its original form.",
+                "name": "Mutated Slime"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "damage_dice": "6d8",
+                "attack_bonus": 5,
+                "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 27 (4d8) acid damage.",
+                "name": "Pseudopod"
+            }
+        ]
+    },
+    {
+        "index": 17,
+        "name": "Sensictar",
+        "size": "Medium",
+        "type": "humanoid",
+        "subtype": "",
+        "alignment": "chaotic evil",
+        "armor_class": 15,
+        "hit_points": 225,
+        "hit_dice": "50d6",
+        "speed": "30 ft.",
+        "strength": 8,
+        "dexterity": 14,
+        "constitution": 12,
+        "intelligence": 19,
+        "wisdom": 16,
+        "charisma": 13,
+        "arcana": 8,
+        "deception": 5,
+        "perception": 7,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "psychic",
+        "damage_immunities": "",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., passive Perception 17",
+        "languages": "Common, Elvish, Abyssal",
+        "challenge_rating": 12,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "The sensictar has +1 to hit and +1 DC against creatures who are afraid of losing their senses or being abandoned.",
+                "name": "Phobic Origin"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "desc": "The sensictar makes a combination of up to 3 of any of its other actions.",
+                "name": "Multiattack"
+            },
+            {
+                "damage_bonus": 0,
+                "damage_dice": "5d10",
+                "attack_bonus": 8,
+                "desc": "Ranged Spell Attack: +8 to hit, range 120 ft., one creature. Hit: 27 (5d10) psychic damage.",
+                "name": "Mental Strike"
+            },
+            {
+                "damage_bonus": 0,
+                "desc": "The sensictar selects one creature within a 120 foot radius. That creature must make a DC 20 Intelligence saving throw. On a failed save, the creature takes 11 (2d10) psychic damage, and loses one of their 5 main senses (sight, hearing, touch, taste, smell) of the sensictar's choice for 10 minutes.\n\nHearing - The creature is deafened.\nSight - The creature is blinded. Darkvision and truesight no longer work.\nSmell - The creature can no longer smell.\nTaste - The creature can no longer taste.\nTouch - The creature can no longer physically feel anything, including pain or their own weapon in their hand. Tremorsense no longer works. They have disadvantage on all weapon attack rolls, and no longer know their current hit points.\n\nA creature can only suffer from the loss of one of their senses at a time this way, and a sensictar can only disable one of each sense at a time.",
+                "name": "Sensory Deprivation (Recharge 3-6)"
+            },
+            {
+                "damage_bonus": 0,
+                "desc": "The sensictar casts the isolation spell with DC 16 at one creature within range.",
+                "name": "Isolation (Recharge 6)"
             }
         ]
     }

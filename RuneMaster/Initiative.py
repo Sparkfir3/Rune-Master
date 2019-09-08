@@ -10,8 +10,7 @@ class Init_List(object):
 
 # Adds initiative with name "name" and value "value" into list
 def add_initiative(value, name):
-	if len(Init_List.list) == 0:
-		Init_List.shuffled = False
+	Init_List.shuffled = False
 	if update_initiative(value, name):
 		embed = discord.Embed(color=0x0080ff)
 		embed.add_field(name = "Success", value = "Updated \"{name}\" with initiative {init} to the ordering.\nInitiative list now has {size} item(s)".format(name=name, init=str(value), size=str(len(Init_List.list))), inline = False)
@@ -47,7 +46,6 @@ def remove_initiative(name):
 
 # Prints list as sorted embed
 def print_list(display_values = True):
-
 	sorted_list = []
 	if not Init_List.shuffled:
 		sorted_list = sorted(Init_List.list, key = lambda init: init[0])

@@ -370,8 +370,8 @@
         "subtype": "",
         "alignment": "unaligned",
         "armor_class": 6,
-        "hit_points": 36,
-        "hit_dice": "6d6",
+        "hit_points": 48,
+        "hit_dice": "8d6",
         "speed": "15 ft.",
         "strength": 12,
         "dexterity": 10,
@@ -406,8 +406,8 @@
         "subtype": "",
         "alignment": "unaligned",
         "armor_class": 7,
-        "hit_points": 65,
-        "hit_dice": "10d6",
+        "hit_points": 91,
+        "hit_dice": "14d6",
         "speed": "10 ft., swim 30 ft.",
         "strength": 12,
         "dexterity": 11,
@@ -442,9 +442,9 @@
         "actions": [
             {
                 "damage_bonus": 0,
-                "damage_dice": "2d6",
+                "damage_dice": "3d6",
                 "attack_bonus": 3,
-                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d6) acid damage.",
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 10 (3d6) acid damage.",
                 "name": "Pseudopod"
             },
             {
@@ -546,14 +546,14 @@
         "actions": [
             {
                 "damage_bonus": 0,
-                "damage_dice": "3d6",
+                "damage_dice": "4d6",
                 "attack_bonus": 3,
-                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) acid damage plus 7 (2d6) fire damage.",
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) acid damage plus 7 (3d6) fire damage.",
                 "name": "Pseudopod"
             },
             {
                 "attack_bonus": 0,
-                "desc": "The slime sprays fire in a 15-foot sphere centered on itself. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much on a successful one.",
+                "desc": "The slime sprays fire in a 15-foot sphere centered on itself. Each creature in the area must make a DC 15 Dexterity saving throw, taking 16 (3d10) fire damage on a failed save, or half as much on a successful one.",
                 "name": "Flame Burst (Recharge 5-6)"
             }
         ]
@@ -566,8 +566,8 @@
         "subtype": "",
         "alignment": "unaligned",
         "armor_class": 8,
-        "hit_points": 90,
-        "hit_dice": "12d6",
+        "hit_points": 105,
+        "hit_dice": "14d6",
         "speed": "20 ft.",
         "strength": 13,
         "dexterity": 9,
@@ -597,14 +597,14 @@
         "actions": [
             {
                 "damage_bonus": 0,
-                "damage_dice": "2d8",
+                "damage_dice": "3d8",
                 "attack_bonus": 3,
-                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) acid damage plus 4 (1d8) cold damage.",
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) acid damage plus 9 (2d8) cold damage.",
                 "name": "Pseudopod"
             },
             {
                 "attack_bonus": 0,
-                "desc": "The slime blows a blast of cold air in a 10-foot cone. Each creature in the area must make a DC 14 Constitution saving throw, taking 7 (2d6) cold damage on a failed save, or half as much on a successful one.",
+                "desc": "The slime blows a blast of cold air in a 10-foot cone. Each creature in the area must make a DC 14 Constitution saving throw, taking 10 (3d6) cold damage on a failed save, or half as much on a successful one.",
                 "name": "Cold Breath (Recharge 4-6)"
             },
             {
@@ -648,21 +648,21 @@
         "actions": [
             {
                 "damage_bonus": 0,
-                "damage_dice": "2d8",
+                "damage_dice": "3d8",
                 "attack_bonus": 3,
-                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) acid damage plus 4 (1d8) lightning damage.",
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) acid damage plus 9 (2d8) lightning damage.",
                 "name": "Pseudopod"
             },
             {
                 "damage_bonus": 0,
-                "damage_dice": "2d6",
+                "damage_dice": "3d6",
                 "attack_bonus": 3,
-                "desc": "Ranged Spell Attack: +3 to hit, reach 30 ft., one target. Hit: 7 (2d6) lightning damage.",
+                "desc": "Ranged Spell Attack: +3 to hit, reach 30 ft., one target. Hit: 10 (3d6) lightning damage.",
                 "name": "Shock"
             },
             {
                 "attack_bonus": 0,
-                "desc": "The slime consumes half its speed to dash up to 20 feet in a straight line. Any creature within 5 feet of the slime at any point during the dash must make a DC 15 Dexterity saving throw, taking 9 (2d8) lightning damage on a failed save, or half as much on a successful one.",
+                "desc": "The slime consumes half its speed to dash up to 20 feet in a straight line. Any creature within 5 feet of the slime at any point during the dash must make a DC 15 Dexterity saving throw, taking 13 (3d8) lightning damage on a failed save, or half as much on a successful one.",
                 "name": "Lightning Dash (Recharge 4-6)"
             }
         ]
@@ -701,9 +701,9 @@
         "actions": [
             {
                 "damage_bonus": 0,
-                "damage_dice": "2d8",
+                "damage_dice": "3d10",
                 "attack_bonus": 3,
-                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 9 (2d8) acid damage.",
+                "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 16 (3d10) acid damage.",
                 "name": "Pseudopod"
             },
             {
@@ -717,47 +717,6 @@
     },
     {
         "index": 14,
-        "name": "Minor Slime Monstrosity",
-        "size": "Medium",
-        "type": "ooze",
-        "subtype": "",
-        "alignment": "unaligned",
-        "armor_class": 6,
-        "hit_points": 105,
-        "hit_dice": "14d6",
-        "speed": "15 ft.",
-        "strength": 14,
-        "dexterity": 10,
-        "constitution": 18,
-        "intelligence": 3,
-        "wisdom": 10,
-        "charisma": 1,
-        "damage_vulnerabilities": "",
-        "damage_resistances": "acid",
-        "damage_immunities": "",
-        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-        "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 10",
-        "languages": "",
-        "challenge_rating": 2,
-        "special_abilities": [
-            {
-                "attack_bonus": 0,
-                "desc": "A slime monstrosity is always originally a type of regular slime, and retains the vulnerabilities, resistances, immunities, abilities, and actions of its original form on top of those listed here.\nAdditionally, the slime monstrosity may replace up to 2 of its base stats, AC, or speed with the correspondings stat of its original form.",
-                "name": "Mutated Slime"
-            }
-        ],
-        "actions": [
-            {
-                "damage_bonus": 0,
-                "damage_dice": "4d6",
-                "attack_bonus": 4,
-                "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 14 (4d6) acid damage.",
-                "name": "Pseudopod"
-            }
-        ]
-    },
-    {
-        "index": 15,
         "name": "Slime Monstrosity",
         "size": "Large",
         "type": "ooze",
@@ -798,48 +757,7 @@
         ]
     },
     {
-        "index": 16,
-        "name": "Major Slime Monstrosity",
-        "size": "Large",
-        "type": "ooze",
-        "subtype": "",
-        "alignment": "unaligned",
-        "armor_class": 8,
-        "hit_points": 147,
-        "hit_dice": "14d8",
-        "speed": "25 ft.",
-        "strength": 16,
-        "dexterity": 13,
-        "constitution": 22,
-        "intelligence": 6,
-        "wisdom": 12,
-        "charisma": 1,
-        "damage_vulnerabilities": "",
-        "damage_resistances": "acid",
-        "damage_immunities": "",
-        "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-        "senses": "blindsight 120 ft. (blind beyond this radius), passive Perception 11",
-        "languages": "",
-        "challenge_rating": 3,
-        "special_abilities": [
-            {
-                "attack_bonus": 0,
-                "desc": "A slime monstrosity is always originally a type of regular slime, and retains the vulnerabilities, resistances, immunities, abilities, and actions of its original form on top of those listed here.\nAdditionally, the slime monstrosity may replace up to 2 of its base stats, AC, or speed with the correspondings stat of its original form.",
-                "name": "Mutated Slime"
-            }
-        ],
-        "actions": [
-            {
-                "damage_bonus": 0,
-                "damage_dice": "6d8",
-                "attack_bonus": 5,
-                "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 27 (4d8) acid damage.",
-                "name": "Pseudopod"
-            }
-        ]
-    },
-    {
-        "index": 17,
+        "index": 15,
         "name": "Sensictar",
         "size": "Medium",
         "type": "humanoid",

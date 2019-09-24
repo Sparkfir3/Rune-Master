@@ -1,0 +1,62 @@
+[
+    {
+        "index": 1,
+        "name": "Etherium Crystals",
+        "equipment_category": "Adventuring Gear",
+        "gear_category": "Standard Gear",
+        "cost": {
+            "quantity": 0,
+            "unit": "n/a"
+        },
+        "weight": 1,
+        "desc": [
+            "An etherium crystal is a rare, solidified form of pure ether, and is overflowing with magical potential. They are sought after by artisans and magicians across the world, and are the most powerful base for rune creation."
+        ],
+        "source": "rc"
+    },
+    {
+        "index": 2,
+        "name": "Etherium Dust",
+        "equipment_category": "Adventuring Gear",
+        "gear_category": "Standard Gear",
+        "cost": {
+            "quantity": 0,
+            "unit": "n/a"
+        },
+        "weight": 1,
+        "desc": [
+            "Etherium dust is physical ether that has been crushed into a fine powder or dust. The most effective way to obtain etherium dust is by crushing pure etherium crystals, but it can also be obtained by extracting ether from other items or minerals."
+        ],
+        "source": "rc"
+    },
+    {
+        "index": 3,
+        "name": "Etherium Ink",
+        "equipment_category": "Adventuring Gear",
+        "gear_category": "Standard Gear",
+        "cost": {
+            "quantity": 0,
+            "unit": "n/a"
+        },
+        "weight": 1,
+        "desc": [
+            "Etherium ink is ink mixed with etherium dust. It is the most powerful secondary material used for rune creation."
+        ],
+        "source": "rc"
+    },
+    {
+        "index": 4,
+        "name": "Runemaker's Tools",
+        "equipment_category": "Adventuring Gear",
+        "gear_category": "Kit",
+        "cost": {
+            "quantity": 50,
+            "unit": "gp"
+        },
+        "weight": 6,
+        "desc": [
+            "These tools are near essentials for making runes. It includes chisels of varying sizes for carving, brushes or quills of varying sizes for painting, and several jars to store different inks and oils."
+        ],
+        "source": "rc"
+    }
+]

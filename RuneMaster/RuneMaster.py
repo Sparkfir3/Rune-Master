@@ -131,7 +131,13 @@ async def monster(ctx, *args):
 				await ctx.send(embed = embed_stats)
 		else:
 			monster_string = combine_args(*args)
-			await ctx.send(embed = Monsters.get_monster_stats(monster_string))
+			embed_stats = Monsters.get_monster_stats(monster_string)
+			if embed_stats.title != "Attempting to Get Info":
+				await ctx.send(embed = embed_stats)
+				await ctx.send(embed = Monsters.get_abilities(monster_string))
+				await ctx.send(embed = Monsters.get_actions(monster_string))
+			else:
+				await ctx.send(embed = embed_stats)
 		#except:
 		#	description = "There was an error with retrieving the data from the API:\n"
 		#	description += "Something is missing from the API, and the data cannot be retrieved properly!"

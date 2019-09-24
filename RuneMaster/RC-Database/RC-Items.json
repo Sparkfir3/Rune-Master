@@ -1,0 +1,13 @@
+[
+    {
+        "index": 1,
+        "name": "Etheric Compass",
+        "type": "Wondrous",
+        "rarity": "common",
+        "desc": [
+            "An etheric compass points towards the nearest source of ether. A weak source of ether will weakly pull the pointer, making it loose, while a strong source will pull it tightly. Multiple nearby sources will cause the compass to waver, often flicking back and forth.",
+            "The compass often points towards nearby enchanted runes or other runic items, but can also point towards areas such as an ether-dense cave system."
+        ],
+        "source": "rc"
+    }
+]

@@ -16,6 +16,14 @@ class rc_data(object):
 		data3 = myfile3.read()
 	rc_monsters = json.loads(data3)
 
+	with open("RC-Database/RC-Equipment.json") as myfile4:
+		data4 = myfile4.read()
+	rc_equipment = json.loads(data4)
+
+	with open("RC-Database/RC-Items.json") as myfile5:
+		data5 = myfile5.read()
+	rc_items = json.loads(data5)
+
 def get_json(url):
 	response = requests.get(url)
 	if response.status_code == 200:

@@ -814,5 +814,125 @@
                 "name": "Isolation (Recharge 6)"
             }
         ]
+    },
+    {
+        "index": 16,
+        "name": "Nakki",
+        "size": "Medium",
+        "type": "elemental",
+        "subtype": "",
+        "alignment": "chaotic evil",
+        "armor_class": 15,
+        "hit_points": 120,
+        "hit_dice": "20d6",
+        "speed": "24 ft., swim 35 ft.",
+        "strength": 9,
+        "dexterity": 14,
+        "constitution": 17,
+        "intelligence": 15,
+        "wisdom": 16,
+        "charisma": 11,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "",
+        "damage_immunities": "",
+        "condition_immunities": "",
+        "senses": "darkvision 60 ft., passive Perception 13",
+        "languages": "Common",
+        "challenge_rating": 5,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "All creatures within a 60 foot radius of the nakki instantly run out of breath while underwater, unless they can naturally breathe underwater or don't require air.",
+                "name": "Drowning Aura"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "All creatures within a 60 foot radius of the nakki cannot be affected by spells, enchantments, or similar effects that grant water breathing, such as the water breathing spell or enchantment.",
+                "name": "Nullify Water Breathing"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The nakki has +1 to hit against creatures who are afraid of drowning. For each creature within a 60 foot radius of the nakki that is afraid of drowning, the nakki may have 1 more hand out at once.",
+                "name": "Phobic Origin"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 3,
+                "damage_dice": "2d8",
+                "attack_bonus": 6,
+                "desc": "Melee Spell Attack: +6 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) slashing damage.",
+                "name": "Water Slash"
+            },
+            {
+                "damage_bonus": 0,
+                "desc": "The nakki casts the shape water cantrip.",
+                "name": "Shape Water"
+            },
+            {
+                "damage_bonus": 0,
+                "desc": "The nakki summons 1d4 + 1 nakki hands anywhere within a 60 foot radius. The nakki cannot have more than 6 hands out at once. The hands have the same initiative has the nakki, and can move immediately after being summoned.",
+                "name": "Summon Hands (Recharge 4-6)"
+            },
+            {
+                "damage_bonus": 0,
+                "desc": "The nakki casts either the control water or the create or destroy water spell at their respective level.",
+                "name": "Water Control (Recharge 6)"
+            }
+        ]
+    },
+    {
+        "index": 17,
+        "name": "Nakki Hand",
+        "size": "Tiny",
+        "type": "elemental",
+        "subtype": "",
+        "alignment": "chaotic evil",
+        "armor_class": 11,
+        "hit_points": 3,
+        "hit_dice": "1d4",
+        "speed": "10 ft., swim 45 ft.",
+        "strength": 15,
+        "dexterity": 12,
+        "constitution": 10,
+        "intelligence": 1,
+        "wisdom": 3,
+        "charisma": 1,
+        "damage_vulnerabilities": "",
+        "damage_resistances": "acid; bludgeoning, piericing, and slashing from nonmagical weapons",
+        "damage_immunities": "poison, psychic",
+        "condition_immunities": "blinded, deafened, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+        "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 6",
+        "languages": "",
+        "challenge_rating": 0,
+        "special_abilities": [
+            {
+                "attack_bonus": 0,
+                "desc": "The hand must always be connected to a body of water, no matter how small, otherwise the hand dissipates into a cloud of mist. The hand can reach up to 10 meters from the surface of its source body of water.",
+                "name": "Aquatic Body"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The hand has advantage on grappling creatures while they are both underwater, and a grappled creature cannot attempt to escape while submerged in water.",
+                "name": "Aquatic Grip"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "Even when the hand is in plain sight, it takes a successful DC 10 Wisdom (Perception) check to spot a hand that has neither moved nor attacked. If the hand is completely submerged in water, a DC 15 Wisdom (Perception) check is required instead.",
+                "name": "Transparent"
+            },
+            {
+                "attack_bonus": 0,
+                "desc": "The hand has +1 DC and +1 to grapple checks against creatures who are afraid of drowning.",
+                "name": "Phobic Origin"
+            }
+        ],
+        "actions": [
+            {
+                "damage_bonus": 0,
+                "desc": "Choose one creature within reach. That creature must make a Dexterity saving throw with DC 14, and is dragged 10 feet towards the hand on a failed save.",
+                "name": "Drag"
+            }
+        ]
     }
 ]

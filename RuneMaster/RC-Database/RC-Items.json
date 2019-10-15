@@ -1,12 +1,56 @@
 [
     {
         "index": 1,
+        "name": "Charm of Etheric Protection",
+        "type": "Wondrous",
+        "rarity": "rare (requires attunement)",
+        "desc": [
+            "The charm emits a constant small aura of ether around the wearer, granting them and any item they are holding immunity to any ether-disabling or hindering effects, such as the etheric winds (disruptive) and disable rune. Positive effects, such as etheric winds (flowing), still affect the wielder."
+        ],
+        "source": "rc"
+    },
+    {
+        "index": 2,
         "name": "Etheric Compass",
         "type": "Wondrous",
         "rarity": "common",
         "desc": [
             "An etheric compass points towards the nearest source of ether. A weak source of ether will weakly pull the pointer, making it loose, while a strong source will pull it tightly. Multiple nearby sources will cause the compass to waver, often flicking back and forth.",
             "The compass often points towards nearby enchanted runes or other runic items, but can also point towards areas such as an ether-dense cave system."
+        ],
+        "source": "rc"
+    },
+    {
+        "index": 3,
+        "name": "Gem of Major Lightning",
+        "type": "Wondrous",
+        "rarity": "legendary (requires attunement by a wizard)",
+        "desc": [
+            "The gem acts as a rune with multiple spells imbued in it. The gem contains the following spells, each of which is cast at 6th level: call lightning, chain lightning, lightning arrow, lightning bolt, lightning lance, witch bolt. The gem has a total of 10 charges, which recharge like a normal rune does, and each charge can be used for any of the spells it contains.",
+            "Additionally, the wielder can use one of their spell slots and the gem to cast a spell at 1 level higher than the spell slot used, as long as the spell is one of the spells contained in the gem. This does not consume a charge from the gem.",
+            "The gem is a bright green crystal with various runic markings on and inside it, and is about 1 square foot in size."
+        ],
+        "source": "rc"
+    },
+    {
+        "index": 4,
+        "name": "Lamp of Etheric Searching",
+        "type": "Wondrous",
+        "rarity": "common",
+        "desc": [
+            "While the lamp is lit, the user can see the area within a 5 foot radius of lamp as if the detect runes spell was cast.",
+            "The lamp can take any shape and form, but it always glows with a blue light."
+        ],
+        "source": "rc"
+    },
+    {
+        "index": 5,
+        "name": "Vial of Ether",
+        "type": "Wondrous",
+        "rarity": "very rare",
+        "desc": [
+            "This vial contains a liquid form of near-pure ether. If drinken, you are under the effect of the etheric winds (flowing) spell for 1 hour. If thrown at the floor, a 20 feet by 20 feet by 20 feet cloud of etheric mist appears, and acts like the etheric winds (flowing) spell. The mist lasts for 30 minutes.",
+            "The vial's liquid slowly fades between sky blue and dark blue every few seconds, and emits a faint glow."
         ],
         "source": "rc"
     }

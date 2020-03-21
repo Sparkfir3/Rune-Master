@@ -42,6 +42,13 @@ def get_enchantment(enchant_string):
 							description += indent
 						description += desc + "\n"
 
+				if "higher_level" in item:
+					description += "{}\n***At Higher Levels.*** ".format(indent)
+					for j, desc in enumerate(item["higher_level"]):
+						if j > 0:
+							description += indent
+						description += "{}\n".format(desc)
+
 				description += "\n" + "**Source:** " + get_page_num(item["page"])
 
 				embed = discord.Embed(color = 0x0080ff, title = enchant_string, description = description)

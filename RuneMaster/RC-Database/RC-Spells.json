@@ -1,685 +1,719 @@
 [
-    {
-        "index": 1,
-        "name": "Blast of Light",
-        "desc": [
-            "You shoot a small, thin, bolt of pure light at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d4 radiant damage.",
-            "This spell's damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4)."
-        ],
-        "level": 0,
-        "school": {
-            "name": "Evocation",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "30 feet",
-        "components": [
-            "V",
-            "S"
-        ],
-        "duration": "Instantaneous",
-        "concentration": false,
-        "page": "rc 5",
-        "classes": [], "subclasses": [], "url": ""
+  {
+    "index": 1,
+    "name": "Blast of Light",
+    "desc": [
+      "You shoot a small, thin, bolt of pure light at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d4 radiant damage.",
+      "This spell's damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4)."
+    ],
+    "level": 0,
+    "school": {
+      "name": "Evocation",
+      "url": ""
     },
-	{
-		"index": 2,
-		"name": "Blinding Light",
-		"desc": [
-			"Choose one point within range. You create a blinding white light at that point. All creatures making an attack roll or similar action directly targetting anything within an unobstructed 5 foot radius of the light have disadvantage. All creatures within an unobstructed 5 foot radius of the light have disadvantage on all attack rolls, and have disadvantage on all Dexterity and Charisma saving throws and skill checks.",
-			"The light also emits a bright light in a 120 foot radius, and a dim light in a 240 foot radius. The light can be spotted up to 300 feet away. Completely covering the light with something opaque blocks the light and negates its effects."
-		],
-		"level": 1,
-		"school": {
-			"name": "Evocation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "30 feet",
-		"components": [
-			"V",
-			"S"
-		],
-		"duration": "Up to 3 turns",
-		"concentration": true,
-		"page": "rc 5",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 3,
-		"name": "Bursting Gemstone",
-		"desc": [
-			"Choose one small gemstone within range. That gemstone now has the following effects:",
-			"The gemstone may be thrown as a ranged weapon attack with proficiency. The gemstone bursts upon impact, dealing 3d8 force damage.",
-			"If the spell is being cast from a rune and is used to target itself, you may target an additional gemstone within range to enchant. Additionally, the original rune gemstone now deals 6d8 force damage."
-		],
-		"higher_level": [
-			"When you cast this spell using a slot of 3rd level or higher, the damage is increased by 1d8 for each slot level above 2nd. If cast using a rune of 3rd level or higher and targeting itself, you may select 1 additional gemstone and the damage of the original gemstone is increased by 2d8 for each rune level above 2nd."
-		],
-		"level": 2,
-		"school": {
-			"name": "Enchantment",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "Touch",
-		"components": [
-			"V",
-			"S"
-		],
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 5",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 4,
-		"name": "Detect Runes",
-		"desc": [
-			"For the duration, the sense the presence of any runes within 30 feet of you. If you sense any runes in this way, you can use your action to see a faint aura around any runes or objects enchanted with runes in the area, and you learn the level of the rune and whether or not the rune is a spell or enchantment. If the rune is a spell, you learn its school of magic, if any. If the rune is an enchantment, you learn the rarity of the enchantment, and the item type the enchantment is for, if any.",
-			"Additionally, if one of the runes you detect is a spell, you may use your action to learn how many charges that rune has remaining.",
-			"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
-		],
-		"level": 1,
-		"school": {
-			"name": "Divination",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "30 feet",
-		"components": [
-			"V",
-			"S"
-		],
-		"duration": "5 minutes",
-		"concentration": false,
-		"page": "rc 5",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 5,
-		"name": "Disarm Runes",
-		"desc": [
-			"You target one rune within reach. The effect of the spell varies depending on the type of rune targetted.",
-			"Spell Rune.",
-			"The rune becomes disabled for 5 minutes, and cannot cast its spell or be affected by rune trap while disabled. If the rune is burnt-out, this time is doubled, increasing to 10 minutes.",
-			"Spell Rune (Trap).",
-			"The rune becomes disabled for 30 minutes, and cannot be activated while disabled. Afterwards, the rune returns to normal and can once again be activated.",
-			"Enchantment Rune.",
-			"The rune becomes disabled for 5 minutes, and no longer provides any bonus effects to the item it is attatched to while disabled. During this time, the item acts and functions as it did before it was enchanted."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 4th level or higher, the disabled time for trap spell runes increases by 30 minutes and the disabled time for non-trap spell runes and enchantment runes increases by 5 minutes for each slot level above 3rd."
-		],
-		"level": 3,
-		"school": {
-			"name": "Enchantment",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "Touch",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a pinch of etherium dust",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 6",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 6,
-		"name": "Draining Mist",
-		"desc": [
-			"You create a 10' x 10' x 10' cloud of dark, purple mist in an area within range. Any creature who takes an action or begins their turn in the cloud must make a Constitution saving throw. The creature takes 3d6 necrotic damage on a failed save, or half as much on a successful one. You heal hit points equal to half the damage dealt, rounded down.",
-			"The cloud can be dispersed by strong winds or anything else than is capable of dispersing heavy mist. Once the cloud reaches a size more than double its original size, its effect weakens. On a failed save, a creature now takes half as much damage, and takes no damage on a successful one. Once the cloud reaches a size more than triple its original size, its effect is completely negated."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 5th level or higher, the size of the cloud increases by 5' x 5' x 5' and the damage increases by 1d6 for each slot level above 4th."
-		],
-		"level": 4,
-		"school": {
-			"name": "Necromancy",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "60 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a bat's wing",
-		"duration": "3 turns",
-		"concentration": false,
-		"page": "rc 6",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 7,
-		"name": "Earth Blast",
-		"desc": [
-			"You choose a section of earth or stone within 5 feet of you, no larger than 1-foot in radius, and raise it out of the ground. You then shoot the piece of earth or stone at a target within range. The target must make a Dexterity saving throw. The target takes 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one.",
-			"The piece of earth or stone can collide with physical objects, and can break on impact, damage structures, or break other objects depending on the difference in strength between the materials of the two objects."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 and the radius of earth or stone you can pull out the ground increases by 0.5 feet for each slot level above 1st."
-		],
-		"level": 1,
-		"school": {
-			"name": "Transmutation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "30 feet",
-		"components": [
-			"V",
-			"S"
-		],
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 6",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 8,
-		"name": "Earthen Wall",
-		"desc": [
-			"Choose a section of earth or stone within range. You raise a slab of earth or stone from that area, up to 5 feet by 5 feet in size and 6 inches thick. The slab can act as cover.",
-			"The slab's durability is dependent on the material in the area selected, and can break under enough pressure or with enough force. If left untouched, the slab will permantly stay in place and will not collapse on its own. However, the slab is still affected by the weather and the surrounding environment."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 3rd level or higher, the maximum size of the slab increases by 5 feet by 5 feet in size and 6 inches in thickness."
-		],
-		"level": 2,
-		"school": {
-			"name": "Transmutation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "10 feet",
-		"components": [
-			"V",
-			"S"
-		],
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 6",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 9,
-		"name": "Enchant Rune",
-		"desc": [
-			"Choose one unactivated rune within range. The rune must contain a spell or enchantment of 2nd level or lower. That rune is now activated, with all of its proper features and capabilities.",
-			"If this spell is cast from a rune, it can only activate runes with a spell or enchantment of 1st level or lower, no matter what level the rune being used to cast the spell is."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 7th level or higher, the maximum level of the spell or enchantment inside the targeted rune increases by one, up to a 5th level spell or enchantment when cast using a 9th level spell slot. In order to enchant higher level runes, you must be using a 9th level spell slot and have an additional spell caster casting Enchant Rune using a 9th level spell slot (targeting the same rune) for each level above 5th, requiring 2 spell casters for a 6th level rune, and 5 spell casters for a 9th level rune."
-		],
-		"level": 6,
-		"school": {
-			"name": "Transmutation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 hour",
-		"range": "5 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a small pouch of etherium dust",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 7",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 10,
-		"name": "Etheric Winds",
-		"desc": [
-			"You create a strong gust of wind up to 30 square feet in width and up to 20 feet high within range that can manipulate the flow of ether. When casting the spell, choose one of the following effects:",
-			"Disruptive Winds.",
-			"The winds disrupts the flow of ether, making spells more difficult to cast. Any creature attempting to cast a spell in the wind's area of effect, including through a rune, must make an Intelligence (Arcana) skill check against your spell DC. On a successful check, the spell is cast successfully. On a failed check, the creature fails to cast the spell. This does not consume a spell slot or rune charge, but does consume the creature's action.",
-			"Additionally, all enchantmented items with a level equal to or less than that of the slot level used to cast this spell become nullified while within the area of the winds.",
-			"Flowing Winds.",
-			"The winds increase the flow of ether, making spells cast in its area more powerful. Any creature attempting to cast a spell with a level equal to or less than that of the slot used to cast this spell while in the wind's area of effect, including through a rune, must make an Intelligence (Arcana) skill check with a DC of 20 - your spell DC. On a successful check, the spell is cast one level higher than normal, but does not consume a stronger spell slot. 9th level spells are not affected. On a failed check, the spell is cast as normal."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 5th level or higher, the maximum size of the winds increases by 10 square feet in width and 5 feet in height."
-		],
-		"level": 4,
-		"school": {
-			"name": "Evocation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "120 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a pinch of etherium dust and a feather",
-		"duration": "Up to 10 minutes",
-		"concentration": true,
-		"page": "rc 7",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 11,
-		"name": "Frozen Blade",
-		"desc": [
-			"Choose a target with an open hand within range, yourself included. A small blade of solid ice forms in their hand. On their turn, the target may spend an action to swing the blade. The blade counts as a shortsword, which deals 1d6 slashing damage. On impact, the blade shatters, and all creatures in a 5 foot radius of the target of the attack except the user take 2d8 cold damage.",
-			"If the caster of the spell targets themselves with it, they are considered proficient with shortswords for the purpose of the spell if they have either a Strength or Dexterity of at least 10. ",
-			"If the spell ends before the target successfully swings the blade, the blade dissipates into a cloud of mist."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d8 for each slot level above 1st."
-		],
-		"level": 1,
-		"school": {
-			"name": "Evocation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "20 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a shard of ice or a drop of water",
-		"duration": "5 turns",
-		"concentration": false,
-		"page": "rc 7",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 12,
-		"name": "Gravitational Crush",
-		"desc": [
-			"Choose one target creature or object in range. The effect of gravity on that target increases exponentially, and the target is thrown to the floor. If the target is a creature, they must make a Strength saving throw. On a failed throw, the target is knocked prone and takes falling damage equivalent to falling 60 meters (6d6 bludgeoning damage), on top of any falling damage they might have taken normally from being knocked prone.",
-			"If the target creature fails the initial saving throw, they may not get up from being knocked prone for the duration of the spell. The creature may also make an additional Strength saving throw at the end of their turn as a bonus action. On a successful throw, the target is now affected as if they had passed the initial saving throw, but does not take any additional damage.",
-			"On a successful throw, the target creature takes falling damage equivalent to falling 20 meters (2d6 bludgeoning damage), the creature's fly speed becomes 0 ft., and the creature's remaining speed is halved for the duration of the spell. Additionally, standing up from being knocked prone takes the creature's full speed for the duration of the spell.",
-			"Additionally, the increased effect of gravity may have an effect on the surrounding environment. For example, a target creature or object above a thin, fragile floor may break the floor and fall through under increased gravity."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 7th level or higher, you may select an additional target for each slot level above 6th."
-		],
-		"level": 6,
-		"school": {
-			"name": "Transmutation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "60 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "",
-		"duration": "Up to 5 minutes",
-		"concentration": true,
-		"page": "rc 7",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 13,
-		"name": "Isolation",
-        "desc": [
-            "Choose one target in range. The target must make a Wisdom saving throw against your spell DC. On a failed save, the target creature can no longer hear, see, or otherwise communicate in any way with any of their allies or comrades for the duration of the spell. The creature may not target any of their allies with an action or skill during this time.",
-            "Items held or worn by their allies also cannot be seen by the target, but actions taken by their allies can still be seen and noticed, such as opening a door. The target creature can still physically communicate with their allies, such as accidentally hitting one another, and the target creature may still be heard, seen, and targeted by their allies.",
-            "On a successful save or once the spell ends, the target creature knows that they were targeted by the spell."
-        ],
-        "higher_level": [
-            "When you cast this spell using a spell slot of 7th level or higher, the spell lasts an additional 10 minutes for each slot level above 6th"
-        ],
-		"level": 6,
-		"school": {
-			"name": "Enchantment",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "30 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a sac of ink and a quill",
-		"duration": "1 minute",
-		"concentration": false,
-		"page": "rc 8",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 14,
-		"name": "Leaf Storm",
-		"desc": [
-			"You create a storm of leaves that is 10 feet by 10 feet by 10 feet in size at one point within range. The leaf storm counts as difficult terrain, and can obscure a creature's vision.",
-			"Any creature who takes an action or begins their turn in the storm must make a Dexterity saving throw. The creature takes 1d4 slashing damage on a failed save. If there are trees or other plants you can take leaves from within range, a instead creature takes 1d6 slashing damage on a failed save."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st, or by 1d6 for each slot level above 1st if there are plants you can take leaves from within range."
-		],
-		"level": 1,
-		"school": {
-			"name": "Transmutation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "30 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a pair of plant pleaves",
-		"duration": "Up to 5 turns",
-		"concentration": true,
-		"page": "rc 7",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 15,
-		"name": "Lightning Lance",
-		"desc": [
-			"You create a 6 foot lance made of pure electricity and launch it at a target within range. Make a ranged spell attack against the target. On a hit, the target takes 2d10 lightning damage.",
-			"Additionally, the lance bursts upon impact. All creatures within a 10 foot radius of the burst (including the target) must make a Dexterity saving throw. A creature takes 6d6 lightning damage on a failed save, or half as much damage on a successful one."
-		],
-		"higher_level": [
-			"When you cast this spell using a spell slot of 4th level or higher, the damage on hit increases by 1d10 and the burst damage increases by 1d6 for each slot level above 3rd."
-		],
-		"level": 3,
-		"school": {
-			"name": "Evocation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "120 feet",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a bit of fur and a rod of amber, crystal, or glass",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 8",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 16,
-		"name": "Rune Burst",
-		"desc": [
-			"Choose one spell rune of 5th level or lower within range. The rune shatters or crumbles into dust, and casts its spell at any target you wish. The spell's level is raised by one during this time. You may delay this effect by up to 1 minute, if you so choose."
-		],
-        "higher_level": [
-            "When you cast this spell using a spell slot of 6th level or higher, you may target a rune with a level equal to or lower than the slot level used. If targeting a rune with a 9th level spell, the level for the spell is not raised."
-        ],
-		"level": 3,
-		"school": {
-			"name": "Transmutation",
-			"url": ""
-		},
-		"ritual": false,
-		"casting_time": "1 action",
-		"range": "Touch",
-		"components": [
-			"V",
-			"S"
-		],
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 8",
-		"classes": [], "subclasses": [], "url": ""
-	},
-	{
-		"index": 17,
-		"name": "Rune Trap",
-		"desc": [
-			"The target rune must be a spell rune. Designate one activation condition and a target area or point for the rune. The rune is now set as a trap, and will cast its spell at the designated area (must be within range) whenever the activation condition is met.",
-			"While a rune is set as a trap, it cannot be used to cast a spell normally. If a trap rune is moved more than 5 feet from its original location, the trap becomes undone and the rune becomes a normal spell rune once again.",
-			"Once the trap rune activates, it is no longer a trap, and will return to being a normal spell rune. The possible activation conditions are as follows:",
-			"Detect Creature.",
-			"The rune activates whenever a creature enters a designated area specified by the spell caster. The spell caster may designate for the rune to ignore specific creatures or individuals, or only activate for specific creatures or individuals.",
-			"Timer.",
-			"The rune activates after an amount of time specified by the spell caster.",
-			"Chain Reaction.",
-			"Select a second rune that has already been set as a trap within 30 feet of the first rune. Whenever the second rune activates, the first rune will activate either immediately afterwards, when the spell meets a certain condition, or after a specified amount of time, depending on what the spell caster so chooses. This can be combined with trap runes containing spells like detect magic."
-		],
-		"level": 4,
-		"school": {
-			"name": "Transmutation",
-			"url": ""
-		},
-		"ritual": true,
-		"casting_time": "5 minutes",
-		"range": "Touch",
-		"components": [
-			"V",
-			"S",
-			"M"
-		],
-		"material": "a pinch of etherium dust",
-		"duration": "Instantaneous",
-		"concentration": false,
-		"page": "rc 9",
-		"classes": [], "subclasses": [], "url": ""
-	},
-    {
-        "index": 18,
-        "name": "Wind Blade",
-        "desc": [
-            "You fire a small, sharp blade of concentrated wind at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage.",
-            "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
-        ],
-        "level": 0,
-        "school": {
-            "name": "Evocation",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "60 feet",
-        "components": [
-            "V",
-            "S"
-        ],
-        "duration": "Instantaneous",
-        "concentration": false,
-        "page": "rc 9",
-        "classes": [],
-        "subclasses": [],
-        "url": ""
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 8",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 2,
+    "name": "Blinding Light",
+    "desc": [
+      "Choose one point within range. You create a blinding white light at that point. All creatures making an attack roll or similar action directly targetting anything within an unobstructed 5 foot radius of the light have disadvantage. All creatures within an unobstructed 5 foot radius of the light have disadvantage on all attack rolls, and have disadvantage on all Dexterity and Charisma saving throws and skill checks.",
+      "The light also emits a bright light in a 120 foot radius, and a dim light in a 240 foot radius. The light can be spotted up to 300 feet away. Completely covering the light with something opaque blocks the light and negates its effects."
+    ],
+    "level": 1,
+    "school": {
+      "name": "Evocation",
+      "url": ""
     },
-    {
-        "index": 19,
-        "name": "Orbital Guard",
-        "desc": [
-            "You summon two small, transparent flying shields, each about 1 foot in size. The shields float around any creature of your choice within range at the time of casting. You may choose for both shields to be on one creature, or for each shield to be on a different creature.",
-            "Moving away from the spell caster after the a shield is floating around a creature does not affect the shield. Once the spell ends, if the shields have not been used, the shields dissipate into a small cloud of etheric mist.",
-            "Each shield may be used to cast the shield spell for the creature it is floating around. This does not take up the reaction of the creature it affects."
-        ],
-        "level": 5,
-        "school": {
-            "name": "Abjuration",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "30 feet",
-        "components": [
-            "V",
-            "S",
-            "M"
-        ],
-        "materials": "a small piece of iron or steel",
-        "duration": "5 minutes",
-        "concentration": false,
-        "page": "rc",
-        "classes": [],
-        "subclasses": [],
-        "url": ""
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 3 turns",
+    "concentration": true,
+    "page": "rc 8",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 3,
+    "name": "Bursting Gemstone",
+    "desc": [
+      "Choose one small gemstone within range. That gemstone now has the following effects:",
+      "The gemstone may be thrown as a ranged weapon attack with proficiency. The gemstone bursts upon impact, dealing 3d8 force damage.",
+      "If the spell is being cast from a rune and is used to target itself, you may target an additional gemstone within range to enchant. Additionally, the original rune gemstone now deals 6d8 force damage."
+    ],
+    "higher_level": [
+      "When you cast this spell using a slot of 3rd level or higher, the damage is increased by 1d8 for each slot level above 2nd. If cast using a rune of 3rd level or higher and targeting itself, you may select 1 additional gemstone and the damage of the original gemstone is increased by 2d8 for each rune level above 2nd."
+    ],
+    "level": 2,
+    "school": {
+      "name": "Enchantment",
+      "url": ""
     },
-    {
-        "index": 20,
-        "name": "Icicle Blast",
-        "desc": [
-            "You hurl large, sharp icicles in a 10-foot-radius, 20-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 3d8 piercing damage and 6d6 cold damge, or half as much on a successful one."
-        ],
-        "higher_level": [
-            "When you cast this spell using a spell slot of 6th level or higher, the piercing damage increases by 1d8 for each slot level above 5th."
-        ],
-        "level": 5,
-        "school": {
-            "name": "Evocation",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "60 feet",
-        "components": [
-            "V",
-            "S",
-            "M"
-        ],
-        "materials": "a shard of ice or a drop of water",
-        "duration": "Instantaneous",
-        "concentration": false,
-        "page": "rc",
-        "classes": [],
-        "subclasses": [],
-        "url": ""
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 8",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 4,
+    "name": "Detect Runes",
+    "desc": [
+      "For the duration, the sense the presence of any runes within 30 feet of you. If you sense any runes in this way, you can use your action to see a faint aura around any runes or objects enchanted with runes in the area, and you learn the level of the rune and whether or not the rune is a spell or enchantment. If the rune is a spell, you learn its school of magic, if any. If the rune is an enchantment, you learn the rarity of the enchantment, and the item type the enchantment is for, if any.",
+      "Additionally, if one of the runes you detect is a spell, you may use your action to learn how many charges that rune has remaining.",
+      "The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+    ],
+    "level": 1,
+    "school": {
+      "name": "Divination",
+      "url": ""
     },
-    {
-        "index": 21,
-        "name": "Water Blast",
-        "desc": [
-            "You shoot a large blast of water at one target within range. The water is capable of putting out medium or smaller fires. Medium or smaller creatures that are hit by the water must make a Dexterity saving throw. On a failed saving throw, the creature is hit by the water and is pushed back 5 feet. Large or bigger creatures are always hit by the water, but are unaffected by it, other than becoming soaked."
-        ],
-        "level": 0,
-        "school": {
-            "name": "Evocation",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "60 feet",
-        "components": [
-            "V",
-            "S"
-        ],
-        "duration": "Instantaneous",
-        "concentration": false,
-        "page": "rc",
-        "classes": [],
-        "subclasses": [],
-        "url": ""
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "5 minutes",
+    "concentration": false,
+    "page": "rc 8",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 5,
+    "name": "Disarm Runes",
+    "desc": [
+      "You target one rune within reach. The effect of the spell varies depending on the type of rune targetted.",
+      "Spell Rune.",
+      "The rune becomes disabled for 5 minutes, and cannot cast its spell or be affected by rune trap while disabled. If the rune is burnt-out, this time is doubled, increasing to 10 minutes.",
+      "Spell Rune (Trap).",
+      "The rune becomes disabled for 30 minutes, and cannot be activated while disabled. Afterwards, the rune returns to normal and can once again be activated.",
+      "Enchantment Rune.",
+      "The rune becomes disabled for 5 minutes, and no longer provides any bonus effects to the item it is attatched to while disabled. During this time, the item acts and functions as it did before it was enchanted."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the disabled time for trap spell runes increases by 30 minutes and the disabled time for non-trap spell runes and enchantment runes increases by 5 minutes for each slot level above 3rd."
+    ],
+    "level": 3,
+    "school": {
+      "name": "Enchantment",
+      "url": ""
     },
-    {
-        "index": 22,
-        "name": "Lightning Blade",
-        "desc": [
-            "You evoke a blade of lightning in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
-            "You can use your action to make a melee spell attack with the lightning blade. On a hit, the target takes 3d6 lightning damage."
-        ],
-        "level": 2,
-        "school": {
-            "name": "Evocation",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 bonus action",
-        "range": "Self",
-        "components": [
-            "V",
-            "S",
-            "M"
-        ],
-        "materials": "a bit of fur and a rod of amber, crystal, or glass",
-        "duration": "10 minutes",
-        "concentration": false,
-        "page": "rc",
-        "classes": [],
-        "subclasses": [],
-        "url": ""
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a pinch of etherium dust",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 9",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 6,
+    "name": "Draining Mist",
+    "desc": [
+      "You create a 10' x 10' x 10' cloud of dark, purple mist in an area within range. Any creature who takes an action or begins their turn in the cloud must make a Constitution saving throw. The creature takes 3d6 necrotic damage on a failed save, or half as much on a successful one. You heal hit points equal to half the damage dealt, rounded down.",
+      "The cloud can be dispersed by strong winds or anything else than is capable of dispersing heavy mist. Once the cloud reaches a size more than double its original size, its effect weakens. On a failed save, a creature now takes half as much damage, and takes no damage on a successful one. Once the cloud reaches a size more than triple its original size, its effect is completely negated."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the size of the cloud increases by 5' x 5' x 5' and the damage increases by 1d6 for each slot level above 4th."
+    ],
+    "level": 4,
+    "school": {
+      "name": "Necromancy",
+      "url": ""
     },
-    {
-        "index": 23,
-        "name": "Vortex of Flames",
-        "desc": [
-            "You create a vortex of flames in a 20-foot-radius centered at a point within range. A creature that starts or ends their turn in the vortex must make a Dexterity saving throw. A creature takes 6d8 fire damage on a failed save, or half as much on a successful one. The vortex lasts until the end of your next turn, and the vortex's area of effect is difficult terrain.",
-            "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
-        ],
-        "higher_level": [
-            "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
-        ],
-        "level": 4,
-        "school": {
-            "name": "Evocation",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "120 feet",
-        "components": [
-            "V",
-            "S"
-        ],
-        "duration": "Instantaneous",
-        "concentration": false,
-        "page": "rc",
-        "classes": [],
-        "subclasses": [],
-        "url": ""
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a bat's wing",
+    "duration": "3 turns",
+    "concentration": false,
+    "page": "rc 9",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 7,
+    "name": "Earth Blast",
+    "desc": [
+      "You choose a section of earth or stone within 5 feet of you, no larger than 1-foot in radius, and raise it out of the ground. You then shoot the piece of earth or stone at a target within range. The target must make a Dexterity saving throw. The target takes 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one.",
+      "The piece of earth or stone can collide with physical objects, and can break on impact, damage structures, or break other objects depending on the difference in strength between the materials of the two objects."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 and the radius of earth or stone you can pull out the ground increases by 0.5 feet for each slot level above 1st."
+    ],
+    "level": 1,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
     },
-    {
-        "index": 24,
-        "name": "Recharge Rune",
-        "desc": [
-            "Choose one rune of 2nd level or lower within range. If it is a spell rune, it regains one charge (but it can't go past its maximum). If it is an enchantment rune with limited uses, such as twice per day, it regains a number of uses equal to its max amount at base level (up to twice its default amount at current level). If it is an enchantment rune with a limited use time, such as up to 1 hour per day, it regains usage time equal to its max amount at base level (up to twice its default amount at current level). Other enchantment runes cannot be targetted by this spell."
-        ],
-        "higher_level": [
-            "When you cast this spell using a spell slot of 3rd level or higher, you may target a rune with a level equal to or lower than the slot level used."
-        ],
-        "level": 2,
-        "school": {
-            "name": "Transmutation",
-            "url": ""
-        },
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "Touch",
-        "components": [
-            "V",
-            "S"
-        ],
-        "duration": "Instantaneous",
-        "concentration": false,
-        "page": "rc",
-        "classes": [],
-        "subclasses": [],
-        "url": ""
-    }
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 9",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 8,
+    "name": "Earthen Wall",
+    "desc": [
+      "Choose a section of earth or stone within range. You raise a slab of earth or stone from that area, up to 5 feet by 5 feet in size and 6 inches thick. The slab can act as cover.",
+      "The slab's durability is dependent on the material in the area selected, and can break under enough pressure or with enough force. If left untouched, the slab will permantly stay in place and will not collapse on its own. However, the slab is still affected by the weather and the surrounding environment."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the maximum size of the slab increases by 5 feet by 5 feet in size and 6 inches in thickness."
+    ],
+    "level": 2,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "10 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 9",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 9,
+    "name": "Enchant Rune",
+    "desc": [
+      "Choose one unactivated rune within range. The rune must contain a spell or enchantment of 2nd level or lower. That rune is now activated, with all of its proper features and capabilities.",
+      "If this spell is cast from a rune, it can only activate runes with a spell or enchantment of 1st level or lower, no matter what level the rune being used to cast the spell is."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the maximum level of the spell or enchantment inside the targeted rune increases by one, up to a 5th level spell or enchantment when cast using a 9th level spell slot. In order to enchant higher level runes, you must be using a 9th level spell slot and have an additional spell caster casting Enchant Rune using a 9th level spell slot (targeting the same rune) for each level above 5th, requiring 2 spell casters for a 6th level rune, and 5 spell casters for a 9th level rune."
+    ],
+    "level": 6,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 hour",
+    "range": "5 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a small pouch of etherium dust",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 10",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 10,
+    "name": "Etheric Winds",
+    "desc": [
+      "You create a strong gust of wind up to 30 square feet in width and up to 20 feet high within range that can manipulate the flow of ether. When casting the spell, choose one of the following effects:",
+      "Disruptive Winds.",
+      "The winds disrupts the flow of ether, making spells more difficult to cast. Any creature attempting to cast a spell in the wind's area of effect, including through a rune, must make an Intelligence (Arcana) skill check against your spell DC. On a successful check, the spell is cast successfully. On a failed check, the creature fails to cast the spell. This does not consume a spell slot or rune charge, but does consume the creature's action.",
+      "Additionally, all enchantmented items with a level equal to or less than that of the slot level used to cast this spell become nullified while within the area of the winds.",
+      "Flowing Winds.",
+      "The winds increase the flow of ether, making spells cast in its area more powerful. Any creature attempting to cast a spell with a level equal to or less than that of the slot used to cast this spell while in the wind's area of effect, including through a rune, must make an Intelligence (Arcana) skill check with a DC of 20 - your spell DC. On a successful check, the spell is cast one level higher than normal, but does not consume a stronger spell slot. 9th level spells are not affected. On a failed check, the spell is cast as normal."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the maximum size of the winds increases by 10 square feet in width and 5 feet in height."
+    ],
+    "level": 4,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a pinch of etherium dust and a feather",
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "page": "rc 10",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 11,
+    "name": "Frozen Blade",
+    "desc": [
+      "Choose a target with an open hand within range, yourself included. A small blade of solid ice forms in their hand. On their turn, the target may spend an action to swing the blade. The blade counts as a shortsword, which deals 1d6 slashing damage. On impact, the blade shatters, and all creatures in a 5 foot radius of the target of the attack except the user take 2d8 cold damage.",
+      "If the caster of the spell targets themselves with it, they are considered proficient with shortswords for the purpose of the spell if they have either a Strength or Dexterity of at least 10. ",
+      "If the spell ends before the target successfully swings the blade, the blade dissipates into a cloud of mist."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d8 for each slot level above 1st."
+    ],
+    "level": 1,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "20 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a shard of ice or a drop of water",
+    "duration": "5 turns",
+    "concentration": false,
+    "page": "rc 10",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 12,
+    "name": "Gravitational Crush",
+    "desc": [
+      "Choose one target creature or object in range. The effect of gravity on that target increases exponentially, and the target is thrown to the floor. If the target is a creature, they must make a Strength saving throw. On a failed throw, the target is knocked prone and takes falling damage equivalent to falling 60 meters (6d6 bludgeoning damage), on top of any falling damage they might have taken normally from being knocked prone.",
+      "If the target creature fails the initial saving throw, they may not get up from being knocked prone for the duration of the spell. The creature may also make an additional Strength saving throw at the end of their turn as a bonus action. On a successful throw, the target is now affected as if they had passed the initial saving throw, but does not take any additional damage.",
+      "On a successful throw, the target creature takes falling damage equivalent to falling 20 meters (2d6 bludgeoning damage), the creature's fly speed becomes 0 ft., and the creature's remaining speed is halved for the duration of the spell. Additionally, standing up from being knocked prone takes the creature's full speed for the duration of the spell.",
+      "Additionally, the increased effect of gravity may have an effect on the surrounding environment. For example, a target creature or object above a thin, fragile floor may break the floor and fall through under increased gravity."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, you may select an additional target for each slot level above 6th."
+    ],
+    "level": 6,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "",
+    "duration": "Up to 5 minutes",
+    "concentration": true,
+    "page": "rc 11",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 13,
+    "name": "Icicle Blast",
+    "desc": [
+      "You hurl large, sharp icicles in a 10-foot-radius, 20-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 3d8 piercing damage and 6d6 cold damge, or half as much on a successful one."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the piercing damage increases by 1d8 for each slot level above 5th."
+    ],
+    "level": 5,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materials": "a shard of ice or a drop of water",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 11",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 14,
+    "name": "Isolation",
+    "desc": [
+      "Choose one target in range. The target must make a Wisdom saving throw against your spell DC. On a failed save, the target creature can no longer hear, see, or otherwise communicate in any way with any of their allies or comrades for the duration of the spell. The creature may not target any of their allies with an action or skill during this time.",
+      "Items held or worn by their allies also cannot be seen by the target, but actions taken by their allies can still be seen and noticed, such as opening a door. The target creature can still physically communicate with their allies, such as accidentally hitting one another, and the target creature may still be heard, seen, and targeted by their allies.",
+      "On a successful save or once the spell ends, the target creature knows that they were targeted by the spell."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the spell lasts an additional 10 minutes for each slot level above 6th"
+    ],
+    "level": 6,
+    "school": {
+      "name": "Enchantment",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a sac of ink and a quill",
+    "duration": "1 minute",
+    "concentration": false,
+    "page": "rc 11",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 15,
+    "name": "Leaf Storm",
+    "desc": [
+      "You create a storm of leaves that is 10 feet by 10 feet by 10 feet in size at one point within range. The leaf storm counts as difficult terrain, and can obscure a creature's vision.",
+      "Any creature who takes an action or begins their turn in the storm must make a Dexterity saving throw. The creature takes 1d4 slashing damage on a failed save. If there are trees or other plants you can take leaves from within range, a instead creature takes 1d6 slashing damage on a failed save."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st, or by 1d6 for each slot level above 1st if there are plants you can take leaves from within range."
+    ],
+    "level": 1,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a pair of plant pleaves",
+    "duration": "Up to 5 turns",
+    "concentration": true,
+    "page": "rc 11",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 16,
+    "name": "Lightning Blade",
+    "desc": [
+      "You evoke a blade of lightning in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
+      "You can use your action to make a melee spell attack with the lightning blade. On a hit, the target takes 3d6 lightning damage."
+    ],
+    "level": 2,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 bonus action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materials": "a bit of fur and a rod of amber, crystal, or glass",
+    "duration": "10 minutes",
+    "concentration": false,
+    "page": "rc 12",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 17,
+    "name": "Lightning Lance",
+    "desc": [
+      "You create a 6 foot lance made of pure electricity and launch it at a target within range. Make a ranged spell attack against the target. On a hit, the target takes 2d10 lightning damage.",
+      "Additionally, the lance bursts upon impact. All creatures within a 10 foot radius of the burst (including the target) must make a Dexterity saving throw. A creature takes 6d6 lightning damage on a failed save, or half as much damage on a successful one."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage on hit increases by 1d10 and the burst damage increases by 1d6 for each slot level above 3rd."
+    ],
+    "level": 3,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a bit of fur and a rod of amber, crystal, or glass",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 12",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 18,
+    "name": "Orbital Guard",
+    "desc": [
+      "You summon two small, transparent flying shields, each about 1 foot in size. The shields float around any creature of your choice within range at the time of casting. You may choose for both shields to be on one creature, or for each shield to be on a different creature.",
+      "Moving away from the spell caster after the a shield is floating around a creature does not affect the shield. Once the spell ends, if the shields have not been used, the shields dissipate into a small cloud of etheric mist.",
+      "Each shield may be used to cast the shield spell for the creature it is floating around. This does not take up the reaction of the creature it affects."
+    ],
+    "level": 5,
+    "school": {
+      "name": "Abjuration",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materials": "a small piece of iron or steel",
+    "duration": "5 minutes",
+    "concentration": false,
+    "page": "rc 12",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 19,
+    "name": "Recharge Rune",
+    "desc": [
+      "Choose one rune of 2nd level or lower within range. If it is a spell rune, it regains one charge (but it can't go past its maximum). If it is an enchantment rune with limited uses, such as twice per day, it regains a number of uses equal to its max amount at base level (up to twice its default amount at current level). If it is an enchantment rune with a limited use time, such as up to 1 hour per day, it regains usage time equal to its max amount at base level (up to twice its default amount at current level). Other enchantment runes cannot be targetted by this spell."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you may target a rune with a level equal to or lower than the slot level used."
+    ],
+    "level": 2,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 12",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 20,
+    "name": "Rune Burst",
+    "desc": [
+      "Choose one spell rune of 5th level or lower within range. The rune shatters or crumbles into dust, and casts its spell at any target you wish. The spell's level is raised by one during this time. You may delay this effect by up to 1 minute, if you so choose."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, you may target a rune with a level equal to or lower than the slot level used. If targeting a rune with a 9th level spell, the level for the spell is not raised."
+    ],
+    "level": 3,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 12",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 21,
+    "name": "Rune Trap",
+    "desc": [
+      "The target rune must be a spell rune. Designate one activation condition and a target area or point for the rune. The rune is now set as a trap, and will cast its spell at the designated area (must be within range) whenever the activation condition is met.",
+      "While a rune is set as a trap, it cannot be used to cast a spell normally. If a trap rune is moved more than 5 feet from its original location, the trap becomes undone and the rune becomes a normal spell rune once again.",
+      "Once the trap rune activates, it is no longer a trap, and will return to being a normal spell rune. The possible activation conditions are as follows:",
+      "Detect Creature.",
+      "The rune activates whenever a creature enters a designated area specified by the spell caster. The spell caster may designate for the rune to ignore specific creatures or individuals, or only activate for specific creatures or individuals.",
+      "Timer.",
+      "The rune activates after an amount of time specified by the spell caster.",
+      "Chain Reaction.",
+      "Select a second rune that has already been set as a trap within 30 feet of the first rune. Whenever the second rune activates, the first rune will activate either immediately afterwards, when the spell meets a certain condition, or after a specified amount of time, depending on what the spell caster so chooses. This can be combined with trap runes containing spells like detect magic."
+    ],
+    "level": 4,
+    "school": {
+      "name": "Transmutation",
+      "url": ""
+    },
+    "ritual": true,
+    "casting_time": "5 minutes",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "a pinch of etherium dust",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 13",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 22,
+    "name": "Vortex of Flames",
+    "desc": [
+      "You create a vortex of flames in a 20-foot-radius centered at a point within range. A creature that starts or ends their turn in the vortex must make a Dexterity saving throw. A creature takes 6d8 fire damage on a failed save, or half as much on a successful one. The vortex lasts until the end of your next turn, and the vortex's area of effect is difficult terrain.",
+      "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+    ],
+    "level": 4,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 13",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 23,
+    "name": "Water Blast",
+    "desc": [
+      "You shoot a blast of water at one target within range. The water is capable of putting out small fires. Small or tiny creatures that are hit by the water must make a Dexterity saving throw. On a failed saving throw, the creature is hit by the water and is pushed back 5 feet. Small or bigger creatures are always hit by the water, but are otherwise unaffected by it."
+    ],
+    "level": 0,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 13",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  },
+  {
+    "index": 24,
+    "name": "Wind Blade",
+    "desc": [
+      "You fire a small, sharp blade of concentrated wind at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage.",
+      "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+    ],
+    "level": 0,
+    "school": {
+      "name": "Evocation",
+      "url": ""
+    },
+    "ritual": false,
+    "casting_time": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "page": "rc 9",
+    "classes": [],
+    "subclasses": [],
+    "url": ""
+  }
 ]

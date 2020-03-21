@@ -1,544 +1,658 @@
 [
-    {
-        "index": 1,
-        "name": "Air Bubble",
-        "rarity": "Uncommon",
-        "level": 3,
-        "armor-desc": [
-            "While underwater or in another unbreathable environment, the armor can emit a small bubble around your head that allows you to breathe normally for a limited time. This bubble lasts up to 5 minutes, and each minute in a breathable environment restores 1 minute of the bubble's usage.",
-            "The bubble may be popped by another creature's attack. When taking damage, roll a d20. On a 8 or lower, the bubble pops, and its available usage time resets to 0.",
-            "For each rune level above 3rd, the bubble can last an additional 5 minutes, and the threshold for the bubble popping on a d20 roll is lowered by 1."
-        ],
-        "page": "rc 10"
-    },
-    {
-        "index": 2,
-        "name": "Antimagic Aura",
-        "rarity": "Very rare",
-        "level": 6,
-        "armor-desc": [
-            "The armor emits a small field of ether that protects the wearer from magical effects. While wearing the armor, the wearer is granted advantage on saving throws against magical effects, and anyone casting a spell has disadvantage on any rolls against the wearer (but not on any other targets). This effect is only granted against spells that are 3rd level or lower.",
-            "For each rune level above 6th, the effect is granted for spells 1 level higher, up to a max of 6th level."
-        ],
-        "page": "rc 10"
-    },
-    {
-        "index": 3,
-        "name": "Aquatic Affinity",
-        "rarity": "Uncommon",
-        "level": 2,
-        "melee-desc": [
-            "The weapon is not granted disadvantage on attack roles by being underwater. Additionally, the weapon (if it's a ranged weapon) does not automatically miss if the target is beyond the weapon's normal range while underwater."
-        ],
-        "ranged-desc": [
-            "The weapon is not granted disadvantage on attack roles by being underwater. Additionally, the weapon (if it's a ranged weapon) does not automatically miss if the target is beyond the weapon's normal range while underwater."
-        ],
-        "page": "rc 10"
-    },
-    {
-        "index": 4,
-        "name": "Arrows of Light",
-        "rarity": "Very rare",
-        "level": 4,
-        "ranged-desc": [
-            "The weapon is capable of of creating arrows out of pure light. This may be done instantly at any time while in bright or dim light, and does not consume any ammunition. The arrows deal radiant damage, and disappear upon impact. This effect may be activated up to 4 times per day.",
-            "For each rune level above 4th, the effect may be activated once more per day. If the rune is at 7th level or higher, the effect may now also be activated in darkness."
-        ],
-        "page": "rc 10"
-    },
-    {
-        "index": 5,
-        "name": "Blade Beam",
-        "rarity": "Rare",
-        "level": 4,
-        "melee-desc": [
-            "Twice per day, when you swing the weapon, you may launch a small blade of concentrated ether as a ranged attack with range 60 feet. The attack has finesse, and uses your proficiency bonus. The blade deals slashing damage equal to the amount of damage the weapon would normally deal.",
-            "For each rune level above 4th, the effect may be activated twice more per day. If the rune is at 7th level or higher, the blade deals twice as much damage."
-        ],
-        "page": "rc 10"
-    },
-    {
-        "index": 6,
-        "name": "Burst of Wind",
-        "rarity": "Uncommon",
-        "level": 2,
-        "armor-desc": [
-            "Twice per day, you may emit a burst of wind in a small radius around you as a reaction to being targeted by a ranged attack. Attacks made with physical projectiles, such as arrows or bolts, have disadvantage against you during this time.",
-            "Additionally, the wind blows away small items near you that are not held down, and can disperse or blow away fog, smoke, and other gases. The wind lasts until the start of your next turn.",
-            "For each rune level above 2nd, the effect may be activated once more per day."
-        ],
-        "page": "rc 11"
-    },
-    {
-        "index": 6,
-        "name": "Chain Extension",
-        "rarity": "Legendary",
-        "level": 6,
-        "melee-desc": [
-            "As a bonus action, you may create a chain that forms between the handle and blade/rest of the weapon. The chain is made out of the same material as the handle and is 5 feet long. This chain allows the wielder to swing the weapon at a much greater range than before, although it may be harder to control. While active, the chain grants the wielder an additional 5 feet of range with the melee weapon.",
-            "The chain may be dismissed as a bonus action, which retracts the chain into the handle, returning the weapon back to normal. This retraction is capable of hiting other creatures, but it may also be stopped by them.",
-            "For each rune level above 6th, the length of the chain is increased by 5 feet."
-        ],
-        "page": "rc 11"
-    },
-    {
-        "index": 7,
-        "name": "Curve Shot",
-        "rarity": "Very rare",
-        "level": 3,
-        "ranged-desc": [
-            "Ammunition shot from the weapon will curve towards their target. Attacks made using the weapon have a +1 bonus to attack rolls. Targets with half cover gain no bonuses from it, and targets with three-quarters cover are treated as if they had half cover.",
-            "For each rune level above 3rd, the weapon gains an additional +1 bonus to attack rolls, with a maximum of +3. This maximum increases to +4 at 8th level.",
-            "If the rune is at 6th level or above, targets with three-quarters cover gain no bonuses from it, and targets with total cover may now be targeted as if they had three-quarters cover. At 7th level or above, targets with total cover are treated as if they had half cover, and at 9th level targets with total cover gain no bonuses from it."
-        ],
-        "page": "rc 11"
-    },
-    {
-        "index": 8,
-        "name": "Darkvision",
-        "rarity": "Uncommon",
-        "level": 2,
-        "armor-desc": [
-            "The armor grants you darkvision out to a range of 60 feet for up to 1 hour per day. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour per day.",
-            "For each rune level above 2nd, this maximum amount of time you gain darkvision increases by 1 hour per day."
-        ],
-        "page": "rc 11"
-    },
-    {
-        "index": 9,
-        "name": "Distant Guard",
-        "rarity": "Very rare",
-        "level": 4,
-        "shield-desc": [
-            "Once per day as a reaction, you may create a magical projection of this shield up to 60 ft. away in line of sight to protect another creature. The target momentarily gains AC equal to the AC granted by the shield. The projection lasts until the start of your next turn.",
-            "For each rune level above 4th, this effect may be activated once more per day."
-        ],
-        "page": "rc 11"
-    },
-    {
-        "index": 10,
-        "name": "Double Shot",
-        "rarity": "Uncommon",
-        "level": 2,
-        "ranged-desc": [
-            "Twice per day, the weapon may duplicate ammunition when attacking. Choose an additional target, and make a ranged attack against them as normal. The two attacks may not target the same creature. This effect does not consume any extra ammunition.",
-            "For each rune level above 2nd, this effect may be activated twice more per day."
-        ],
-        "page": "rc 11"
-    },
-    {
-        "index": 11,
-        "name": "Electrify",
-        "rarity": "Uncommon",
-        "level": 4,
-        "melee-desc": [
-            "For up to 10 minutes per day, the weapon may begin to crackle with lightning whenever the wielder so chooses. The lightning is capable of moving short distances, and is capable of shocking anyone except for the wielder. While crackling with lightning, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and 1d4 lightning damage otherwise.",
-            "If attacking a target wearing metal armor, the lightning is capable of shocking them through their armor if the attack doesn't fully connect. While crackling with lightning, the weapon deals 1d4 lightning damage to targets wearing metal armor on a non-critical miss.",
-            "For each rune level above 4th, the lightning may last for an additional 10 minutes per day. For every two rune levels above 4th, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and an additional 1d4 lightning damage otherwise. Against targets wearing metal armor, the weapon deals an additional 1d4 lightning damage on a non-critical miss."
-        ],
-        "page": "rc 11"
-    },
-    {
-        "index": 12,
-        "name": "Enhanced Mobility",
-        "rarity": "Uncommon",
-        "level": 5,
-        "armor-desc": [
-            "The armor increases the wearer's movement capabilites. While wearing the armor, your walk speed is increased by 5 feet, and you gain +1 on all Dexterity-based saving throws and skill checks, or +2 if you are proficient in the respective saving throw or skill check.",
-            "For every two rune levels above 5th, the walk speed bonus granted by the armor increases by 5 feet. If the rune is at 8th level or above, the bonus on saving throws and skill checks increases to +2, or +4 if you are proficient."
-        ],
-        "page": "rc 12"
-    },
-    {
-        "index": 13,
-        "name": "Fey Protection",
-        "rarity": "Uncommon",
-        "level": 5,
-        "armor-desc": [
-            "The armor increases the wearer's movement capabilites. While wearing the armor, your walk speed is increased by 5 feet, and you gain +1 on all Dexterity-based saving throws and skill checks, or +2 if you are proficient in the respective saving throw or skill check.",
-            "For every two rune levels above 5th, the walk speed bonus granted by the armor increases by 5 feet. If the rune is at 8th level or above, the bonus on saving throws and skill checks increases to +2, or +4 if you are proficient."
-        ],
-        "page": "rc 12"
-    },
-    {
-        "index": 14,
-        "name": "Firebound",
-        "rarity": "Uncommon",
-        "level": 4,
-        "armor-desc": [
-            "The armor begins to heat up and emit small flames whenever the wearer so chooses. These flames are incapable of spreading, and cannot catch anything on fire. Although the flames cannot directly damage the wearer, the immense heat from them may have side effects depending on the wearer's physical condition and the outside environment.",
-            "While emitting these flames, the wearer is granted resistance to cold damage. The flames also emit a dim light in a 5 foot radius.",
-            "If the rune is at 6th level or higher, the wearer is now granted resistance to fire damage and immunity to cold damage. If the rune is at 8th level or higher, the wearer is now granted immunity to fire damage."
-        ],
-        "melee-desc": [
-            "For up to 10 minutes per day, the weapon may begin to emit small flames whenever the wielder so chooses. These flames are incapable of spreading, and cannot catch anything on fire. The flames still emit a large amount of heat, however. While emitting these flames, the weapon deals an additional 1d6 fire damage and emits a dim light in a 5 foot radius.",
-            "For each rune level above 4th, the flames may last for an additional 10 minutes per day. For every two rune levels above 4th, the bonus fire damage increases by 1d6."
-        ],
-        "page": "rc 12"
-    },
-    {
-        "index": 15,
-        "name": "Heavy Stance",
-        "rarity": "Uncommon",
-        "level": 3,
-        "armor-desc": [
-            "As a bonus action or reaction (to anything), you may increase the effective weight of yourself and the armor up to three times your normal weight. You may end this effect as a bonus action.",
-            "While the weight is increased, you are immune to any effects that may forcefully move or push you, unless you wish to be moved. Additionally, your movement speed is halved, and you lose any and all fly speed you may have had.",
-            "For each rune level above 3rd, the maximum weight of you and the armor increases by one times your normal weight."
-        ],
-        "page": "rc 12"
-    },
-    {
-        "index": 16,
-        "name": "Holy Glow",
-        "rarity": "Rare",
-        "level": 3,
-        "armor-desc": [
-            "The armor begins to glow with a faint light the wearer so chooses. These lights emit a dim light as far as the wearer wishes, up to a max of a 10 ft. radius and a minimum of a 5 ft. radius.",
-            "While emitting lights, the armor grants the wearer resistance to necrotic damage.",
-            "For each rune level above 3rd, the max radius of the light increases by 5 feet. If the rune is at 7th level or higher, the wearer is now granted immunity to necrotic damage and resistance to radiant damage."
-        ],
-        "page": "rc 12"
-    },
-    {
-        "index": 17,
-        "name": "Icebound",
-        "rarity": "Uncommon",
-        "level": 3,
-        "armor-desc": [
-            "The armor begins to emit freezing cold mist whenever the wearer so chooses. The immense cold from the mist may have side effects depending on the wearer's physical condition and the outside environment.",
-            "While emitting the mist, the wearer is granted resistance to fire damage.",
-            "If the rune is at 5th level or higher, the wearer is now granted resistance to cold damage and immunity to fire damage. If the rune is at 8th level or higher, the wearer is now granted immunity to cold damage."
-        ],
-        "page": "rc 12"
-    },
-    {
-        "index": 18,
-        "name": "Lightweight",
-        "rarity": "Common",
-        "level": 1,
-        "armor-desc": [
-            "While enchanted, the armor becomes every so slightly lighter. This makes it slightly easier to carry around and is less difficult to wear. However, the effect of the enchantment at 1st level is so slim that it has no visible effect during combat.",
-            "For each rune level above 1st, the armor becomes even lighter. If the rune is at 4th level or above, the maximum Dex modifier for the armor increases by 1, becoming a max of 3 for medium armor and a max of 1 for heavy armor. For each rune level above 6th, the Strength requirement to wear the armor, if it exists, decreases by 1."
-        ],
-        "page": "rc 12"
-    },
-    {
-        "index": 19,
-        "name": "Magic Missile",
-        "rarity": "Uncommon",
-        "level": 2,
-        "ranged-desc": [
-            "Once per day at any point during the flight of an item launched from the weapon, you may transform the item into a magic missile as if the magic missile spell had been cast. The missile may travel up to 120 ft. towards any target of your choosing, and deals 1d4 + 1 force damage. The missile cannot miss.",
-            "For each rune level above 2nd, the effect may be activated once more per day."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 20,
-        "name": "Muffler",
-        "rarity": "Rare",
-        "level": 4,
-        "armor-desc": [
-            "The armor is capable of absorbing and muffling large sounds. While wearing the armor, the wearer is granted resistance to thunder damage and is immune to any sound-based effects and spells. This effect may be temporarily disabled at the user's will at any time.",
-            "If the rune is at 7th level or higher, the wearer is now granted immunity to thunder damage."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 21,
-        "name": "Projection",
-        "rarity": "Very rare",
-        "level": 4,
-        "melee-desc": [
-            "Once per day, you may create a magical projection of this weapon up to 60 ft. away in line of sight and attack with it for one turn. Make attack and damage rolls as normal.",
-            "This action is potentially capable of catching opponents off guard. A target who is caught off guard and does not know about the enchantment (once a foe has seen you use it, they know about it) must make a Wisdom (Perception) or Dexterity (Acrobatics) saving throw with DC 10 + rune level. On a failed throw, you have advantage on the attack roll.",
-            "For each rune level above 4th, the effect may be activated once more per day."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 22,
-        "name": "Rebound Force",
-        "rarity": "Rare",
-        "level": 2,
-        "shield-desc": [
-            "Once per day, if you are targeted by a melee attack that has missed, your shield may rebound the force of the blocked attack back onto the attacker.",
-            "When activating this effect, have the attacker make a damage roll, as if they had hit you. The attacker must then make a constitution saving throw with DC 10 + rune level, and takes force damage equal to their total damage roll on a failed save, or half as much on a successful one.",
-            "For each rune level above 2nd, the effect may be activated once more per day."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 23,
-        "name": "Reflective Mirror",
-        "rarity": "Rare",
-        "level": 4,
-        "shield-desc": [
-            "The shield is granted a reflective shine, similar to that of a mirror. Once per day, if you are targeted by a ranged attack that has missed, you may redirect the attack towards any target of your choosing within range. The attack deals the same amount of damage as normal.",
-            "For each rune level above 4th, the effect may be activated once more per day."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 24,
-        "name": "Returning Throw",
-        "rarity": "Rare",
-        "level": 3,
-        "melee-desc": [
-            "Whenever you throw the weapon, you may will for it to fly back towards you. At the start of your next turn, as a reaction or bonus action, make a Dexterity (Sleight of Hand) skill check with DC 12. On a successful check, you successfully catch the weapon.",
-            "On a failed check or if you choose not to catch the weapon, the weapon flies past you in the opposite direction. The weapon is capable of potentially hitting other creatures or targets during its flight in either direction.",
-            "For each rune level above 4th, the effect may be activated once more per day."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 25,
-        "name": "Self Destruct",
-        "rarity": "Uncommon",
-        "level": 3,
-        "melee-desc": [
-            "As an action or bonus action, you may cause your weapon to explode in a burst of etheric energy. All creatures within a 10 foot radius of the weapon must make a Constitution saving throw with DC 10 + rune level. A creature takes 6d10 typeless damage on a failed save, or half as much on a successful one.",
-            "Both the weapon and any runes attatched to it are disintegrated in the process, and cannot be salvaged.",
-            "For each rune level above 3rd, the explosion does an additional 2d10 damage."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 26,
-        "name": "Shield",
-        "rarity": "Very rare",
-        "level": 6,
-        "melee-desc": [
-            "Once per day, you may use the weapon to cast the shield spell; however, the spell only grants you +2 AC, instead of +5.",
-            "For each rune level above 6th, the effect may be activated once more per day."
-        ],
-        "ranged-desc": [
-            "Once per day, you may use the weapon to cast the shield spell; however, the spell only grants you +2 AC, instead of +5.",
-            "For each rune level above 6th, the effect may be activated once more per day."
-        ],
-        "page": "rc 13"
-    },
-    {
-        "index": 27,
-        "name": "Shield Warp",
-        "rarity": "Very rare",
-        "level": 8,
-        "shield-desc": [
-            "Twice per day, you may have your shield teleport into your hands as an action or as a reaction to being targetted to an attack. If done as a reaction, the shield grants its additional AC against the triggering attack, but only if the shield is 100 feet or less away from you before teleporting.",
-            "For every 100 feet the shield is away from you, the teleport takes 1 additional second, starting at 0 seconds (instant). The teleport is incapable of traveling through different dimensional planes.",
-            "For each rune level above 8th, the effect may be activated twice more per day."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 28,
-        "name": "Shock Absorber",
-        "rarity": "Rare",
-        "level": 3,
-        "armor-desc": [
-            "While wearing the armor, the wearer is granted resistance to lightning damage.",
-            "Once per day, when taking lightning damage, the armor may absorb the lightning and transfer it into one item the wearer is holding. The item acts as if it had the electrify enchantment at 2nd level. This effect goes away whenever the wielder makes an attack with the item, or after 1 minute has passed.",
-            "For each rune level above 3rd, the effect may be activated once more per day. If the rune is at 6th level or higher, the wearer is now granted immunity to lightning damage."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 29,
-        "name": "Smokescreen",
-        "rarity": "Common",
-        "level": 2,
-        "ranged-desc": [
-            "Twice per day, you may fire a trail of white or gray smoke from the weapon as an action. The smoke trail is 5 feet by 5 feet wide, and follows the trail of a normal item fired from the weapon. The smoke is capable of obscuring a creature's vision. Doing this does not consume any ammunition.",
-            "For each rune level above 2nd, the effect may be activated once more per day. If the rune is at 5th level or higher, the smoke trail is now 10 feet by 10 feet wide, and if the rune is at 8th level or higher the smoke trail is now 15 feet by 15 feet wide."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 30,
-        "name": "Stabilizer",
-        "rarity": "Legendary",
-        "level": 8,
-        "armor-desc": [
-            "The armor emits a faint healing aura that is capable of stabilizing unconscious creatures. While wearing the armor, you cannot fail a death saving throw by dice (you still suffer from failed throws by taking damage, however), and you only need 1 successful death saving throw to become stable.",
-            "Additionally, while stable, you regain 1 hit point after 1 hour instead of 1d4 hours."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 31,
-        "name": "Stored Energy",
-        "rarity": "Rare",
-        "level": 6,
-        "shield-desc": [
-            "The shield is capable of storing energy from blocked attacks and releasing it as a blast of ether. The shield gains 1 charge each time you are targetted by an attack that does not hit, and can store up to 6 charges per day. A charge is lost an hour after it is gained if it is not spent.",
-            "As an action, you may consume charges from the shield to use it to make a ranged magical attack with finesse and proficiency. The attack hits 1 target, and has a range of 60 feet.. You may consume as many charges as you want for the attack, with a minimum of 1. For each charge consumed, the attack deals 3d8 force damage. Additionally, on a hit, the target is pushed back 5 feet for each charge consumed.",
-            "For each rune level above 6th, the shield is capable of storing an additional charge per day."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 32,
-        "name": "Swift Swim",
-        "rarity": "Uncommon",
-        "level": 4,
-        "armor-desc": [
-            "The armor does not weight you down while attempting to move while underwater. However, the armor can still weight you down if you are not entirely immersed in water. Additionally, if you have any swim speed, the armor grants you an additional 5 feet of swim speed.",
-            "For each rune level above 4th, the additional swim speed granted by the armor increases by 5 feet."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 33,
-        "name": "Thunderous Clang",
-        "rarity": "Uncommon",
-        "level": 3,
-        "melee-desc": [
-            "Once per day, the weapon may emit a loud, thunderous sound that can be heard up to 100 feet away when it hits another object. All creatures except the wielder within a 5 foot radius of the weapon must make a Constitution saving throw with DC 10 + rune level, taking 1d8 thunder damage on a failed save, or half as much on a successful one.",
-            "For each rune level above 3rd, this effect may be activated once more per day. If the rune is at 5th level or higher, the damage increases to 2d8, and at 7th level or higher the damage increases to 3d8."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 34,
-        "name": "Thunderous Shot",
-        "rarity": "Uncommon",
-        "level": 3,
-        "ranged-desc": [
-            "Once per day, any item fired from the weapon may create a loud, thunderous sound that can be heard up to 100 feet away when it collides with another object. All creatures within a 5 foot radius of the point of impact must make a Constitution saving throw with DC 10 + rune level, taking 1d8 thunder damage on a failed save, or half as much on a successful one.",
-            "For each rune level above 3rd, this effect may be activated once more per day. If the rune is at 5th level or higher, the damage increases to 2d8, and at 7th level or higher the damage increases to 3d8."
-        ],
-        "page": "rc 14"
-    },
-    {
-        "index": 35,
-        "name": "Water Breathing",
-        "rarity": "Rare",
-        "level": 4,
-        "armor-desc": [
-            "The armor grants you the ability to breathe underwater for up to 1 hour per day. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour per day.",
-            "For each rune level above 4th, the maximum amount of time you can breathe underwater increases by 1 hour per day."
-        ],
-        "page": "rc 15"
-    },
-    {
-        "index": 36,
-        "name": "Weapon Warp",
-        "rarity": "Very rare",
-        "level": 8,
-        "melee-desc": [
-            "Twice per day, you may have your weapon teleport into your hands or any position within 5 feet of you as an action. For every 100 feet the weapon is away from you, the teleport takes 1 additional second, starting at 0 seconds (instant). The teleport is incapable of traveling through different dimensional planes.",
-            "For each rune level above 8th, the effect may be activated twice more per day."
-        ],
-        "ranged-desc": [
-            "Twice per day, you may have your weapon teleport into your hands or any position within 5 feet of you as an action. For every 100 feet the weapon is away from you, the teleport takes 1 additional second, starting at 0 seconds (instant). The teleport is incapable of traveling through different dimensional planes.",
-            "For each rune level above 8th, the effect may be activated twice more per day."
-        ],
-        "page": "rc 15"
-    },
-    {
-        "index": 37,
-        "name": "Wide Guard",
-        "rarity": "Rare",
-        "level": 4,
-        "shield-desc": [
-            "You may use your action to create a 1-inch thick 15 ft by 15 ft magical barrier. This barrier grants you +4 AC and +2 AC to all other creatures who are directly behind the barrier. Holding the barrier requires concentration, similarly to spells, and is treated as such. Breaking your concentration, such as by taking another action, disperses the barrier. Additionally, you may disperse the barrier as a bonus action.",
-            "The barrier is directly attatched to your shield, and moving the shield also moves the barrier. While holding the barrier up, your movement speed is halved.",
-            "If the rune is at 6th level or higher, the bonus granted by the barrier increases by +1. If the rune is at 8th level or higher, the bonus is instead increased by +2 and the size of the barrier increases to 20 ft by 20 ft."
-        ],
-        "page": "rc 15"
-    },
-    {
-        "index": 38,
-        "name": "Wind Shot",
-        "rarity": "Uncommon",
-        "level": 1,
-        "ranged-desc": [
-            "Whenever you attack with the weapon, a small gust of wind encompasses the projectile you shoot. This wind does not change the trajectory or aiming of your attack, but is capable of blowing away small objects that aren't being held down when it flies past them.",
-            "For each rune level above 1st, the wind becomes increasingly larger and stronger. If the rune is at 4th level or higher, creatures within a 5 foot radius of the line of fire of the attack must succeed on a Strength saving throw with DC 4 + rune level or be pushed 5 feet in the direction of the attack."
-        ],
-        "page": "rc 15"
-    },
-    {
-        "index": 39,
-        "name": "Targetted Teleport",
-        "rarity": "Legendary",
-        "level": 9,
-        "melee-desc": [
-            "Once per day, for the cost of all your movement, you may teleport to a space next to the weapon. The weapon must be within 120 feet of you, and within your line of sight. There must be enough space besides the weapon for you to stand comfortably, and after the teleport you end in a position such that the weapon is in your hands. The weapon remains in the same position it was in before you teleport.",
-            "As a bonus action and at the cost of all your movement, you may throw the weapon and then teleport to it during its flight. Additionally, you may still make an action after teleporting if you have not done so during your turn, such as an attack."
-        ],
-        "page": "rc"
-    },
-    {
-        "index": 40,
-        "name": "Rope Tether",
-        "rarity": "Very rare",
-        "level": 6,
-        "melee-desc": [
-            "As a bonus action, you may create a rope that forms between the handle and the blade/rest of the weapon. The rope is regular rope, can carry up to four times the user's weight, and is 20 feet long. The rope is incapable of snapping or breaking; instead, it automatically retracts if it goes over its weight capacity or if it is damaged enough.",
-            "The rope may be used to increase the range of the weapon, although it is significantly harder to control, especially when compared to the chain extension enchantment. Any attack made at an increased range using the rope always has disadvantage.",
-            "The rope may be dismissed as a bonus action, which retracts the rope into the handle, returning the weapon to normal. This retraction is capable of hitting other creatures, but it may also be stopped by them.",
-            "For each rune level above 6th, the length of the rope is increased by 10 feet."
-        ],
-        "page": "rc"
-    },
-    {
-        "index": 41,
-        "name": "Wall Breaker",
-        "rarity": "Uncommon",
-        "level": 3,
-        "melee-desc": [
-            "Any attacks made with the weapon deals twice as much damage to walls, buildings, and other structures or terrain.",
-            "For each rune level above 3rd, the weapon deals an additional multiplier of damage to structures and terrain (for example, on a 5th level rune, the weapon deals four times as much damage)."
-        ],
-        "ranged-desc": [
-            "Any attacks made with the weapon deals twice as much damage to walls, buildings, and other structures or terrain.",
-            "For each rune level above 3rd, the weapon deals an additional multiplier of damage to structures and terrain (for example, on a 5th level rune, the weapon deals four times as much damage)."
-        ],
-        "page": "rc"
-    },
-    {
-        "index": 42,
-        "name": "Strong Hold",
-        "rarity": "Uncommon",
-        "level": 3,
-        "melee-desc": [
-            "The weapon (or shots fired from the weapon, if ranged) is capable of sticking inside of and holding onto walls and other structures with ease. While doing so, the weapon deals as little damage to the structure as possible."
-        ],
-        "ranged-desc": [
-            "The weapon (or shots fired from the weapon, if ranged) is capable of sticking inside of and holding onto walls and other structures with ease. While doing so, the weapon deals as little damage to the structure as possible."
-        ],
-        "page": "rc"
-    },
-    {
-        "index": 43,
-        "name": "Illusory Protection",
-        "rarity": "Rare",
-        "level": 3,
-        "armor-desc": [
-            "For up to one hour per day, the armor can change its appearance to another type of armor, or to even be invisible. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour, per day."
-        ],
-        "page": "rc"
-    },
-    {
-        "index": 44,
-        "name": "Invisible Shield",
-        "rarity": "Uncommon",
-        "level": 2,
-        "shield-desc": [
-            "For up to one hour per day, the shield can appear to be invisible. Additionally, the hand holding the shield appears normal, as if its not holding anything. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour, per day."
-        ],
-        "page": "rc"
-    },
-    {
-        "index": 45,
-        "name": "Triple Shot",
-        "rarity": "Rare",
-        "level": 4,
-        "ranged-desc": [
-            "Twice per day, the weapon may duplicate ammunition when attacking. Choose two additional targets, and make a ranged attack against them as normal. The three attacks may not target the same creature. This effect does not consume any extra ammunition.",
-            "For each rune level above 4th, this effect may be activated twice more per day."
-        ]
-    }
+  {
+    "index": 1,
+    "name": "Air Bubble",
+    "rarity": "Uncommon",
+    "level": 3,
+    "armor-desc": [
+      "While underwater or in another unbreathable environment, the armor can emit a small bubble around your head that allows you to breathe normally for a limited time. This bubble lasts up to 5 minutes, and each minute in a breathable environment restores 1 minute of the bubble's usage.",
+      "The bubble may be popped by another creature's attack. When taking damage, roll a d20. On a 8 or lower, the bubble pops, and its available usage time resets to 0."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, the bubble can last an additional 5 minutes, and the threshold for the bubble popping on a d20 roll is lowered by 1."
+    ],
+    "page": "rc 14"
+  },
+  {
+    "index": 2,
+    "name": "Antimagic Aura",
+    "rarity": "Very rare",
+    "level": 6,
+    "armor-desc": [
+      "The armor emits a small field of ether that protects the wearer from magical effects. While wearing the armor, the wearer is granted advantage on saving throws against magical effects, and anyone casting a spell has disadvantage on any rolls against the wearer (but not on any other targets). This effect is only granted against spells that are 3rd level or lower."
+    ],
+    "higher_level": [
+      "For each rune level above 6th, the effect is granted for spells 1 level higher, up to a max of 6th level."
+    ],
+    "page": "rc 14"
+  },
+  {
+    "index": 3,
+    "name": "Aquatic Affinity",
+    "rarity": "Uncommon",
+    "level": 2,
+    "melee-desc": [
+      "The weapon is not granted disadvantage on attack roles by being underwater. Additionally, the weapon (if it's a ranged weapon) does not automatically miss if the target is beyond the weapon's normal range while underwater."
+    ],
+    "ranged-desc": [
+      "The weapon is not granted disadvantage on attack roles by being underwater. Additionally, the weapon (if it's a ranged weapon) does not automatically miss if the target is beyond the weapon's normal range while underwater."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, the wielder's swim speed is increased by 5 feet."
+    ],
+    "page": "rc 14"
+  },
+  {
+    "index": 4,
+    "name": "Arrows of Light",
+    "rarity": "Very rare",
+    "level": 4,
+    "ranged-desc": [
+      "The weapon is capable of of creating arrows out of pure light. This may be done instantly at any time while in bright or dim light, and does not consume any ammunition. The arrows deal radiant damage, and disappear upon impact. This effect may be activated up to 4 times per day."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the effect may be activated once more per day. If the rune is at 7th level or higher, the effect may now also be activated in darkness."
+    ],
+    "page": "rc 14"
+  },
+  {
+    "index": 5,
+    "name": "Blade Beam",
+    "rarity": "Rare",
+    "level": 4,
+    "melee-desc": [
+      "Twice per day, when you swing the weapon, you may launch a small blade of concentrated ether as a ranged attack with range 60 feet. The attack has finesse, and uses your proficiency bonus. The blade deals slashing damage equal to the amount of damage the weapon would normally deal."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the effect may be activated twice more per day. If the rune is at 7th level or higher, the blade deals twice as much damage."
+    ],
+    "page": "rc 15"
+  },
+  {
+    "index": 6,
+    "name": "Burst of Wind",
+    "rarity": "Uncommon",
+    "level": 2,
+    "armor-desc": [
+      "Twice per day, you may emit a burst of wind in a small radius around you as a reaction to being targeted by a ranged attack. Attacks made with physical projectiles, such as arrows or bolts, have disadvantage against you during this time.",
+      "Additionally, the wind blows away small items near you that are not held down, and can disperse or blow away fog, smoke, and other gases. The wind lasts until the start of your next turn."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, the effect may be activated once more per day."
+    ],
+    "page": "rc 15"
+  },
+  {
+    "index": 7,
+    "name": "Chain Extension",
+    "rarity": "Legendary",
+    "level": 6,
+    "melee-desc": [
+      "As a bonus action, you may create a chain that forms between the handle and blade/rest of the weapon. The chain is made out of the same material as the handle and is 5 feet long. This chain allows the wielder to swing the weapon at a much greater range than before, although it may be harder to control. While active, the chain grants the wielder an additional 5 feet of range with the melee weapon.",
+      "The chain may be dismissed as a bonus action, which retracts the chain into the handle, returning the weapon back to normal. This retraction is capable of hiting other creatures, but it may also be stopped by them."
+    ],
+    "higher_level": [
+      "For each rune level above 6th, the length of the chain is increased by 5 feet."
+    ],
+    "page": "rc 15"
+  },
+  {
+    "index": 8,
+    "name": "Curve Shot",
+    "rarity": "Very rare",
+    "level": 3,
+    "ranged-desc": [
+      "Ammunition shot from the weapon will curve towards their target. Attacks made using the weapon have a +1 bonus to attack rolls. Targets with half cover gain no bonuses from it, and targets with three-quarters cover are treated as if they had half cover.",
+      "For each rune level above 3rd, the weapon gains an additional +1 bonus to attack rolls, with a maximum of +3. This maximum increases to +4 at 8th level."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, the weapon gains an additional +1 bonus to attack rolls, with a maximum of +3. This maximum increases to +4 at 8th level.",
+      "If the rune is at 6th level or above, targets with three-quarters cover gain no bonuses from it, and targets with total cover may now be targeted as if they had three-quarters cover. At 7th level or above, targets with total cover are treated as if they had half cover, and at 9th level targets with total cover gain no bonuses from it."
+    ],
+    "page": "rc 15"
+  },
+  {
+    "index": 9,
+    "name": "Darkvision",
+    "rarity": "Uncommon",
+    "level": 2,
+    "armor-desc": [
+      "The armor grants you darkvision out to a range of 60 feet for up to 1 hour per day. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour per day."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, this maximum amount of time you gain darkvision increases by 1 hour per day."
+    ],
+    "page": "rc 15"
+  },
+  {
+    "index": 10,
+    "name": "Distant Guard",
+    "rarity": "Very rare",
+    "level": 4,
+    "shield-desc": [
+      "Once per day as a reaction, you may create a magical projection of this shield up to 60 ft. away in line of sight to protect another creature. The target momentarily gains AC equal to the AC granted by the shield. The projection lasts until the start of your next turn."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, this effect may be activated once more per day."
+    ],
+    "page": "rc 15"
+  },
+  {
+    "index": 11,
+    "name": "Double Shot",
+    "rarity": "Uncommon",
+    "level": 2,
+    "ranged-desc": [
+      "Twice per day, the weapon may duplicate ammunition when attacking. Choose an additional target, and make a ranged attack against them as normal. The two attacks may not target the same creature. This effect does not consume any extra ammunition."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, this effect may be activated twice more per day."
+    ],
+    "page": "rc 15"
+  },
+  {
+    "index": 12,
+    "name": "Electrify",
+    "rarity": "Uncommon",
+    "level": 4,
+    "melee-desc": [
+      "For up to 10 minutes per day, the weapon may begin to crackle with lightning whenever the wielder so chooses. The lightning is capable of moving short distances, and is capable of shocking anyone except for the wielder. While crackling with lightning, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and 1d4 lightning damage otherwise.",
+      "If attacking a target wearing metal armor, the lightning is capable of shocking them through their armor if the attack doesn't fully connect. While crackling with lightning, the weapon deals 1d4 lightning damage to targets wearing metal armor on a non-critical miss."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the lightning may last for an additional 10 minutes per day. For every two rune levels above 4th, the weapon deals an additional 1d6 lightning damage if it's made out of metal, and an additional 1d4 lightning damage otherwise. Against targets wearing metal armor, the weapon deals an additional 1d4 lightning damage on a non-critical miss."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 13,
+    "name": "Enhanced Mobility",
+    "rarity": "Uncommon",
+    "level": 5,
+    "armor-desc": [
+      "The armor increases the wearer's movement capabilites. While wearing the armor, your walk speed is increased by 5 feet, and you gain +1 on all Dexterity-based saving throws and skill checks, or +2 if you are proficient in the respective saving throw or skill check."
+    ],
+    "higher_level": [
+      "For every two rune levels above 5th, the walk speed bonus granted by the armor increases by 5 feet. If the rune is at 8th level or above, the bonus on saving throws and skill checks increases to +2, or +4 if you are proficient."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 14,
+    "name": "Fey Protection",
+    "rarity": "Uncommon",
+    "level": 5,
+    "armor-desc": [
+      "While wearing the armor, you have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+      "If you already have the Fey Ancestry trait while wearing this armor, you gain +4 to saving throws against being charmed, on top of having advantage."
+    ],
+    "higher_level": [
+      "For every rune level above 2nd, this bonus increases by +1."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 15,
+    "name": "Firebound",
+    "rarity": "Uncommon",
+    "level": 4,
+    "armor-desc": [
+      "The armor begins to heat up and emit small flames whenever the wearer so chooses. These flames are incapable of spreading, and cannot catch anything on fire. Although the flames cannot directly damage the wearer, the immense heat from them may have side effects depending on the wearer's physical condition and the outside environment.",
+      "While emitting these flames, the wearer is granted resistance to cold damage. The flames also emit a dim light in a 5 foot radius.",
+      "If the rune is at 6th level or higher, the wearer is now granted resistance to fire damage and immunity to cold damage. If the rune is at 8th level or higher, the wearer is now granted immunity to fire damage."
+    ],
+    "melee-desc": [
+      "For up to 10 minutes per day, the weapon may begin to emit small flames whenever the wielder so chooses. These flames are incapable of spreading, and cannot catch anything on fire. The flames still emit a large amount of heat, however. While emitting these flames, the weapon deals an additional 1d6 fire damage and emits a dim light in a 5 foot radius.",
+      "For each rune level above 4th, the flames may last for an additional 10 minutes per day. For every two rune levels above 4th, the bonus fire damage increases by 1d6."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 16,
+    "name": "Firebound (Armor)",
+    "rarity": "Uncommon",
+    "level": 4,
+    "armor-desc": [
+      "The armor begins to heat up and emit small flames whenever the wearer so chooses. These flames are incapable of spreading, and cannot catch anything on fire. Although the flames cannot directly damage the wearer, the immense heat from them may have side effects depending on the wearer's physical condition and the outside environment.",
+      "While emitting these flames, the wearer is granted resistance to cold damage. The flames also emit a dim light in a 5 foot radius."
+    ],
+    "higher_level": [
+      "If the rune is at 6th level or higher, the wearer is now granted resistance to fire damage and immunity to cold damage. If the rune is at 8th level or higher, the wearer is now granted immunity to fire damage."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 17,
+    "name": "Firebound (Melee Weapons)",
+    "rarity": "Uncommon",
+    "level": 4,
+    "melee-desc": [
+      "For up to 10 minutes per day, the weapon may begin to emit small flames whenever the wielder so chooses. These flames are incapable of spreading, and cannot catch anything on fire. The flames still emit a large amount of heat, however. While emitting these flames, the weapon deals an additional 1d6 fire damage and emits a dim light in a 5 foot radius."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the flames may last for an additional 10 minutes per day. For every two rune levels above 4th, the bonus fire damage increases by 1d6."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 18,
+    "name": "Heavy Stance",
+    "rarity": "Uncommon",
+    "level": 3,
+    "armor-desc": [
+      "As a bonus action or reaction (to anything), you may increase the effective weight of yourself and the armor up to three times your normal weight. You may end this effect as a bonus action.",
+      "While the weight is increased, you are immune to any effects that may forcefully move or push you, unless you wish to be moved. Additionally, your movement speed is halved, and you lose any and all fly speed you may have had."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, the maximum weight of you and the armor increases by one times your normal weight."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 19,
+    "name": "Holy Glow",
+    "rarity": "Rare",
+    "level": 3,
+    "armor-desc": [
+      "The armor begins to glow with a faint light the wearer so chooses. These lights emit a dim light as far as the wearer wishes, up to a max of a 10 ft. radius and a minimum of a 5 ft. radius.",
+      "While emitting lights, the armor grants the wearer resistance to necrotic damage."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, the max radius of the light increases by 5 feet. If the rune is at 7th level or higher, the wearer is now granted immunity to necrotic damage and resistance to radiant damage."
+    ],
+    "page": "rc 16"
+  },
+  {
+    "index": 20,
+    "name": "Icebound",
+    "rarity": "Uncommon",
+    "level": 3,
+    "armor-desc": [
+      "The armor begins to emit freezing cold mist whenever the wearer so chooses. The immense cold from the mist may have side effects depending on the wearer's physical condition and the outside environment.",
+      "While emitting the mist, the wearer is granted resistance to fire damage."
+    ],
+    "higher_level": [
+      "If the rune is at 5th level or higher, the wearer is now granted resistance to cold damage and immunity to fire damage. If the rune is at 8th level or higher, the wearer is now granted immunity to cold damage."
+    ],
+    "page": "rc 17"
+  },
+  {
+    "index": 21,
+    "name": "Illusory Protection",
+    "rarity": "Rare",
+    "level": 3,
+    "armor-desc": [
+      "For up to one hour per day, the armor can change its appearance to another type of armor, or to even be invisible. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour, per day."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, the maximum amount of time the armor can be change its appearance increases by 30 minutes."
+    ],
+    "page": "rc 17"
+  },
+  {
+    "index": 22,
+    "name": "Invisible Shield",
+    "rarity": "Uncommon",
+    "level": 2,
+    "shield-desc": [
+      "For up to one hour per day, the shield can appear to be invisible. Additionally, the hand holding the shield appears normal, as if its not holding anything. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour, per day."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, the maximum amount of time the shield can be invisible increases by 30 minutes."
+    ],
+    "page": "rc 17"
+  },
+  {
+    "index": 23,
+    "name": "Lightweight",
+    "rarity": "Common",
+    "level": 1,
+    "armor-desc": [
+      "While enchanted, the armor becomes every so slightly lighter. This makes it slightly easier to carry around and is less difficult to wear. However, the effect of the enchantment at 1st level is so slim that it has no visible effect during combat."
+    ],
+    "higher_level": [
+      "For each rune level above 1st, the armor becomes even lighter. If the rune is at 4th level or above, the maximum Dex modifier for the armor increases by 1, becoming a max of 3 for medium armor and a max of 1 for heavy armor. For each rune level above 6th, the Strength requirement to wear the armor, if it exists, decreases by 1."
+    ],
+    "page": "rc 17"
+  },
+  {
+    "index": 24,
+    "name": "Magic Missile",
+    "rarity": "Uncommon",
+    "level": 2,
+    "ranged-desc": [
+      "Once per day at any point during the flight of an item launched from the weapon, you may transform the item into a magic missile as if the magic missile spell had been cast. The missile may travel up to 120 ft. towards any target of your choosing, and deals 1d4 + 1 force damage. The missile cannot miss."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, the effect may be activated once more per day."
+    ],
+    "page": "rc 17"
+  },
+  {
+    "index": 25,
+    "name": "Muffler",
+    "rarity": "Rare",
+    "level": 4,
+    "armor-desc": [
+      "The armor is capable of absorbing and muffling large sounds. While wearing the armor, the wearer is granted resistance to thunder damage and is immune to any sound-based effects and spells. This effect may be temporarily disabled at the user's will at any time."
+    ],
+    "higher_level": [
+      "If the rune is at 7th level or higher, the wearer is now granted immunity to thunder damage. "
+    ],
+    "page": "rc 17"
+  },
+  {
+    "index": 26,
+    "name": "Projection",
+    "rarity": "Very rare",
+    "level": 4,
+    "melee-desc": [
+      "Once per day, you may create a magical projection of this weapon up to 60 ft. away in line of sight and attack with it for one turn. Make attack and damage rolls as normal.",
+      "This action is potentially capable of catching opponents off guard. A target who is caught off guard and does not know about the enchantment (once a foe has seen you use it, they know about it) must make a Wisdom (Perception) or Dexterity (Acrobatics) saving throw with DC 10 + rune level. On a failed throw, you have advantage on the attack roll."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the effect may be activated once more per day."
+    ],
+    "page": "rc 17"
+  },
+  {
+    "index": 27,
+    "name": "Rebound Force",
+    "rarity": "Rare",
+    "level": 2,
+    "shield-desc": [
+      "Once per day, if you are targeted by a melee attack that has missed, your shield may rebound the force of the blocked attack back onto the attacker.",
+      "When activating this effect, have the attacker make a damage roll, as if they had hit you. The attacker must then make a constitution saving throw with DC 10 + rune level, and takes force damage equal to their total damage roll on a failed save, or half as much on a successful one."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, the effect may be activated once more per day."
+    ],
+    "page": "rc 18"
+  },
+  {
+    "index": 28,
+    "name": "Reflective Mirror",
+    "rarity": "Rare",
+    "level": 4,
+    "shield-desc": [
+      "The shield is granted a reflective shine, similar to that of a mirror. Once per day, if you are targeted by a ranged attack that has missed, you may redirect the attack towards any target of your choosing within range. The attack deals the same amount of damage as normal."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the effect may be activated once more per day."
+    ],
+    "page": "rc 18"
+  },
+  {
+    "index": 29,
+    "name": "Returning Throw",
+    "rarity": "Rare",
+    "level": 3,
+    "melee-desc": [
+      "Whenever you throw the weapon, you may will for it to fly back towards you. At the start of your next turn, as a reaction or bonus action, make a Dexterity (Sleight of Hand) skill check with DC 12. On a successful check, you successfully catch the weapon.",
+      "On a failed check or if you choose not to catch the weapon, the weapon flies past you in the opposite direction. The weapon is capable of potentially hitting other creatures or targets during its flight in either direction."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the effect may be activated once more per day."
+    ],
+    "page": "rc 18"
+  },
+  {
+    "index": 30,
+    "name": "Rope Tether",
+    "rarity": "Very rare",
+    "level": 6,
+    "melee-desc": [
+      "As a bonus action, you may create a rope that forms between the handle and the blade/rest of the weapon. The rope is regular rope, can carry up to four times the user's weight, and is 20 feet long. The rope is incapable of snapping or breaking; instead, it automatically retracts if it goes over its weight capacity or if it is damaged enough.",
+      "The rope may be used to increase the range of the weapon, although it is significantly harder to control, especially when compared to the chain extension enchantment. Any attack made at an increased range using the rope always has disadvantage.",
+      "The rope may be dismissed as a bonus action, which retracts the rope into the handle, returning the weapon to normal. This retraction is capable of hitting other creatures, but it may also be stopped by them."
+    ],
+    "higher_level": [
+      "For each rune level above 6th, the length of the rope is increased by 10 feet."
+    ],
+    "page": "rc 18"
+  },
+  {
+    "index": 31,
+    "name": "Self Destruct",
+    "rarity": "Uncommon",
+    "level": 3,
+    "melee-desc": [
+      "As an action or bonus action, you may cause your weapon to explode in a burst of etheric energy. All creatures within a 10 foot radius of the weapon must make a Constitution saving throw with DC 10 + rune level. A creature takes 6d10 typeless damage on a failed save, or half as much on a successful one.",
+      "Both the weapon and any runes attatched to it are disintegrated in the process, and cannot be salvaged."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, the explosion does an additional 2d10 damage."
+    ],
+    "page": "rc 18"
+  },
+  {
+    "index": 32,
+    "name": "Shield",
+    "rarity": "Very rare",
+    "level": 6,
+    "melee-desc": [
+      "Once per day, you may use the weapon to cast the shield spell; however, the spell only grants you +2 AC, instead of +5."
+    ],
+    "ranged-desc": [
+      "Once per day, you may use the weapon to cast the shield spell; however, the spell only grants you +2 AC, instead of +5."
+    ],
+    "higher_level": [
+      "For each rune level above 6th, the effect may be activated once more per day."
+    ],
+    "page": "rc 18"
+  },
+  {
+    "index": 33,
+    "name": "Shield Warp",
+    "rarity": "Very rare",
+    "level": 8,
+    "shield-desc": [
+      "Twice per day, you may have your shield teleport into your hands as an action or as a reaction to being targetted to an attack. If done as a reaction, the shield grants its additional AC against the triggering attack, but only if the shield is 100 feet or less away from you before teleporting.",
+      "For every 100 feet the shield is away from you, the teleport takes 1 additional second, starting at 0 seconds (instant). The teleport is incapable of traveling through different dimensional planes."
+    ],
+    "higher_level": [
+      "For each rune level above 8th, the effect may be activated twice more per day."
+    ],
+    "page": "rc 18"
+  },
+  {
+    "index": 34,
+    "name": "Shock Absorber",
+    "rarity": "Rare",
+    "level": 3,
+    "armor-desc": [
+      "While wearing the armor, the wearer is granted resistance to lightning damage.",
+      "Once per day, when taking lightning damage, the armor may absorb the lightning and transfer it into one item the wearer is holding. The item acts as if it had the electrify enchantment at 2nd level. This effect goes away whenever the wielder makes an attack with the item, or after 1 minute has passed."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, the effect may be activated once more per day. If the rune is at 6th level or higher, the wearer is now granted immunity to lightning damage."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 35,
+    "name": "Smokescreen",
+    "rarity": "Common",
+    "level": 2,
+    "ranged-desc": [
+      "Twice per day, you may fire a trail of white or gray smoke from the weapon as an action. The smoke trail is 5 feet by 5 feet wide, and follows the trail of a normal item fired from the weapon. The smoke is capable of obscuring a creature's vision. Doing this does not consume any ammunition."
+    ],
+    "higher_level": [
+      "For each rune level above 2nd, the effect may be activated once more per day. If the rune is at 5th level or higher, the smoke trail is now 10 feet by 10 feet wide, and if the rune is at 8th level or higher the smoke trail is now 15 feet by 15 feet wide."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 36,
+    "name": "Stabilizer",
+    "rarity": "Legendary",
+    "level": 9,
+    "armor-desc": [
+      "The armor emits a faint healing aura that is capable of stabilizing unconscious creatures. While wearing the armor, you cannot fail a death saving throw by dice (you still suffer from failed throws by taking damage, however), and you only need 1 successful death saving throw to become stable.",
+      "Additionally, while stable, you regain 1 hit point after 1 hour instead of 1d4 hours."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 37,
+    "name": "Stored Energy",
+    "rarity": "Rare",
+    "level": 6,
+    "shield-desc": [
+      "The shield is capable of storing energy from blocked attacks and releasing it as a blast of ether. The shield gains 1 charge each time you are targetted by an attack that does not hit, and can store up to 6 charges per day. A charge is lost an hour after it is gained if it is not spent.",
+      "As an action, you may consume charges from the shield to use it to make a ranged magical attack with finesse and proficiency. The attack hits 1 target, and has a range of 60 feet.. You may consume as many charges as you want for the attack, with a minimum of 1. For each charge consumed, the attack deals 3d8 force damage. Additionally, on a hit, the target is pushed back 5 feet for each charge consumed."
+    ],
+    "higher_level": [
+      "For each rune level above 6th, the shield is capable of storing an additional charge per day."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 38,
+    "name": "Strong Hold",
+    "rarity": "Uncommon",
+    "level": 3,
+    "melee-desc": [
+      "The weapon (or shots fired from the weapon, if ranged) is capable of sticking inside of and holding onto walls and other structures with ease. While doing so, the weapon deals as little damage to the structure as possible."
+    ],
+    "ranged-desc": [
+      "The weapon (or shots fired from the weapon, if ranged) is capable of sticking inside of and holding onto walls and other structures with ease. While doing so, the weapon deals as little damage to the structure as possible."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 39,
+    "name": "Swift Swim",
+    "rarity": "Uncommon",
+    "level": 4,
+    "armor-desc": [
+      "The armor does not weight you down while attempting to move while underwater. However, the armor can still weight you down if you are not entirely immersed in water. Additionally, if you have any swim speed, the armor grants you an additional 5 feet of swim speed."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the additional swim speed granted by the armor increases by 5 feet."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 40,
+    "name": "Targetted Teleport",
+    "rarity": "Legendary",
+    "level": 9,
+    "melee-desc": [
+      "Once per day, for the cost of all your movement, you may teleport to a space next to the weapon. The weapon must be within 120 feet of you, and within your line of sight. There must be enough space besides the weapon for you to stand comfortably, and after the teleport you end in a position such that the weapon is in your hands. The weapon remains in the same position it was in before you teleport.",
+      "As a bonus action and at the cost of all your movement, you may throw the weapon and then teleport to it during its flight. Additionally, you may still make an action after teleporting if you have not done so during your turn, such as an attack."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 41,
+    "name": "Thunderous Clang",
+    "rarity": "Uncommon",
+    "level": 3,
+    "melee-desc": [
+      "Once per day, the weapon may emit a loud, thunderous sound that can be heard up to 100 feet away when it hits another object. All creatures except the wielder within a 5 foot radius of the weapon must make a Constitution saving throw with DC 10 + rune level, taking 1d8 thunder damage on a failed save, or half as much on a successful one."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, this effect may be activated once more per day. If the rune is at 5th level or higher, the damage increases to 2d8, and at 7th level or higher the damage increases to 3d8."
+    ],
+    "page": "rc 19"
+  },
+  {
+    "index": 42,
+    "name": "Thunderous Shot",
+    "rarity": "Uncommon",
+    "level": 3,
+    "ranged-desc": [
+      "Once per day, any item fired from the weapon may create a loud, thunderous sound that can be heard up to 100 feet away when it collides with another object. All creatures within a 5 foot radius of the point of impact must make a Constitution saving throw with DC 10 + rune level, taking 1d8 thunder damage on a failed save, or half as much on a successful one."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, this effect may be activated once more per day. If the rune is at 5th level or higher, the damage increases to 2d8, and at 7th level or higher the damage increases to 3d8."
+    ],
+    "page": "rc 20"
+  },
+  {
+    "index": 43,
+    "name": "Triple Shot",
+    "rarity": "Rare",
+    "level": 4,
+    "ranged-desc": [
+      "Twice per day, the weapon may duplicate ammunition when attacking. Choose two additional targets, and make a ranged attack against them as normal. The three attacks may not target the same creature. This effect does not consume any extra ammunition."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, this effect may be activated twice more per day."
+    ],
+    "page": "rc 20"
+  },
+  {
+    "index": 44,
+    "name": "Wall Breaker",
+    "rarity": "Uncommon",
+    "level": 3,
+    "melee-desc": [
+      "Any attacks made with the weapon deals twice as much damage to walls, buildings, and other structures or terrain."
+    ],
+    "ranged-desc": [
+      "Any attacks made with the weapon deals twice as much damage to walls, buildings, and other structures or terrain."
+    ],
+    "higher_level": [
+      "For each rune level above 3rd, the weapon deals an additional multiplier of damage to structures and terrain (for example, on a 5th level rune, the weapon deals four times as much damage)."
+    ],
+    "page": "rc 20"
+  },
+  {
+    "index": 45,
+    "name": "Water Breathing",
+    "rarity": "Rare",
+    "level": 4,
+    "armor-desc": [
+      "The armor grants you the ability to breathe underwater for up to 1 hour per day. This time does not need to be all at once, and can be split up into multiple times a day as long as the total does not exceed 1 hour per day."
+    ],
+    "higher_level": [
+      "For each rune level above 4th, the maximum amount of time you can breathe underwater increases by 1 hour per day."
+    ],
+    "page": "rc 20"
+  },
+  {
+    "index": 46,
+    "name": "Weapon Warp",
+    "rarity": "Very rare",
+    "level": 8,
+    "melee-desc": [
+      "Twice per day, you may have your weapon teleport into your hands or any position within 5 feet of you as an action. For every 100 feet the weapon is away from you, the teleport takes 1 additional second, starting at 0 seconds (instant). The teleport is incapable of traveling through different dimensional planes."
+    ],
+    "ranged-desc": [
+      "Twice per day, you may have your weapon teleport into your hands or any position within 5 feet of you as an action. For every 100 feet the weapon is away from you, the teleport takes 1 additional second, starting at 0 seconds (instant). The teleport is incapable of traveling through different dimensional planes."
+    ],
+    "higher_level": [
+      "For each rune level above 8th, the effect may be activated twice more per day."
+    ],
+    "page": "rc 20"
+  },
+  {
+    "index": 47,
+    "name": "Wide Guard",
+    "rarity": "Rare",
+    "level": 4,
+    "shield-desc": [
+      "You may use your action to create a 1-inch thick 15 ft by 15 ft magical barrier. This barrier grants you +4 AC and +2 AC to all other creatures who are directly behind the barrier. Holding the barrier requires concentration, similarly to spells, and is treated as such. Breaking your concentration, such as by taking another action, disperses the barrier. Additionally, you may disperse the barrier as a bonus action.",
+      "The barrier is directly attatched to your shield, and moving the shield also moves the barrier. While holding the barrier up, your movement speed is halved."
+    ],
+    "higher_level": [
+      "If the rune is at 6th level or higher, the bonus granted by the barrier increases by +1. If the rune is at 8th level or higher, the bonus is instead increased by +2 and the size of the barrier increases to 20 ft by 20 ft."
+    ],
+    "page": "rc 20"
+  },
+  {
+    "index": 48,
+    "name": "Wind Shot",
+    "rarity": "Uncommon",
+    "level": 1,
+    "ranged-desc": [
+      "Whenever you attack with the weapon, a small gust of wind encompasses the projectile you shoot. This wind does not change the trajectory or aiming of your attack, but is capable of blowing away small objects that aren't being held down when it flies past them."
+    ],
+    "higher_level": [
+      "For each rune level above 1st, the wind becomes increasingly larger and stronger. If the rune is at 4th level or higher, creatures within a 5 foot radius of the line of fire of the attack must succeed on a Strength saving throw with DC 4 + rune level or be pushed 5 feet in the direction of the attack."
+    ],
+    "page": "rc 20"
+  }
 ]

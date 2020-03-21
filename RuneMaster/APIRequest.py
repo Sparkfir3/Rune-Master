@@ -25,8 +25,12 @@ class rc_data(object):
 	rc_items = json.loads(data5)
 
 def get_json(url):
-	response = requests.get(url)
-	if response.status_code == 200:
-		return response.json()
+	if base_URL in url:
+		response = requests.get(url)
+		if response.status_code == 200:
+			return response.json()
+		else:
+			return 0
 	else:
-		return 0
+		print("Error: improper URL {}".format(url))
+		return 0;
